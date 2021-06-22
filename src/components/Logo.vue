@@ -14,6 +14,9 @@ export default {
       type: Number,
       default: 40,
     },
+    height: {
+      type: Number,
+    },
     isDarkMode: {
       type: Boolean,
       default: false
@@ -22,7 +25,7 @@ export default {
 
   computed: {
     getHeight() {
-      return 
+      return this.height
     },
     getWidth() {
       return this.width

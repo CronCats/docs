@@ -26,7 +26,7 @@ export default [
   {
     name: "404",
     path: "/404/",
-    component: () => import(/* webpackChunkName: "page--src--pages--404-vue" */ "/Users/nanook/code/src/github.com/Cron-Near/docs/src/pages/404.vue")
+    component: () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/nanook/code/src/github.com/Cron-Near/docs/node_modules/gridsome/app/pages/404.vue")
   },
   {
     name: "home",
@@ -36,7 +36,7 @@ export default [
   {
     name: "*",
     path: "*",
-    component: () => import(/* webpackChunkName: "page--src--pages--404-vue" */ "/Users/nanook/code/src/github.com/Cron-Near/docs/src/pages/404.vue")
+    component: () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/nanook/code/src/github.com/Cron-Near/docs/node_modules/gridsome/app/pages/404.vue")
   }
 ]
 

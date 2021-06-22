@@ -6,7 +6,7 @@
           class="flex flex-col items-center px-2 mr-auto sm:px-4 sm:flex-row"
         >
           <g-link to="/" class="flex items-center text-ui-primary" title="Home">
-            <Logo :width="80" :isDarkMode="this.$root.$options.store.isDarkMode" class="text-ui-primary" />
+            <Logo :width="80" :height="20" :isDarkMode="this.$root.$options.store.isDarkMode" class="text-ui-primary" />
           </g-link>
 
           <div
