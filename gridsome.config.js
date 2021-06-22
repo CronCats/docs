@@ -26,7 +26,7 @@ module.exports = {
             title: 'Getting Started',
             items: [
               '/docs/',
-              '/docs/installation/',
+              '/docs/examples/',
               '/docs/writing-content/',
               '/docs/deploying/',
             ],

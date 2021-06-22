@@ -12,7 +12,7 @@ export default [
     component: () => import(/* webpackChunkName: "page--src--templates--markdown-page-vue" */ "/Users/nanook/code/src/github.com/Cron-Near/docs/src/templates/MarkdownPage.vue")
   },
   {
-    path: "/docs/installation/",
+    path: "/docs/examples/",
     component: () => import(/* webpackChunkName: "page--src--templates--markdown-page-vue" */ "/Users/nanook/code/src/github.com/Cron-Near/docs/src/templates/MarkdownPage.vue")
   },
   {

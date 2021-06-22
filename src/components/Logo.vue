@@ -1,5 +1,5 @@
 <template>
-  <svg :width="getWidth">
+  <svg :width="getWidth" :height="getHeight">
     <component width="100%" v-bind:is="cronLogo"></component>
   </svg>
 </template>
@@ -21,6 +21,9 @@ export default {
   },
 
   computed: {
+    getHeight() {
+      return 
+    },
     getWidth() {
       return this.width
     },

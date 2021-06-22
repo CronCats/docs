@@ -132,11 +132,6 @@ export default {
     GithubIcon,
     TwitterIcon,
   },
-  data() {
-    return {
-      isDarkMode: localStorage.getItem(LIGHTS_OUT) === 'true'
-    }
-  },
   computed: {
     meta() {
       return this.$static.metadata

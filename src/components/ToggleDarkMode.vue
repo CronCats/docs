@@ -56,10 +56,12 @@ export default {
   },
 
   mounted() {
-    if (this.hasInStorage()) {
+    if (process.isClient) {
+      if (this.hasInStorage()) {
       this.toggleDarkMode(this.getFromStorage())
     } else if (process.isClient && window.matchMedia) {
       this.toggleDarkMode(this.detectPrefered())
+    }
     }
   },
 }

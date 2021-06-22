@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/installation/'
+prev: '/docs/examples/'
 next: '/docs/settings/'
 ---
 
