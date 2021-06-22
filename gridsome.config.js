@@ -23,7 +23,7 @@ module.exports = {
         name: 'docs',
         sections: [
           {
-            title: 'Getting Started',
+            title: 'Introduction',
             items: [
               '/docs/',
               '/docs/examples/',
@@ -32,8 +32,8 @@ module.exports = {
             ],
           },
           {
-            title: 'Configuration',
-            items: ['/docs/settings/', '/docs/sidebar/'],
+            title: 'Developer Guides',
+            items: ['/docs/task-runner/', '/docs/smart-contract-integration/'],
           },
         ],
       },
