@@ -26,14 +26,16 @@ module.exports = {
             title: 'Introduction',
             items: [
               '/docs/',
-              '/docs/examples/',
-              '/docs/writing-content/',
-              '/docs/deploying/',
+              '/docs/scenarios/',
             ],
           },
           {
             title: 'Developer Guides',
-            items: ['/docs/task-runner/', '/docs/smart-contract-integration/'],
+            items: [
+              '/docs/cron-agent/',
+              '/docs/cron-cli/',
+              '/docs/smart-contract-integration/',
+            ],
           },
         ],
       },

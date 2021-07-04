@@ -5,8 +5,7 @@ prev: '/docs/'
 next: '/docs/writing-content/'
 ---
 
-# Examples
-
+# Use Cases
 ## Contract Subscription Payments
 
 Most SaaS business models rely on subscription based payments to provide a profitable service. Subscription models usually prompt the customer to accept terms where they will get charged some amount recurring over some time period. At the end of each period, the customer is charged the agreed upon amount based on a standard amount or based on usage.
