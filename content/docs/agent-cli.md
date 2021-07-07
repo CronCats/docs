@@ -2,10 +2,10 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/deploying/'
-next: '/docs/smart-contract-integration/'
+next: '/docs/contract-integration/'
 ---
 
-# Task Runner
+# Agent CLI
 As a task runner, you can provide Cron with a reliable ongoing triggering mechanism by registering your server as an official Cron agent.
 
 ## Setup
