@@ -5,18 +5,21 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Cron.Cat',
+  siteName: 'Docs.Cron.Cat',
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png',
   },
-  siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://example.com',
+  siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://docs.cron.cat',
   settings: {
     web: process.env.URL_WEB || false,
     twitter: process.env.URL_TWITTER || false,
     github: process.env.URL_GITHUB || false,
     nav: {
-      links: [{ path: '/docs/', title: 'Docs' }],
+      links: [
+        { path: 'https://cron.cat', title: 'Home' },
+        { path: '/docs/', title: 'Docs' }
+      ],
     },
     sidebar: [
       {
@@ -26,14 +29,29 @@ module.exports = {
             title: 'Introduction',
             items: [
               '/docs/',
-              '/docs/examples/',
-              '/docs/writing-content/',
-              '/docs/deploying/',
+              '/docs/use-cases',
             ],
           },
           {
-            title: 'Developer Guides',
-            items: ['/docs/task-runner/', '/docs/smart-contract-integration/'],
+            title: 'Agent',
+            items: [
+              '/docs/agent-cli/',
+              '/docs/agent-docker/',
+            ],
+          },
+          {
+            title: 'Integration',
+            items: [
+              '/docs/contract-integration/',
+              '/docs/task-creation/',
+              '/docs/task-monitoring/',
+            ],
+          },
+          {
+            title: 'Examples',
+            items: [
+              '/docs/examples/',
+            ],
           },
         ],
       },
@@ -65,12 +83,12 @@ module.exports = {
       },
     },
 
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: process.env.GA_ID ? process.env.GA_ID : 'XX-999999999-9',
-      },
-    },
+    // {
+    //   use: '@gridsome/plugin-google-analytics',
+    //   options: {
+    //     id: process.env.GA_ID ? process.env.GA_ID : 'XX-999999999-9',
+    //   },
+    // },
 
     {
       use: '@gridsome/plugin-sitemap',

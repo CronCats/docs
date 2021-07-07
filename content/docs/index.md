@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-next: '/docs/examples/'
+next: '/docs/use-cases/'
 ---
 
 # Summary
