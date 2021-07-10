@@ -2,10 +2,10 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/'
-next: '/docs/writing-content/'
+next: '/docs/agent-cli/'
 ---
 
-# Examples
+# Use Cases
 
 ## Contract Subscription Payments
 

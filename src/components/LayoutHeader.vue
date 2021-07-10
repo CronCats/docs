@@ -5,13 +5,13 @@
         <div
           class="flex flex-col items-center px-2 mr-auto sm:px-4 sm:flex-row"
         >
-          <g-link to="/" class="flex items-center text-ui-primary" title="Home">
+          <g-link to="/" class="flex items-center text-ui-primary mr-8" title="Home">
             <Logo :width="80" :height="20" :isDarkMode="this.$root.$options.store.isDarkMode" class="text-ui-primary" />
           </g-link>
 
           <div
             v-if="settings.nav.links.length > 0"
-            class="hidden ml-2 mr-5 sm:block sm:ml-8"
+            class="ml-2 mr-5 flex sm:ml-8"
           >
             <g-link
               v-for="link in settings.nav.links"
@@ -20,6 +20,7 @@
               class="
                 block
                 p-1
+                mr-8
                 font-medium
                 nav-link
                 text-ui-typo
@@ -31,7 +32,7 @@
           </div>
         </div>
 
-        <div class="w-full px-2 sm:px-4 max-w-screen-xs">
+        <div class="w-full px-2 sm:px-4 max-w-screen-xs max-w-2xl">
           <ClientOnly>
             <Search />
           </ClientOnly>

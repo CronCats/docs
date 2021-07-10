@@ -29,7 +29,7 @@ module.exports = {
             title: 'Introduction',
             items: [
               '/docs/',
-              '/docs/use-cases',
+              '/docs/use-cases/',
             ],
           },
           {
