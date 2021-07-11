@@ -154,7 +154,7 @@ export default {
   --color-ui-typo: theme('colors.gray.700');
   --color-ui-sidebar: theme('colors.gray.200');
   --color-ui-border: theme('colors.gray.300');
-  --color-ui-primary: theme('colors.teal.500');
+  --color-ui-primary: theme('colors.green.500');
 }
 
 html[lights-out] {
@@ -162,7 +162,7 @@ html[lights-out] {
   --color-ui-typo: theme('colors.gray.100');
   --color-ui-sidebar: theme('colors.gray.800');
   --color-ui-border: theme('colors.gray.800');
-  --color-ui-primary: theme('colors.teal.500');
+  --color-ui-primary: theme('colors.green.500');
 
   pre[class*='language-'],
   code[class*='language-'] {
