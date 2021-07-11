@@ -1,8 +1,8 @@
 ---
 description: ''
-sidebar: 'docs'
-prev: '/docs/cron-agent/'
-next: '/docs/smart-contract-integration/'
+sidebar: 'docss'
+# prev: '/docs/cron-agent'
+# next: '/docs/contract-integration'
 ---
 
 # Cron CLI

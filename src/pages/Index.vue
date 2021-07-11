@@ -82,6 +82,34 @@
           <p class="text-lg text-left">
             Use the age old standard crontab spec to annotate time intervals. Extended to support blockchain consensus timing.
           </p>
+          <g-link
+            to="/docs/"
+            class="
+              flex
+              items-center
+              px-6
+              py-4
+              ml-auto
+              text-md
+              font-bold
+              leading-none
+              text-white
+              border
+              rounded-lg
+              shadow-lg
+              bg-ui-primary
+              border-ui-primary
+              transition-all
+              duration-200
+              ease-out
+              transform
+              hover:shadow-xl
+              hover:-translate-y-1
+            "
+          >
+            Start
+            <ArrowRightCircleIcon class="ml-4" size="1x" />
+          </g-link>
         </div>
 
         <div

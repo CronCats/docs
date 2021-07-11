@@ -1,8 +1,8 @@
 ---
 description: ''
-sidebar: 'docs'
-prev: '/docs/deploying/'
-next: '/docs/cron-cli/'
+sidebar: 'docss'
+# prev: '/docss'
+# next: '/docs/cron-cli'
 ---
 
 # Cron Agent
