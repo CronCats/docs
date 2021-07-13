@@ -12,9 +12,9 @@ module.exports = {
   },
   siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://docs.cron.cat',
   settings: {
-    web: process.env.URL_WEB || false,
+    web: process.env.URL_WEB || 'https://cron.cat',
     twitter: process.env.URL_TWITTER || false,
-    github: process.env.URL_GITHUB || false,
+    github: process.env.URL_GITHUB || 'https://github.com/Cron-Near/docs',
     nav: {
       links: [
         { path: 'https://cron.cat', title: 'Home' },
@@ -51,8 +51,8 @@ module.exports = {
             title: 'Examples',
             items: [
               '/docs/examples/',
-              '/docs/example-counter',
-              '/docs/example-charity',
+              '/docs/example-counter/',
+              '/docs/example-charity/',
             ],
           },
         ],

@@ -1,8 +1,8 @@
 ---
 description: 'Watch tasks in croncat and access configuration'
 sidebar: 'docs'
-prev: '/docs/task-creation'
-next: '/docs/contract-integration'
+prev: '/docs/task-creation/'
+next: '/docs/contract-integration/'
 ---
 
 # Task Monitoring

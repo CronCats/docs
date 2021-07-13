@@ -1,7 +1,7 @@
 ---
 description: 'A demo of how to setup a cron task for the multi-transaction charity example'
 sidebar: 'docs'
-prev: '/docs/examples'
+prev: '/docs/examples/'
 # next: '/docs/example-charity'
 ---
 

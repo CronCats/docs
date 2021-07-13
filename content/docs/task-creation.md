@@ -2,7 +2,7 @@
 description: 'Create a task in croncat specifying different configuration params'
 sidebar: 'docs'
 prev: '/docs/'
-next: '/docs/task-monitoring'
+next: '/docs/task-monitoring/'
 ---
 
 # Task Creation

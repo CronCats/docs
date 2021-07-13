@@ -2,7 +2,7 @@
 description: 'Examples of contracts setup with croncat'
 sidebar: 'docs'
 # prev: '/docs/'
-next: '/docs/example-counter'
+next: '/docs/example-counter/'
 ---
 
 # Examples

@@ -2,7 +2,7 @@
 description: 'Integrate task triggers directly inside on-chain contracts'
 sidebar: 'docs'
 prev: '/docs/'
-next: '/docs/task-monitoring'
+next: '/docs/task-monitoring/'
 ---
 
 # Contract Integration
