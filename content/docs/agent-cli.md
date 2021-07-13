@@ -100,7 +100,7 @@ Ctrl+c
 
 ----
 
-# All CLI Commands
+## All CLI Commands
 
 For a list of up-to-date commands, run `croncat --help` in your terminal.
 
@@ -117,6 +117,7 @@ Commands:
   croncat go <accountId>                           Run tasks that are available, if agent is registered and has balance
 ```
 
+----
 
 ## Register
  In order to run Cron tasks and receive rewards you need to register your server as a participant in the Cron service by submitting your server wallet account ID and reward account id (`payableAccountId`).
@@ -131,16 +132,12 @@ Example:
 croncat register cron-agent.testnet cron-agent-wallet.testnet
 ```
 
-#### Update Cron accounts
+## Update Agent
 If you need to change your Cron Agent account or the rewards account run the following:
-
-```bash
-croncat register <accountId> <payableAccountId>
-```
 
 Example:
 ```bash
-croncat update new-cron-agent.testnet new-cron-agent-wallet.testnet
+croncat update cron-agent.testnet new-cron-agent-wallet.testnet
 ```
 
 

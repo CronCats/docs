@@ -78,4 +78,13 @@ You will notice three important things:
 2. function_id - the code we want to execute
 3. cadence - the timing of the contract execution
 
-TODO: FINISH!!!!!!!!!!!
+[View full task creation details here](/docs/task-creation)
+
+Now that the task has been registered with the cron manager, the task will now be triggered/executed by the croncat agents at the scheduled time! 
+
+**Hooray!**
+
+At this point, you can manage your task by:
+
+* [Monitoring](/docs/task-monitoring)
+* [Update Task](/docs/task-creation)

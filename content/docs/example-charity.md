@@ -2,14 +2,14 @@
 description: 'A demo of how to setup a cron task for the multi-transaction charity example'
 sidebar: 'docs'
 prev: '/docs/examples'
-next: '/docs/example-charity'
+# next: '/docs/example-charity'
 ---
 
 # Example: Multi-Transfer "Charity"
 
 [View Full Source](https://github.com/Cron-Near/contracts/tree/main/examples/charity)
 
-Trigger a one time transaction in the future (4 hours later). This example shows how to setup a multi-send transfer to multiple recipients, which is useful when a doing transfers that span tens-to-thousands of transfers immediately. The example doesnt use pagination, but it is intended to show the bare setup of a multi-transfer contract.
+This example shows how to setup a multi-send transfer to multiple recipients, which is useful when a doing transfers that span tens-to-thousands of transfers immediately. The example doesnt use pagination, but it is intended to show the bare setup of a multi-transfer contract.
 
 ## Contract Source Example
 
@@ -70,37 +70,24 @@ impl Donations {
 }
 ```
 
-As you can see, there are 2 main functions:
+As you can see, there are 3 main functions:
 
-#### Increment
+#### Add / Remove Account
 
-Increase the integer in storage by 1
+Update a list of accounts to split payments across.
 
-#### Decrement
+#### Donate
 
-Decrease the integer in storage by 1
+Transfer funds equally to all accounts within a beneficiary list
 
 ## Cron Task Creation
 
-Using this example, we will assume that this contract is deployed at [counter.in.testnet](https://explorer.testnet.near.org/accounts/counter.in.testnet).
+Using this example, we will assume that this contract is deployed at [charity.in.testnet](https://explorer.testnet.near.org/accounts/charity.in.testnet).
 
-We can test that the contract works, but doing:
-
-```bash
-near view counter.in.testnet get_num
-```
-
-The response shows something like: 
-
-```
-View call: counter.in.testnet.get_num()
-225
-```
-
-Okay, we know the starting point of our counter "225" (yours might be different), now we can configure a cron task that will execute every 5 minutes for ~10 times using the following command:
+We can configure a cron task that will execute every 1 minutes for ~50 times using the following command:
 
 ```bash
-near call cron.in.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "* */5 * * * *","recurring": true,"deposit": 0,"gas": 2400000000000}' --accountId YOUR_ACCOUNT.testnet --amount 2
+near call cron.in.testnet create_task '{"contract_id": "charity.in.testnet","function_id": "donate","cadence": "* */1 * * * *","recurring": true,"deposit": 2,"gas": 2400000000000}' --accountId YOUR_ACCOUNT.testnet --amount 200
 ```
 
 You will notice three important things:
@@ -108,4 +95,13 @@ You will notice three important things:
 2. function_id - the code we want to execute
 3. cadence - the timing of the contract execution
 
-TODO: FINISH!!!!!!!!!!!
+[View full task creation details here](/docs/task-creation)
+
+Now that the task has been registered with the cron manager, the task will now be triggered/executed by the croncat agents at the scheduled time! 
+
+**Hooray!**
+
+At this point, you can manage your task by:
+
+* [Monitoring](/docs/task-monitoring)
+* [Update Task](/docs/task-creation)

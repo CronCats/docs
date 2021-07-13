@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Docs.Cron.Cat',
+  siteName: 'croncat',
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png',
@@ -40,17 +40,19 @@ module.exports = {
             ],
           },
           {
-            title: 'Integration',
+            title: 'Tasks',
             items: [
-              '/docs/contract-integration/',
               '/docs/task-creation/',
               '/docs/task-monitoring/',
+              '/docs/contract-integration/',
             ],
           },
           {
             title: 'Examples',
             items: [
               '/docs/examples/',
+              '/docs/example-counter',
+              '/docs/example-charity',
             ],
           },
         ],
