@@ -19,3 +19,15 @@ Cron.Near is not a new concept, it is an implementation of blockchain executable
 Many contract functionalities need an extra execution step to enable the completion of some action or state finalization. Without a cron-style execution, contracts on chain must rely on externally provided state & function changes via transactions sent by chain participants. This is a critical logic piece that is innefficient and sometimes expensive for the participant. Such execution could be paid for by the contract (if desired) or made to execute with less logic (cheaper) by not needing to alter large amounts of chain storage.
 
 > Cron is the missing functionality required for contracts to operate as a fully autonomous entity.
+
+# For Developers
+
+If you want to utilize croncat in your dApp or project:
+
+[Start Here](/docs/task-creation)
+
+# For Agents
+
+If you want to run croncat agent and earn rewards:
+
+[Start Here](/docs/agent-cli)
