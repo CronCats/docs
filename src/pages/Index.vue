@@ -199,9 +199,9 @@ export default {
   },
 
   metaInfo() {
-    const title = 'Great Documentation starts here'
+    const title = 'Croncat - Decentralized Scheduling for Blockchain Transactions'
     const description =
-      'DOCC is a starter theme with instant search and dark mode for writing great technical documentation. Based on Gridsome!'
+      'A general access, fully autonomous cron runner that enables scheduled function calls for blockchain contract execution'
 
     return {
       title: title,

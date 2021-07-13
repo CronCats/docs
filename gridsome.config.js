@@ -5,16 +5,16 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Docs.Cron.Cat',
+  siteName: 'croncat',
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png',
   },
   siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://docs.cron.cat',
   settings: {
-    web: process.env.URL_WEB || false,
+    web: process.env.URL_WEB || 'https://cron.cat',
     twitter: process.env.URL_TWITTER || false,
-    github: process.env.URL_GITHUB || false,
+    github: process.env.URL_GITHUB || 'https://github.com/Cron-Near/docs',
     nav: {
       links: [
         { path: 'https://cron.cat', title: 'Home' },
@@ -40,17 +40,19 @@ module.exports = {
             ],
           },
           {
-            title: 'Integration',
+            title: 'Tasks',
             items: [
-              '/docs/contract-integration/',
               '/docs/task-creation/',
               '/docs/task-monitoring/',
+              '/docs/contract-integration/',
             ],
           },
           {
             title: 'Examples',
             items: [
               '/docs/examples/',
+              '/docs/example-counter/',
+              '/docs/example-charity/',
             ],
           },
         ],
