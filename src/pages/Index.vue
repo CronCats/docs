@@ -82,7 +82,7 @@
           <p class="text-lg text-left">
             Use the age old standard crontab spec to annotate time intervals. Extended to support blockchain consensus timing.
           </p>
-          <g-link
+          <!-- <g-link
             to="/docs/"
             class="
               flex
@@ -109,7 +109,7 @@
           >
             Start
             <ArrowRightCircleIcon class="ml-4" size="1x" />
-          </g-link>
+          </g-link> -->
         </div>
 
         <div
