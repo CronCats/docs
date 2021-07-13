@@ -42,9 +42,39 @@
               transform
               hover:shadow-xl
               hover:-translate-y-1
+              mr-12
             "
           >
             Get started
+            <ArrowRightCircleIcon class="ml-4" size="1x" />
+          </g-link>
+          <g-link
+            to="/docs/use-cases/"
+            class="
+              flex
+              items-center
+              px-6
+              py-4
+              ml-auto
+              text-2xl
+              font-bold
+              leading-none
+              text-white
+              border
+              rounded-lg
+              shadow-lg
+              bg-ui-secondary
+              border-ui-secondary
+              transition-all
+              duration-200
+              ease-out
+              transform
+              opacity-50
+              hover:shadow-xl
+              hover:opacity-100
+            "
+          >
+            Use Cases
             <ArrowRightCircleIcon class="ml-4" size="1x" />
           </g-link>
         </div>
