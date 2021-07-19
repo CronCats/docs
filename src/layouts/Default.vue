@@ -122,26 +122,6 @@ export default {
   metaInfo() {
     return {
       meta: [
-        {
-          key: 'og:type',
-          name: 'og:type',
-          content: 'website',
-        },
-        {
-          key: 'twitter:card',
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-        {
-          key: 'og:image',
-          name: 'og:image',
-          content: process.env.SITE_URL + '/cron-cat-logo.png',
-        },
-        {
-          key: 'twitter:image',
-          name: 'twitter:image',
-          content: process.env.SITE_URL + '/cron-cat-logo.png',
-        },
       ],
     }
   },
