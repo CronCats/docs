@@ -232,7 +232,7 @@ export default {
     const title = 'Croncat - Developer Docs'
     const description =
       'Schedule tasks for any contract using standard cron expression, executed by a decentralized network of croncat agents. Useful for subscriptions, auctions & more'
-    const ogImage = '/OG_Image.png'
+    const ogImage = 'https://docs.cron.cat/OG_Image.png'
 
     return {
       title: title,
@@ -269,6 +269,11 @@ export default {
         {
           key: 'og:image',
           name: 'og:image',
+          content: ogImage,
+        },
+        {
+          key: 'twitter:image',
+          name: 'twitter:image',
           content: ogImage,
         },
         {

@@ -12,7 +12,8 @@ export default function (Vue, { appOptions, router, head, isClient }) {
     head.meta.push({
       key: 'og:url',
       name: 'og:url',
-      content: process.env.GRIDSOME_BASE_PATH + to.path,
+      // content: process.env.GRIDSOME_BASE_PATH + to.path,
+      content: process.env.SITE_URL ? process.env.SITE_URL + to.path : 'https://docs.cron.cat' + to.path,
     })
     next()
   })
