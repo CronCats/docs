@@ -229,9 +229,10 @@ export default {
   },
 
   metaInfo() {
-    const title = 'Croncat - Decentralized Scheduling for Blockchain Transactions'
+    const title = 'Croncat - Developer Docs'
     const description =
-      'A general access, fully autonomous cron runner that enables scheduled function calls for blockchain contract execution'
+      'Schedule tasks for any contract using standard cron expression, executed by a decentralized network of croncat agents. Useful for subscriptions, auctions & more'
+    const ogImage = '/OG_Image.png'
 
     return {
       title: title,
@@ -259,6 +260,21 @@ export default {
           key: 'twitter:description',
           name: 'twitter:description',
           content: description,
+        },
+        {
+          key: 'twitter:description',
+          name: 'twitter:description',
+          content: description,
+        },
+        {
+          key: 'og:image',
+          name: 'og:image',
+          content: ogImage,
+        },
+        {
+          key: 'manifest',
+          name: 'manifest',
+          content: '/manifest.json',
         },
       ],
     }
