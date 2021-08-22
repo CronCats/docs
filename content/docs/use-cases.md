@@ -2,7 +2,7 @@
 description: 'Sample use cases for how croncat can be utilized'
 sidebar: 'docs'
 prev: '/docs/'
-next: '/docs/agent-cli/'
+next: '/docs/values-vision/'
 ---
 
 # Use Cases

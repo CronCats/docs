@@ -20,3 +20,9 @@ Increase or decrease an integer every 30 minutes with croncat! This example show
 Trigger a one time transaction in the future (4 hours later). This example shows how to setup a multi-send transfer to multiple recipients, which is useful when a doing transfers that span tens-to-thousands of transfers immediately. The example doesnt use pagination, but it is intended to show the bare setup of a multi-transfer contract.
 
 [Start Example](/docs/example-charity)
+
+## Example 3: On-Chain Indexer
+
+This example shows how to setup a cross-contract implementation with croncat. The demo functionality shows an on-chain indexing of balances in a time series format. This contract allows scheduling, updating, removing & checking status.
+
+[Start Example](/docs/example-indexer)
