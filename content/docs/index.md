@@ -15,8 +15,8 @@ Croncat provides a general purpose, fully autonomous network that enables schedu
 
 Croncat is a looping runtime that maintains a registry of tasks & agents. In the Croncat system, there are two fundamental ‘Stakeholders’: 
 
-* Applications: Blockchain contracts or dApps that schedule future tasks.
-* Agents: Users that execute cron tasks and receive rewards
+* **Applications**: Blockchain contracts or dApps that schedule future tasks.
+* **Agents**: Users that execute cron tasks and receive rewards
 
 Tasks that are scheduled by applications or contracts, get put into future buckets which remain dormant until a bucket is active. A bucket becomes active when the block height has been reached or surpassed. Agents communicate with the cron contracts, watching for available tasks & signing transactions that are ready to execute. Agents earn a small reward every time they successfully execute a task.
 

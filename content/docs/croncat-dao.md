@@ -2,7 +2,7 @@
 description: 'Enabling a community to own, grow & maintain the blockchain scheduling utility.'
 sidebar: 'docs'
 prev: '/docs/values-vision/'
-next: '/docs/agent-cli/'
+next: '/docs/join-croncat/'
 ---
 
 # Croncat DAO
@@ -22,7 +22,7 @@ Here are the classifications of what makes up the types of people in Croncat DAO
 * **Founder** - Core contributors that provide vision, implementation & leadership
 * **Agent** - The operator executing the tasks & runtime dictated by the DAO
 * **Application** - Entities that need scheduled transactions
-* **Commander** - Developer, Influencer -- Individuals that contribute to initiatives defined by the DAO, receive retainer stipend based on performance
+* **Commander** - Individuals that contribute to initiatives defined by the DAO, receive retainer stipend based on performance (Example: Growth Hacker)
 
 Becoming part of the Croncat DAO is much different than token based DAOs. It requires real interaction and participation in community development, governance, research & network growth. To maintain a seat on Croncat DAO, you believe in the vision, aspire to further the mission statement, and generally provide your personal perspective to create positive outcomes for the Croncat community as a whole. Maintaining a seat on the DAO requires interactions like voting at minimum 5 times per year.
 

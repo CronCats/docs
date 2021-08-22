@@ -10,7 +10,7 @@ next: '/docs/croncat-dao/'
 ### Forward:
 We owe the utmost respect to paul vixie for implementing the version of crontab that croncat is based on, without his early pioneering we would not have such a simple solution for common system tasks. [Source](https://en.wikipedia.org/wiki/Cron#Modern_versions)
 
-# What Is The Core Value Proposition Of Croncat? 
+## What Is The Core Value Proposition Of Croncat? 
 Croncat aims to bring decentralized automation to every decentralized application. Without croncat, applications must utilize user-invoked transactions at the time of execution or run a trusted server that signs transactions on behalf of the users in a centralized manner. Croncat utilizes a network of users to execute transactions at the specific time needed in a sandboxed proxy setup. This opens up a layer of extra capabilities and freedom to application developers that previously relied on user interactions to trigger core functionality.
 
 ### Key Benefits:
@@ -18,7 +18,7 @@ Croncat aims to bring decentralized automation to every decentralized applicatio
 * End-to-end Blockchain Execution
 * Economically Sustainable
 
-# Croncat Economics: A Simple Snapshot
+# #Croncat Economics: A Simple Snapshot
 **The underlying ethos of the Croncat crypto-economic design is to** create a utility service that enables an autonomous business built around (1) micropayments for runtime and (2) earned interest as a basis for operational costs.
 
 The economics of Croncat are aimed at achieving the above ethos by self-maintaining collateral movements (i.e. the Cron DAO will manage locked $NEAR scheduled on a contract), and by DAO approved settings (i.e. DAO vote on how the interest from this $NEAR will be utilized to enhance and improve Croncat). Importantly, Croncat is not focussed on becoming extremely profitable, but rather a stable building block for decentralized applications to utilize for core runtime logic. A full overview of the Croncat economics will be published in a separate document.
@@ -39,7 +39,7 @@ In general, Cron economics follows three core models
 * Cron will maintain an on-going treasury task for rebalancing each bucket holdings based on upcoming task execution needs.
 
 # Long Term Vision & Future Development Plans
-## Long term viability
+## 1. Long term viability
 Cron aims to achieve self-sustainability by a balance of both agents running tasks and task creators utilizing Cron with an increasing number of dApps and contracts. By design, cron allows task creators the freedom to utilize cron with a minimal additional cost. This however, also provides a problem for the agents, as there must be enough tasks to warrant running the cron agent scripts. This problem is addressed by establishing phases of growth so the agent / task ratio remains in a semi lucrative baseline. Such tiers of growth - and the timing of opening up new slots for future agents - will be managed by the Cron DAO. A brief overview of the main three phases is explained below: 
 
 **Phase 1**: In the very first phase, Croncat will incentivize new task creators, by allowing them to set up tasks with free fees or cron-matched budgets. The task threshold goal will be to achieve a minimum of 100 tasks per agent per day. This allows the cron service to maintain a steady availability of new agent seats as well as non-competing task execution. Task creators will receive a specific permission level within the cron DAO, to align the task execution costs with the needs of the community.
