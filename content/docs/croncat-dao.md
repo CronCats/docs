@@ -42,9 +42,9 @@ Council members are responsible to the DAO, and have a requirement to on-chain a
 |Commander|Proposal|Proposes reimbursements, work initiatives, development bounties, marketing initiatives & other types of works created for furthering the growth of cron. Commanders receive differing levels of access to things like social, discussion, development session & more based on longevity and work completed.|
 
 ### Proposal Types
-Treasury Proposal: Items relating to or including fund or token allocation & staking accounting. 
-Operation Cost Proposal: Items that pay individuals for a certain finalized development or marketing initiative.
-Custom Operation: Special contract function calls that can include core runtime settings, interacting with other dApps or upgrading core contracts.
+* **Treasury Proposal**: Items relating to or including fund or token allocation & staking accounting. 
+* **Operation Cost Proposal**: Items that pay individuals for a certain finalized development or marketing initiative.
+* **Custom Operation**: Special contract function calls that can include core runtime settings, interacting with other dApps or upgrading core contracts.
 Council Change: Adding/Removing council members only when deemed appropriate by DAO.
 
 ### Core Operations:
@@ -66,7 +66,9 @@ The cron DAO will be responsible for appropriately allocating funds towards init
 
 ### General Fund Management
 Cron DAO will maintain two areas of funds:
+
 1. **Treasury**: Funds allocated to treasury will contain collateral provided by tasks, accrued from staking interest, accrued from potential yield initiatives and initially seeded by cron DAO grant(s). The treasury use and allocation for all operations will be only controlled by founder level proposals and voted by founder level votes. Treasury will maintain a budget allocating the majority of funds towards operations and some towards incentives and growth. Treasury will focus on the goal of a fully self-sustaining income based on seeking revenue by accrued interest, developing features for efficiency or further revenues and maintaining the correct ratio of funds to keep ongoing tasks running.
+
 2. **Core Operations**: These funds will be automatically managed by the croncat core contracts, and utilized for task deposits, task gas fees, overhead for upcoming task needs and agent reward payout. No funds remaining on the core contracts shall be touched by members of the croncat DAO, unless fee structures are adjusted resulting in a collateral surplus. All changes to fee structures will be actioned directly from the DAO, and surplus or other situations must be handled by cron DAO treasury.
 
 
@@ -87,29 +89,38 @@ Operations will fund specific needs of the cron DAO that act like traditional bu
 
 
 ### Incentives
-Bounties - Applied to hackathons & competitions
-Referral rewards - Available to any community member
-Onboarding bonuses: Early application integrations, Application fee waivers, Early agent adoption
-Ongoing bonuses: Application continued use, Agent continued support
+* Bounties - Applied to hackathons & competitions
+* Referral rewards - Available to any community member
+* Onboarding bonuses: Early application integrations, Application fee waivers, Early agent adoption
+* Ongoing bonuses: Application continued use, Agent continued support
 
 ### DAO Viral Loops
 **Application Onboarding**
 
 Applications running tasks on cron are imperative to the success of croncat. Early integrations using cron should be encouraged by a few initiatives:
+
 1. Early integrations will reward both application and ambassador. Applications will receive a set amount of free transactions and free agent fees paid for by cron DAO. See economics section for specific reward amounts.
+
 2. All integrations will receive a set amount of tasks that are agent fee free. Agents will still be rewarded for executing these tasks, however the amount will be paid by cron DAO.
+
 3. Applications that have continuous tasks running for longer than 3 months or greater than 10,000 tasks will receive cross promotion on cron social and a rare NFT. If possible, the application will also be highlighted as a use case on the cron website.
 
 **Agent Onboarding**
 
 Agents keep the lights on for croncat and make the autonomy of cron possible. Agents will be incentivized primarily by rewards per task, but also encouraged in additional ways:
+
 1. Promote the use of cron by onboarding new applications or tasks.
+
 2. Refer others to become croncat agents.
+
 3. Continuously run the croncat agent scripts for 1 year or more with minimal downtime. 
 
 **Outreach, Community Expansion**
 
 Cron will rely on the community of croncat commanders to grow the adoption of cron and promote awareness. Commanders will be responsible for creating network effects by the following avenues:
+
 1. Post promotional materials for onboarding applications, agents and other commanders.
+
 2. Produce creative pieces (video, blog, social post) that highlight and encourage cron use cases, potential functionality & more.
+
 3. Recruit applications and agents to utilize cron. 
