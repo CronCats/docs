@@ -13,7 +13,7 @@ module.exports = {
   siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://docs.cron.cat',
   settings: {
     web: process.env.URL_WEB || 'https://cron.cat',
-    twitter: process.env.URL_TWITTER || false,
+    twitter: process.env.URL_TWITTER || 'https://twitter.com/croncats',
     github: process.env.URL_GITHUB || 'https://github.com/Cron-Near/docs',
     nav: {
       links: [
@@ -30,6 +30,8 @@ module.exports = {
             items: [
               '/docs/',
               '/docs/use-cases/',
+              '/docs/values-vision/',
+              '/docs/croncat-dao/',
             ],
           },
           {
