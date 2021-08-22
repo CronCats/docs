@@ -18,7 +18,7 @@ Croncat aims to bring decentralized automation to every decentralized applicatio
 * End-to-end Blockchain Execution
 * Economically Sustainable
 
-# #Croncat Economics: A Simple Snapshot
+## Croncat Economics: A Simple Snapshot
 **The underlying ethos of the Croncat crypto-economic design is to** create a utility service that enables an autonomous business built around (1) micropayments for runtime and (2) earned interest as a basis for operational costs.
 
 The economics of Croncat are aimed at achieving the above ethos by self-maintaining collateral movements (i.e. the Cron DAO will manage locked $NEAR scheduled on a contract), and by DAO approved settings (i.e. DAO vote on how the interest from this $NEAR will be utilized to enhance and improve Croncat). Importantly, Croncat is not focussed on becoming extremely profitable, but rather a stable building block for decentralized applications to utilize for core runtime logic. A full overview of the Croncat economics will be published in a separate document.
