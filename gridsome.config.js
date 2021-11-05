@@ -60,6 +60,13 @@ module.exports = {
               '/docs/example-indexer/',
             ],
           },
+          {
+            title: 'Tutorials',
+            items: [
+              '/docs/tutorials/',
+              '/docs/tutorials-pixel-pet/',
+            ],
+          },
         ],
       },
     ],
