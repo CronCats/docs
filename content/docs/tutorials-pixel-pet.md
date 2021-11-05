@@ -146,7 +146,7 @@ If you liked this tutorial, please share it with your friends! Here's a quick sn
 ```
 I just got a special @croncats @PixelDapps #pixelpet using an automated #croncat #task! This pet is dope! 
 Can you beat the #NEARvember @nearprotocol #challenge? LFG!
-https://docs.cron.cat/docs/tutorials/pixel-pet/
+https://docs.cron.cat/docs/tutorials-pixel-pet/
 ```
 
 Thank you! Be sure to jump in our discord for more awesome croncat things!
