@@ -1,8 +1,7 @@
 ---
 description: 'Learn how to use croncat through tutorials'
 sidebar: 'docs'
-# prev: '/docs/'
-next: '/docs/tutorials/pixel-pet/'
+next: '/docs/tutorials-pixel-pet/'
 ---
 
 # Tutorials

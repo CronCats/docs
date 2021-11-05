@@ -2,7 +2,7 @@
 description: 'A demo of how to setup a cron task for the counter example'
 sidebar: 'docs'
 prev: '/docs/examples/'
-next: '/docs/examples/charity/'
+next: '/docs/example-charity/'
 ---
 
 # Example: Counter

@@ -1,8 +1,7 @@
 ---
 description: 'A journey through croncat to earn a pixel pet'
 sidebar: 'docs'
-prev: '/docs/examples/'
-# next: '/docs/example-charity/'
+prev: '/docs/tutorials/'
 ---
 
 # Tutorial: Pixel Pets
