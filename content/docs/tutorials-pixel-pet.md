@@ -12,6 +12,8 @@ Learn how to use croncat by earning a special (and powerful) pixel pet! This tut
 
 To get rewarded the croncat pixel pet, you must have courage, adventurous mindset & a little command line skill. If you follow this tutorial and take a few notes, you should easily be able to figure out the answer and earn a powerful croncat pet!
 
+![](../../static/pxpet_croncat_crop.png)
+
 #### Overview
 
 * Learn what a croncat task is
@@ -50,7 +52,7 @@ An example of a cron task occurring every 5 minutes would look something like th
   "cadence": "0 */5 * * * *",
   "recurring": true,
   "deposit": "0",
-  "gas": 120000000000000,
+  "gas": 180000000000000,
   "arguments": ""
 }
 ```
@@ -85,6 +87,8 @@ Did you match this output? If so, time for the final clue!
 
 ## Clue 3: Creating A Croncat Task
 
+![](../../static/pxpet_croncat_logo.png)
+
 Okay, let's construct the pieces of a croncat task, and focus only on what is needed to create a pixelpet.
 
 First off, you need to know what contract and function will be getting called. In this case, we will be creating a task that calls the croncat rewards contract that has a special function to distribute croncat pets!
@@ -100,7 +104,7 @@ We also need to consider `recurring`, in this case we need the function to get c
 
 Deposit can simply stay `"0"` as we don't need to pay anything to the rewards contract.
 
-Gas is suggested to be `120000000000000` to make sure no issues running out.
+Gas is suggested to be `180000000000000` to make sure no issues running out.
 
 Lastly the most important piece: `arguments`
 
@@ -127,11 +131,13 @@ For #2, you can take the hash you got above and encode the following payload. Ke
 Once you have the encoded arguments, its time to piece the entire command together! Here's an example of what that will look like (yours will differ as each account will create different data)
 
 ```bash
-NEAR_ENV=mainnet near call manager_v1.croncat.near create_task '{"contract_id": "rewards.croncat.near","function_id": "PET_FUNCTION_ID","cadence": "YOUR_CADENCE","recurring": true,"deposit": "0","gas": 120000000000000, "arguments": "ey_YOUR_ENCODED_ARGUMENTS_"}' --accountId YOUR_ACCOUNT.near --amount 0.05 --gas 300000000000000
+NEAR_ENV=mainnet near call manager_v1.croncat.near create_task '{"contract_id": "rewards.croncat.near","function_id": "PET_FUNCTION_ID","cadence": "YOUR_CADENCE","recurring": true,"deposit": "0","gas": 180000000000000, "arguments": "ey_YOUR_ENCODED_ARGUMENTS_"}' --accountId YOUR_ACCOUNT.near --amount 0.0252 --gas 300000000000000
 ```
 
 ### PHEW!
 Now you're ready to put all these variables together into a single CLI command. If all goes well, you will receive a link to your transaction on the blockchain!
+
+![](../../static/croncat_pxpet_task.png)
 
 You can even [check that your task is scheduled here -->](https://cron.cat/tasks)
 
