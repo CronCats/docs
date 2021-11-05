@@ -63,7 +63,8 @@ module.exports = {
           {
             title: 'Tutorials',
             items: [
-              '/docs/tutorials/pixel-pet',
+              '/docs/tutorials/',
+              '/docs/tutorials/pixel-pet/',
             ],
           },
         ],
