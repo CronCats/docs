@@ -55,9 +55,15 @@ module.exports = {
             title: 'Examples',
             items: [
               '/docs/examples/',
-              '/docs/example-counter/',
-              '/docs/example-charity/',
-              '/docs/example-indexer/',
+              '/docs/examples/counter/',
+              '/docs/examples/charity/',
+              '/docs/examples/indexer/',
+            ],
+          },
+          {
+            title: 'Tutorials',
+            items: [
+              '/docs/tutorials/pixel-pet',
             ],
           },
         ],

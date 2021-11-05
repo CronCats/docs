@@ -2,7 +2,7 @@
 description: 'Examples of contracts setup with croncat'
 sidebar: 'docs'
 # prev: '/docs/'
-next: '/docs/example-counter/'
+next: '/docs/examples/counter/'
 ---
 
 # Examples
@@ -13,16 +13,16 @@ Learning how to setup example contracts that get triggered externally with cronc
 
 Increase or decrease an integer every 30 minutes with croncat! This example shows how a task can have recurring execution and you can view state that is changing over time (the count increases!).
 
-[Start Example](/docs/example-counter)
+[Start Example](/docs/examples/counter)
 
 ## Example 2: Multi-Transfer "Charity"
 
 Trigger a one time transaction in the future (4 hours later). This example shows how to setup a multi-send transfer to multiple recipients, which is useful when a doing transfers that span tens-to-thousands of transfers immediately. The example doesnt use pagination, but it is intended to show the bare setup of a multi-transfer contract.
 
-[Start Example](/docs/example-charity)
+[Start Example](/docs/examples/charity)
 
 ## Example 3: On-Chain Indexer
 
 This example shows how to setup a cross-contract implementation with croncat. The demo functionality shows an on-chain indexing of balances in a time series format. This contract allows scheduling, updating, removing & checking status.
 
-[Start Example](/docs/example-indexer)
+[Start Example](/docs/examples/indexer)
