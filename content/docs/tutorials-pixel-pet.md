@@ -131,7 +131,7 @@ For #2, you can take the hash you got above and encode the following payload. Ke
 Once you have the encoded arguments, its time to piece the entire command together! Here's an example of what that will look like (yours will differ as each account will create different data)
 
 ```bash
-NEAR_ENV=mainnet near call manager_v1.croncat.near create_task '{"contract_id": "rewards.croncat.near","function_id": "PET_FUNCTION_ID","cadence": "YOUR_CADENCE","recurring": true,"deposit": "0","gas": 180000000000000, "arguments": "ey_YOUR_ENCODED_ARGUMENTS_"}' --accountId YOUR_ACCOUNT.near --amount 0.0252 --gas 300000000000000
+NEAR_ENV=mainnet near call manager_v1.croncat.near create_task '{"contract_id": "rewards.croncat.near","function_id": "PET_FUNCTION_ID","cadence": "YOUR_CADENCE","recurring": true,"deposit": "0","gas": 180000000000000, "arguments": "ey_YOUR_ENCODED_ARGUMENTS_"}' --accountId YOUR_ACCOUNT.near --amount 0.05 --gas 300000000000000
 ```
 
 ### PHEW!
