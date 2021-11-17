@@ -24,7 +24,7 @@ Each field within croncat serves a specific purpose, the following details show 
 | ------- | ------- | ------- |
 | contract_id | AccountId | Account to direct all execution calls against |
 | function_id | String | Contract method this task will be executing |
-| cadence | String | Crontab Spec String. Defines the interval spacing of execution |
+| cadence* | String | Crontab Spec String. Defines the interval spacing of execution |
 | recurring | Boolean | Defines if this task can continue until balance runs out |
 | total_deposit | u128 | Total balance of NEAR available for current and future executions |
 | deposit | u128 | Configuration of NEAR balance to send to each function call. This is the "amount" for a function call. |
@@ -32,6 +32,7 @@ Each field within croncat serves a specific purpose, the following details show 
 | arguments | Vec<u8> | NOTE: Only allow static pre-defined bytes, most useful for cross-contract task creation |
 |  |  |  |
 
+*Note that The smallest interval that can be described by a Cron expression is 60 blocks (~one minute). Intervals less than that need to be handled otherwise.
 
 ## Simple Task Creation Example
 
