@@ -173,5 +173,5 @@ At any time you may view all tasks that your agent can run. In most cases, this 
 ```bash
 croncat tasks
 ```
-## Notes
+## RPI Users
 The installation process on RPI is identical to the above and runs without errors.
