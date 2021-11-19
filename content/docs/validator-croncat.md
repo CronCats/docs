@@ -1,5 +1,5 @@
 ---
-description: 'How How to run validator & Croncat Agent'
+description: 'How How to run validator & Croncat'
 sidebar: 'docs'
 ---
 
