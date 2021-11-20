@@ -41,8 +41,27 @@ SLACK_CHANNEL=general
 HEARTBEAT=false
 HEARTBEAT_URL=GET_REQUEST_URL_FOR_STATUS_SERVICE
 ```
-### Croncat .env variables
+## Croncat .env variables
 
 Let's take a look at each variable:
 
-#### test
+### NEAR_ENV
+
+This is the network environment variable (mainnet, testnet, guildnet) that the commands refer to when run from the command line.
+
+### LOG_LEVEL
+
+Here you can specify what level of logs will be displayed.
+
+### AGENT_ACCOUNT_ID
+
+The account registered as an agent. Example: agent-007.near
+
+### AGENT_MIN_TASK_BALANCE
+
+The NEAR amount to trigger a notification
+
+### AGENT_AUTO_REFILL
+
+When balance is empty, will auto-withdraw rewards to cover signing txns, withdraws the payout account.
+
