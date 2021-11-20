@@ -116,3 +116,14 @@ sudo systemctl start croncat.service
 ```
 ## Croncat Agents Logs  
   
+Croncat Agent logs can be found here:
+
+```bash
+tail -f /var/log/croncat.log
+```
+  
+The error logs can be found here:
+
+  ```bash
+tail -f /var/log/croncaterror.log
+```
