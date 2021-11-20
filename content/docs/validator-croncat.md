@@ -114,3 +114,5 @@ And launch the Croncat Agent:
 ```bash
 sudo systemctl start croncat.service
 ```
+## Croncat Agents Logs  
+  
