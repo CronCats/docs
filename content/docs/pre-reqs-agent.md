@@ -47,7 +47,7 @@ sudo npm install -g near-cli
 
 
 
-Если у вас еще нет NEAR Аккаунта, то создайте его [Mainnet](https://wallet.near.org/), [Testnet](https://wallet.testnet.near.org/), [Guildnet](https://wallet.openshards.io/). 
+If you do not have a NEAR Account yet, please create one [Mainnet](https://wallet.near.org/), [Testnet](https://wallet.testnet.near.org/), [Guildnet](https://wallet.openshards.io/). 
 
 ### Environment
 
