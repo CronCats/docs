@@ -62,14 +62,16 @@ Where <networks>:
 - `mainnet`
 - `testnet`
 - `guildnet`
-
-And add to the ~ / .bashrc file so that you don't have to enter the command every time you log in
-
-Example:
+ 
+ Example:
 
 ```bash
 export NEAR_ENV=mainnet
 ```
+
+And add to the ~ / .bashrc file so that you don't have to enter the command every time you log in
+
+
 
 ```bash
 echo 'export NEAR_ENV=<network>' >> ~/.bashrc
