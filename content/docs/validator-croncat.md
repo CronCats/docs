@@ -3,7 +3,9 @@ description: 'How to run validator & Croncat'
 sidebar: 'docs'
 ---
 
-# How to run validator & Croncat
+# Validator + Croncat
+
+## How to run validator & Croncat
 
 Croncat is a great helper for NEAR validators too! Such a necessary and simple action as "ping" can be performed on the blockchain using Croncat ;)
 
@@ -85,7 +87,7 @@ nano croncat.service
 
 And add to the file:
 
-``` [Unit]
+```[Unit]
 Description=CronCat Agent
 After=multi-user.target
 

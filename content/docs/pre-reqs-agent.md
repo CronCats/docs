@@ -4,7 +4,9 @@ sidebar: 'docs'
 next: '/docs/agent-cli/'
 ---
 
-# Pre-requirements for Croncat Agent 
+# Agent Pre-Reqs
+
+## Pre-requirements for Croncat Agent 
 
 Before you start [installing the Croncat Agent Cli](/docs/agent-cli.md) you need to prepare your computer/server/vps.
 

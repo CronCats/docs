@@ -3,11 +3,13 @@ description: 'How to setup .env file'
 sidebar: 'docs'
 ---
 
-# What is .env file?
+# ENV File
 
-Development has been much easier since the invention of the .env file. You can easily set your environment variables and values with the syntax ENV_VARIABLE = VALUE and boom!
+## What is .env file?
 
-Env file allows you to customize individual variables for your environment. .env files are line delimitated text files, meaning that each new line represents a single variable. By convention .env variable names are uppercase words separated by underscores. Variable names are followed directly by an = which, in turn is followed directly by the value.
+Development has been much easier since the invention of the `.env` file. You can easily set your environment variables and values with the syntax ENV_VARIABLE = VALUE and boom!
+
+Env file allows you to customize individual variables for your environment. `.env` files are line delimitated text files, meaning that each new line represents a single variable. By convention .env variable names are uppercase words separated by underscores. Variable names are followed directly by an = which, in turn is followed directly by the value.
 
 ## .env setup
 
