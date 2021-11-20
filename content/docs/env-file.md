@@ -65,3 +65,15 @@ The NEAR amount to trigger a notification
 
 When balance is empty, will auto-withdraw rewards to cover signing txns, withdraws the payout account.
 
+### WAIT_INTERVAL_MS
+
+The interval to wait between checking for tasks. Good intervals are below 60 seconds and above 10 seconds.
+
+
+### SLACK_TOKEN, SLACK_CHANNEL
+
+Notify slack when events happen
+
+### HEARTBEAT, HEARTBEAT_URL
+
+ If you have an external heartbeat service that just needs a ping (GET request)
