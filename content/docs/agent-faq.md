@@ -1,8 +1,8 @@
-
-
 ---
 description: 'Croncat Agent FAQ'
+sidebar: 'docs'
 prev: '/docs/agent-cli/'
+#next: '/docs/agent-docker/'
 ---
 
 # Croncat Agent FAQ
