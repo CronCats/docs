@@ -114,3 +114,17 @@ Launched agent account.
 #### Agent Balance
 
 The balance on the agent's wallet. You must have at least 0.5N on your account.
+
+## How to update Croncat Agen Cli
+
+To update a Croncat Agent just enter the command:
+
+```bash
+npm update croncat
+```
+
+Or:
+
+```bash
+npm i -g croncat
+```
