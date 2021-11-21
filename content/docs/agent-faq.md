@@ -41,7 +41,7 @@ tail -n 1000 -f log-1
 The same should be done for agent-2.testnet and agent-3.testnet. But you need to change `screen -S croncat-1` to `screen -S croncat-2`, `log-1` to `log-2`, etc.
 
 
-## Find out the status of the Croncat Agent
+## Find out the status of Croncat Agent
 
 
 ### Croncat status
