@@ -2,7 +2,6 @@
 
 ---
 description: 'Croncat Agent FAQ'
-sidebar: 'docs'
 prev: '/docs/agent-cli/'
 ---
 
