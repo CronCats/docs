@@ -41,7 +41,7 @@ module.exports = {
             items: [
               '/docs/pre-reqs-agent/',
               '/docs/agent-cli/',
-              '/docs/agent-faq/'
+              '/docs/agent-faq/',
               '/docs/agent-docker/',
               '/docs/env-file/',
               '/docs/validator-croncat/',
