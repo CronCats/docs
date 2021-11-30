@@ -127,7 +127,7 @@ The status indicates the activity of the agent. The "Pending" status means that 
 
 Agent account [registered](/docs/agent-cli/#3-register-your-agent) in the system.
 
-## How to update Croncat Agen Cli
+## How to update Croncat Agent Cli
 
 To update a Croncat Agent just enter the command:
 
