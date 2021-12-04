@@ -129,6 +129,12 @@ Agent account [registered](/docs/agent-cli/#3-register-your-agent) in the system
 
 ## How to update Croncat Agent Cli
 
+To get latest Croncat version:
+
+```bash
+curl -s https://github.com/Cron-Near/croncat/releases/latest |  grep -Eo "[0-9].[0-9]*.[0-9]"
+```
+
 To update a Croncat Agent just enter the command:
 
 ```bash
