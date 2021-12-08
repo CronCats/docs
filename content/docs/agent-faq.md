@@ -147,13 +147,5 @@ Or:
 npm i -g croncat
 ```
 
-## How to get Task Hash
 
-```bash
-near view <CONTRACT_ACCOUNT> get_hash '{"contract_id": "<CONTRACT_ID>","function_id": "<FUNCTION>","cadence": "0 0 * * * *","owner_id": "<OWNER_ID>"}'
-```
 
-Example (get Task Hash from "ping" function):
-```bash
-near view manager_v1.cron.testnet get_hash '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","owner_id": "jakson.testnet"}'
-```

@@ -73,13 +73,37 @@ This is completed by making sure the transaction is signed by the account that w
 
 **Very important thing to note:** the `--amount` flag is how you are attaching real NEAR tokens to your task. If you specify a "deposit" of 10, and then the `--amount` is less than 10, the task will never run.
 
-## Updating a Task
 
-Once your task is created on chain, it will begin to trigger on the schedule you specified. If you need to change the configuration for any reason **before the task runs out of balance**, you can use the following method to change configuration parameters:
+## How to get Task Hash
 
 ```bash
-near call cron.in.testnet update_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4=","cadence": "@weekly","recurring": true,"deposit": 0,"gas": 2400000000000}' --accountId YOUR_NEAR_ACCT.testnet
+near view <CONTRACT_ACCOUNT> get_hash '{"contract_id": "<CONTRACT_ID>","function_id": "<FUNCTION>","cadence": "0 0 * * * *","owner_id": "<OWNER_ID>"}'
 ```
+
+Example (get Task Hash from "ping" function):
+```bash
+near view manager_v1.cron.testnet get_hash '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","owner_id": "jakson.testnet"}'
+```
+
+## Refill Balance
+
+If you run out of balance on a task, here's a way to refill the balance:
+
+```bash
+near call <CONTRACT_ACCOUNT> refill_balance '{"task_hash": "<YOUR_TASK_HASH>"}' --accountId <accountId> --amount 5
+```
+
+
+Example:
+
+```bash
+near call manager_v1.cron.testnet refill_balance '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet --amount 5
+```
+
+
+
+
+
 
 ## More Examples
 
