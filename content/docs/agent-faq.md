@@ -147,6 +147,24 @@ Or:
 npm i -g croncat
 ```
 
+## How to Refill Balance
+
+If you run out of balance on a task, here's a way to refill the balance:
+
+```bash
+near call <CONTRACT_ACCOUNT> refill_balance '{"task_hash": "<YOUR_TASK_HASH>"}' --accountId <accountId> --amount 5
+```
+
+[How go get Task Hash](/docs/agent-faq/#how-to-get-task-hash)
+
+
+Example:
+
+```bash
+near call manager_v1.cron.testnet refill_balance '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet --amount 5
+```
+
+
 ## How to get Task Hash
 
 ```bash
@@ -157,3 +175,5 @@ Example (get Task Hash from "ping" function):
 ```bash
 near view manager_v1.cron.testnet get_hash '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","owner_id": "jakson.testnet"}'
 ```
+
+

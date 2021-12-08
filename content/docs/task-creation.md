@@ -74,23 +74,6 @@ This is completed by making sure the transaction is signed by the account that w
 **Very important thing to note:** the `--amount` flag is how you are attaching real NEAR tokens to your task. If you specify a "deposit" of 10, and then the `--amount` is less than 10, the task will never run.
 
 
-## Refill Balance
-
-If you run out of balance on a task, here's a way to refill the balance:
-
-```bash
-near call <CONTRACT_ACCOUNT> refill_balance '{"task_hash": "<YOUR_TASK_HASH>"}' --accountId <accountId> --amount 5
-```
-
-[How go get Task Hash](/docs/agent-faq/#how-to-get-task-hash)
-
-
-Example:
-
-```bash
-near call manager_v1.cron.testnet refill_balance '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet --amount 5
-```
-
 
 
 ## More Examples
