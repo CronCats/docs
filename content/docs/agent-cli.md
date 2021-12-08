@@ -175,3 +175,22 @@ croncat tasks
 ```
 ## RPI Users
 The installation process on RPI is identical to the above and runs without errors.
+
+## Refill Balance
+
+If you run out of balance on a task, here's a way to refill the balance:
+
+```bash
+near call <CONTRACT_ACCOUNT> refill_balance '{"task_hash": "<YOUR_TASK_HASH>"}' --accountId <accountId> --amount 5
+```
+
+[How go get Task Hash](/docs/agent-faq/#how-to-get-task-hash)
+
+
+Example:
+
+```bash
+near call manager_v1.cron.testnet refill_balance '{"task_hash": "kJ1KnxlkajJmNznJalOaja="}' --accountId jakson.testnet --amount 5
+```
+
+
