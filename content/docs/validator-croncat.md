@@ -97,7 +97,7 @@ Restart=always
 RestartSec=60
 ExecStart=/usr/bin/croncat go <ACCOUNT> 
 StandardOutput=append:/var/log/croncat.log
-StandartError=append:/var/log/croncaterror.log
+StandardError=append:/var/log/croncaterror.log
 
 [Install]
 WantedBy=multi-user.target
