@@ -111,10 +111,12 @@ Commands:
   croncat register <accountId> <payableAccountId>  Add your agent to cron known agents
   croncat update <accountId> <payableAccountId>    Update your agent to cron known agents
   croncat unregister <accountId>                   Account to remove from list of active agents.
-  croncat withdraw <accountId>                     Withdraw all rewards earned for this account
-  croncat status <accountId>                       Check agent status and balance for this account
+  croncat withdraw [accountId]                     Withdraw all rewards earned for this account
+  croncat status [accountId]                       Check agent status and balance for this account
   croncat tasks                                    Check how many tasks are available
-  croncat go <accountId>                           Run tasks that are available, if agent is registered and has balance
+  croncat go [account_id]                          Run tasks that are available, if agent is registered and has balance
+  croncat daemon [near_env]                        Generate a network specific croncat daemon service
+
 ```
 
 ----
@@ -173,6 +175,50 @@ At any time you may view all tasks that your agent can run. In most cases, this 
 ```bash
 croncat tasks
 ```
+
 ## RPI Users
 The installation process on RPI is identical to the above and runs without errors.
+
+
+## Croncat Agent DAEMON
+
+To setup an agent that has auto reboot capability, do the following steps:
+
+1. create a service file via daemon command:
+
+```bash
+croncat daemon [near_env]
+```
+
+Example for testnet:
+
+```bash
+croncat daemon testnet
+```
+
+2. Create the service symlink and then enable the service:
+
+```bash
+sudo systemctl link ~/croncat/testnet/croncat_testnet.service
+sudo systemctl enable croncat_testnet.service
+```
+
+3. Reload systemctl
+
+```bash
+sudo systemctl daemon-reload
+```
+
+
+4. Start the service
+```bash
+sudo systemctl start croncat_testnet.service
+```
+5. For accessing logs, you can use these commands, just make sure to use the right network name
+
+```bash
+journalctl -f -u croncat_testnet.service
+tail -f /var/log/croncat_testnet.log
+tail -f /var/log/croncat_testneterror.log
+```
 

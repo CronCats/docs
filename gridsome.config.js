@@ -40,6 +40,7 @@ module.exports = {
             title: 'Agent',
             items: [
               '/docs/pre-reqs-agent/',
+              '/docs/agent-changelog/',
               '/docs/agent-cli/',
               '/docs/agent-faq/',
               '/docs/agent-docker/',
