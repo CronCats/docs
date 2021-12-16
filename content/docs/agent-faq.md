@@ -5,7 +5,7 @@ prev: '/docs/agent-cli/'
 #next: '/docs/agent-docker/'
 ---
 
-# Croncat Agent FAQ
+# Agent FAQ
 
 Didn't find information about the questions of interest? Welcome to the FAQ!
 
