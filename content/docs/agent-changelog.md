@@ -5,7 +5,7 @@ prev: '/docs/pre-reqs-agent/'
 next: '/docs/agent-cli/'
 ---
 
-# Croncat Agent Changelog
+# Agent Changelog
 
 ## 1.6.4. Daemon Helper, Process Updates
 
