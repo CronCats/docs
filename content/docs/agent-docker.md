@@ -1,8 +1,8 @@
 ---
 description: 'Run croncat inside a docker image'
 sidebar: 'docs'
-prev: '/docs/agent-cli/'
-# next: '/docs/contract-integration'
+prev: '/docs/agent-faq/'
+next: '/docs/env-file/'
 ---
 
 # Agent Docker

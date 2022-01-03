@@ -39,14 +39,14 @@ Each field within croncat serves a specific purpose, the following details show 
 Let's say you have a contract "counter" that increments a storage integer, and you want it to trigger every 5 minutes. Creating an ongoing task will look like this:
 
 ```bash
-near call cron.in.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "*/10 * * * * *","recurring": true,"deposit": 10,"gas": 2400000000000}' --accountId YOUR_NEAR_ACCT.testnet --amount 10
+near call manager_v1.cron.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "*/10 * * * * *","recurring": true,"deposit": 0,"gas": 2400000000000}' --accountId YOUR_NEAR_ACCT.testnet --amount 10
 ```
 
 Now let's break this down a bit:
 
 First snippet makes a call request to the "cron" manager in testnet to register a new task.
 ```bash
-near call cron.in.testnet create_task
+near call manager_v1.cron.testnet create_task
 ```
 
 Next we specify the contract and function getting called, like this:
@@ -61,7 +61,7 @@ Then we specify the scheduling of this contract call:
 
 Lastly, we specify any payment or fee needs:
 ```bash
-"deposit": 10,"gas": 2400000000000}'
+"deposit": 0,"gas": 2400000000000}'
 ```
 
 This is completed by making sure the transaction is signed by the account that will own this task:
@@ -100,10 +100,20 @@ Example:
 near call manager_v1.cron.testnet refill_balance '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet --amount 5
 ```
 
+## Remove task
+
+When deleting a task, all unused balance will be returned to the wallet of the task owner.
 
 
+```bash
+near call <CONTRACT_ACCOUNT> remove_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet
+```
 
+Example
 
+```bash
+near call manager_v1.cron.testnet remove_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1"}' --accountId <accountId>
+```
 
 ## More Examples
 
