@@ -1,8 +1,8 @@
 ---
 description: 'Run croncat directly via CLI'
 sidebar: 'docs'
-# prev: '/docs/'
-next: '/docs/agent-docker/'
+prev: '/docs/agent-changelog/'
+next: '/docs/agent-faq/'
 ---
 
 # Agent CLI

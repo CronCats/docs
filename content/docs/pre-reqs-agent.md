@@ -1,7 +1,7 @@
 ---
 description: 'Pre-requirements for running Croncat Agent'
 sidebar: 'docs'
-next: '/docs/agent-cli/'
+next: '/docs/agent-changelog/'
 ---
 
 # Agent Pre-Reqs

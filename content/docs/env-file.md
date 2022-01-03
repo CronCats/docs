@@ -1,7 +1,10 @@
 ---
 description: 'How to setup .env file'
 sidebar: 'docs'
+prev: '/docs/agent-docker/'
+next: '/docs/validator-croncat/'
 ---
+
 
 # ENV File
 
