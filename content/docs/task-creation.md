@@ -39,7 +39,7 @@ Each field within croncat serves a specific purpose, the following details show 
 Let's say you have a contract "counter" that increments a storage integer, and you want it to trigger every 5 minutes. Creating an ongoing task will look like this:
 
 ```bash
-near call manager_v1.cron.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "*/10 * * * * *","recurring": true,"deposit": 0,"gas": 2400000000000}' --accountId YOUR_NEAR_ACCT.testnet --amount 10
+near call manager_v1.cron.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "*/10 * * * * *","recurring": true,"deposit": "0","gas": 2400000000000}' --accountId YOUR_NEAR_ACCT.testnet --amount 10
 ```
 
 Now let's break this down a bit:
@@ -61,7 +61,7 @@ Then we specify the scheduling of this contract call:
 
 Lastly, we specify any payment or fee needs:
 ```bash
-"deposit": 0,"gas": 2400000000000}'
+"deposit": "0","gas": 2400000000000}'
 ```
 
 This is completed by making sure the transaction is signed by the account that will own this task:
