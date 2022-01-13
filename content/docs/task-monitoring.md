@@ -25,5 +25,5 @@ croncat task r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4=
 This is just a shortcut for the method available using near-cli as well:
 
 ```bash
-near view cron.in.testnet get_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}'
+near view manager_v1.cron.testnet get_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}'
 ```

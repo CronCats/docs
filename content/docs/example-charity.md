@@ -2,7 +2,7 @@
 description: 'A demo of how to setup a cron task for the multi-transaction charity example'
 sidebar: 'docs'
 prev: '/docs/examples/'
-next: '/docs/example-indexer/'
+next: '/docs/example-airdrop/'
 ---
 
 # Example: Multi-Transfer "Charity"
@@ -87,7 +87,7 @@ Using this example, we will assume that this contract is deployed at [charity.in
 We can configure a cron task that will execute every 1 minutes for ~50 times using the following command:
 
 ```bash
-near call cron.in.testnet create_task '{"contract_id": "charity.in.testnet","function_id": "donate","cadence": "* */1 * * * *","recurring": true,"deposit": 2,"gas": 2400000000000}' --accountId YOUR_ACCOUNT.testnet --amount 200
+near call manager_v1.cron.testnet create_task '{"contract_id": "charity.in.testnet","function_id": "donate","cadence": "* */1 * * * *","recurring": true,"deposit": "2000000000000000000000000","gas": 9000000000000}' --accountId YOUR_ACCOUNT.testnet --amount 200
 ```
 
 You will notice three important things:
