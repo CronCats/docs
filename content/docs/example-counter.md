@@ -70,7 +70,7 @@ View call: counter.in.testnet.get_num()
 Okay, we know the starting point of our counter "225" (yours might be different), now we can configure a cron task that will execute every 5 minutes for ~10 times using the following command:
 
 ```bash
-near call cron.in.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "* */5 * * * *","recurring": true,"deposit": 0,"gas": 2400000000000}' --accountId YOUR_ACCOUNT.testnet --amount 2
+near call manager_v1.cron.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "* */5 * * * *","recurring": true,"deposit": "0","gas": 9000000000000}' --accountId YOUR_ACCOUNT.testnet --amount 2
 ```
 
 You will notice three important things:

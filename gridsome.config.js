@@ -62,6 +62,7 @@ module.exports = {
               '/docs/examples/',
               '/docs/example-counter/',
               '/docs/example-charity/',
+              '/docs/example-airdrop/',
               '/docs/example-indexer/',
             ],
           },
