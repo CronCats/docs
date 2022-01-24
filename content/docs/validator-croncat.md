@@ -64,12 +64,12 @@ near call jakson.pool.f863973.m0 ping '{}' --accountId jackson.testnet --gas=300
 And this is how the ping task is installed in Croncat (on the Testnet network):
 
 ```bash
-near call manager_v1.cron.testnet create_task '{"contract_id": "<POOL>","function_id": "ping","cadence": "0 0 * * * *","recurring": true,"deposit": "0","gas": 9000000000000}' --accountId "<ACCOUNT>" --amount 10
+near call manager_v1.croncat.testnet create_task '{"contract_id": "<POOL>","function_id": "ping","cadence": "0 0 * * * *","recurring": true,"deposit": "0","gas": 9000000000000}' --accountId "<ACCOUNT>" --amount 10
 ```
 Example:
 
 ```bash
-near call manager_v1.cron.testnet create_task '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","recurring": true,"deposit": "0","gas": 9000000000000}' --accountId "jakson.testnet" --amount 10
+near call manager_v1.croncat.testnet create_task '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","recurring": true,"deposit": "0","gas": 9000000000000}' --accountId "jakson.testnet" --amount 10
 ```
 
 ## Croncat Agent + Validator

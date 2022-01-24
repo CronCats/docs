@@ -39,14 +39,14 @@ Each field within croncat serves a specific purpose, the following details show 
 Let's say you have a contract "counter" that increments a storage integer, and you want it to trigger every 5 minutes. Creating an ongoing task will look like this:
 
 ```bash
-near call manager_v1.cron.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "*/10 * * * * *","recurring": true,"deposit": "0","gas": 2400000000000}' --accountId YOUR_NEAR_ACCT.testnet --amount 10
+near call manager_v1.croncat.testnet create_task '{"contract_id": "counter.in.testnet","function_id": "increment","cadence": "*/10 * * * * *","recurring": true,"deposit": "0","gas": 2400000000000}' --accountId YOUR_NEAR_ACCT.testnet --amount 10
 ```
 
 Now let's break this down a bit:
 
 First snippet makes a call request to the "cron" manager in testnet to register a new task.
 ```bash
-near call manager_v1.cron.testnet create_task
+near call manager_v1.croncat.testnet create_task
 ```
 
 Next we specify the contract and function getting called, like this:
@@ -82,7 +82,7 @@ near view <CONTRACT_ACCOUNT> get_hash '{"contract_id": "<CONTRACT_ID>","function
 
 Example (get Task Hash from "ping" function):
 ```bash
-near view manager_v1.cron.testnet get_hash '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","owner_id": "jakson.testnet"}'
+near view manager_v1.croncat.testnet get_hash '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","owner_id": "jakson.testnet"}'
 ```
 
 ## Refill Balance
@@ -97,7 +97,7 @@ near call <CONTRACT_ACCOUNT> refill_balance '{"task_hash": "<YOUR_TASK_HASH>"}' 
 Example:
 
 ```bash
-near call manager_v1.cron.testnet refill_balance '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet --amount 5
+near call manager_v1.croncat.testnet refill_balance '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet --amount 5
 ```
 
 ## Remove task
@@ -112,7 +112,7 @@ near call <CONTRACT_ACCOUNT> remove_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93
 Example
 
 ```bash
-near call manager_v1.cron.testnet remove_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1"}' --accountId <accountId>
+near call manager_v1.croncat.testnet remove_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1"}' --accountId <accountId>
 ```
 
 ## More Examples

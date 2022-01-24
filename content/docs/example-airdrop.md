@@ -152,7 +152,7 @@ Using this example, we will assume that this contract is deployed at [airdrop.in
 We can configure a cron task that will execute immediately after current slot until the list is complete, using the following command:
 
 ```bash
-near call manager_v1.cron.testnet create_task '{"contract_id": "airdrop.in.testnet","function_id": "multisend","cadence": "1 * * * * *","recurring": true,"deposit": "10000000000000000000000000","gas": 200000000000000,"arguments": "eyJ0cmFuc2Zlcl90eXBlIjogIk5lYXIiLCAiYW1vdW50IjogIjUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCJ9"}' --accountId YOUR_ACCOUNT.testnet --amount 20
+near call manager_v1.croncat.testnet create_task '{"contract_id": "airdrop.in.testnet","function_id": "multisend","cadence": "1 * * * * *","recurring": true,"deposit": "10000000000000000000000000","gas": 200000000000000,"arguments": "eyJ0cmFuc2Zlcl90eXBlIjogIk5lYXIiLCAiYW1vdW50IjogIjUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCJ9"}' --accountId YOUR_ACCOUNT.testnet --amount 20
 ```
 
 You will notice three important things:
