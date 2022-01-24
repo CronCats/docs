@@ -25,13 +25,15 @@ Here are the deployed contracts on each network supporting croncat:
     "version",
     "get_info",
     "get_tasks",
+    "get_task",
+    "get_tasks_by_owner",
     "get_slot_tasks",
     "get_slot_ids",
-    "get_task",
     "get_agent_tasks",
-    "get_agent_ids",
     "get_agent",
-    "get_hash"
+    "get_agent_ids",
+    "get_hash",
+    "validate_cadence"
   ],
   "changeMethods": [
     "create_task",
