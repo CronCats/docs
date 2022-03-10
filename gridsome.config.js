@@ -57,22 +57,32 @@ module.exports = {
             ],
           },
           {
+            title: 'Triggers',
+            items: [
+              '/docs/trigger-creation/',
+              '/docs/trigger-monitoring/',
+              '/docs/trigger-integration/',
+            ],
+          },
+          {
             title: 'Examples',
             items: [
               '/docs/examples/',
+              '/docs/example-trigger/',
               '/docs/example-counter/',
               '/docs/example-charity/',
               '/docs/example-airdrop/',
               '/docs/example-indexer/',
             ],
           },
-          {
-            title: 'Tutorials',
-            items: [
-              '/docs/tutorials/',
-              '/docs/tutorials-pixel-pet/',
-            ],
-          },
+          // Removing tutorials for now, as were moving to recipes
+          // {
+          //   title: 'Tutorials',
+          //   items: [
+          //     '/docs/tutorials/',
+          //     '/docs/tutorials-pixel-pet/',
+          //   ],
+          // },
         ],
       },
     ],

@@ -11,7 +11,7 @@ next: '/docs/task-monitoring/'
 
 Croncat tasks follow a very straight forward flow:
 
-1. Deploy or find a contract to a NEAR blockchain
+1. Deploy or find a contract to a NEAR blockchain account
 2. Decide how often a contract should be called & estimate it's transaction fee needs.
 3. Create the task configuration within croncat
 4. Monitor the ongoing progress of the task
