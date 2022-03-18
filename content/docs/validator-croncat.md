@@ -5,6 +5,13 @@ sidebar: 'docs'
 
 # Validator + Croncat
 
+Benefits of CronCat
+
+Fault tolerant: Our agents scale to never go down
+Decentralized: Covering many hosting providers, so you never miss a ping
+Cost efficient: Less what your active validator makes in 1 epoch
+
+
 ## How to run validator & Croncat
 
 Croncat is a great helper for NEAR validators too! Such a necessary and simple action as "ping" can be performed on the blockchain using Croncat ;)
@@ -28,6 +35,10 @@ You can find the complete process of installing and running a node on the offici
 You can use the nearup tools to install and run Testnet & Guildnet nodes. The installation process is described on the official NEAR Github [Nearup Setup](https://github.com/near/nearup)
 
 You can also use Bootcamp, where you will find a complete guide to installing Mainnet, Testnet and Guildnet nodes [NEAR OSA Bootcamp](https://bootcamp.openshards.io/)
+
+## Creating a Ping Task via the Web
+
+The easiest way to create a Ping Task is via the Web version [here](https://cron.cat/create-ping). You only need to enter the pool name of your validator.
 
 ## Ping Script
 
