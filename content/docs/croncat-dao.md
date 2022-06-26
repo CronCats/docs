@@ -58,6 +58,16 @@ Croncat core contracts have several variables that can be adjusted by the DAO to
 |gas_price|Balance|This is the gas price, as set by the genesis config of near runtime. In the event that config changes, the setting can be updated to reflect that value.|
 |slot_granularity|u64|The total amount of blocks to cluster into a window of execution. Example: If there are 1000 blocks and slot granularity is 100 then there will be 10 “buckets” where tasks will be slotted.|
 
+The following additional settings are not available in the NEAR implementation:
+
+| Variable | Type    | Description                                                                                                                                                                                                            |
+|---|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|min_tasks_per_agent| Number  | The ideal number of tasks and agent can handle alone. This determines if agents in the pending queue can be added to the active queue.                                                                                 |
+|agent_active_indices| Number  | In order to even out the tasks across agents we increment numbers contained in here and offset that value from the agent active queue, when choosing where to begin on                                                 |
+|agents_eject_threshold| Number  | How many slots an agent can miss before being removed from the active queue                                                                                                                                            |
+|agent_nomination_duration| Number  | The duration a prospective agent has to nominate themselves. If they fail to nominate within this timespan of seconds, the second agent in the pending queue can nominate themselves to be an active agent, and so on. |
+|slot_granularity| u64     | The total amount of blocks to cluster into a window of execution. Example: If there are 1000 blocks and slot granularity is 100 then there will be 10 “buckets” where tasks will be slotted.                           |
+
 ### Core Deployment
 Croncat is a living creature, developed by people and autonomously operating on the blockchain. Development will continue to be fluid, where features will be added from time to time. When a new feature is ready to be deployed, the compiled contract code will be staged on-chain, and submitted as an upgrade proposal. Core DAO members will be responsible for testing & ensuring the upgrade will not be malicious, align with all representative parties of cron DAO and meet all coding standards for production contracts. Upon successful approval of upgrade, the croncat contract will utilize a migration function to handle any/all state changes needed. In the event that there are backward incompatibilities, the DAO can decide to launch an entirely new deployed contract. This type of change will need to be communicated among all integration partnerships, publicly disclosed on social and website and maintain the legacy contract until all tasks have been completed.
 

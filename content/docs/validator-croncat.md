@@ -5,7 +5,7 @@ sidebar: 'docs'
 
 # Validator + Croncat
 
-Benefits of CronCat
+Benefits of Croncat
 
 Fault tolerant: Our agents scale to never go down
 Decentralized: Covering many hosting providers, so you never miss a ping
@@ -56,7 +56,7 @@ And run:
 ./ping_install.sh 
 ```
 
-During the installation process, you will need to enter the name of the pool (example: jacksonPool) and the name of the account, that is, the wallet (example: jackson) and choose how the ping will be launched: via Crontab (locally) or via CronCat (via blockchain).
+During the installation process, you will need to enter the name of the pool (example: jacksonPool) and the name of the account, that is, the wallet (example: jackson) and choose how the ping will be launched: via Crontab (locally) or via Croncat (via blockchain).
 
 ### Ping Manual
 
