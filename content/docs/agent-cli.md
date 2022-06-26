@@ -7,9 +7,11 @@ next: '/docs/agent-faq/'
 
 # Agent CLI
 
-Welcome friend! If you are here, you're likely interested in setting up a cron agent, to help decentralized the cron tasks & earn rewards! This guide is dedicated to getting you setup, all the way from nothing to getting tasks running. Please note, you will need some NEAR funds to be able to trigger transactions. Don't worry, all of the funds needed to sign transactions will be awarded back to you, in addition to rewards you will earn.
+Welcome, friend! If you are here, you're likely interested in setting up a cron agent, to help decentralized the cron tasks & earn rewards! This guide is dedicated to getting you set up, all the way from nothing to getting tasks running. Please note, you will need some NEAR funds to be able to trigger transactions. Don't worry, all the funds needed to sign transactions will be awarded back to you, in addition to rewards you will earn.
 
-As a task runner, you can provide Cron with a reliable ongoing triggering mechanism by registering your server as an official Cron agent. This will take a few steps, so let's get started! 
+As a task runner, you can provide Cron with a reliable ongoing triggering mechanism by registering your server as an official Cron agent. This will take a few steps, so let's get started!
+
+**Note**: this page covers the Agent CLI for NEAR Protocol. If you're looking for details on the Cosmos implementation, please visit the [launch-tools repository](https://github.com/CronCats/launch-tools).
 
 ## 1. Setup
 

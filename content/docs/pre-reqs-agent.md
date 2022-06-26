@@ -8,9 +8,15 @@ next: '/docs/agent-changelog/'
 
 ## Pre-requirements for Croncat Agent 
 
-Before you start [installing the Croncat Agent Cli](/docs/agent-cli.md) you need to prepare your computer/server/vps.
+Before you start [installing the Croncat Agent Cli](/docs/agent-cli) you need to prepare your computer/server/vps.
 
-## NEAR Cli
+## Cosmos
+
+Please see the [launch-tools repository](https://github.com/CronCats/launch-tools) for details on getting your agent set up. 
+
+## NEAR Protocol
+
+### NEAR CLI
 
 Before you start, you might want to ensure your system is up to date.
 
@@ -26,7 +32,7 @@ sudo apt install build-essential nodejs
 PATH="$PATH"
 ```
 
-Check Node.js and npm version:
+Check NodeJS and NPM version:
 
 ```bash
 node -v
@@ -44,17 +50,13 @@ And install NEAR-Cli:
 sudo npm install -g near-cli
 ```
 
-
-## NEAR Account
-
-
+### NEAR Account
 
 If you do not have a NEAR Account yet, please create one [Mainnet](https://wallet.near.org/), [Testnet](https://wallet.testnet.near.org/), [Guildnet](https://wallet.openshards.io/). 
 
-### Environment
+#### Environment
 
 The environment will need to be set each time a new shell is launched to select the correct network.
-
 
 ```bash
 export NEAR_ENV=<network>
@@ -71,16 +73,13 @@ Where <networks>:
 export NEAR_ENV=mainnet
 ```
 
-And add to the ~ / .bashrc file so that you don't have to enter the command every time you log in
-
-
+And add to the `~/.bashrc` file (or `~/.zshrc`, etc. if your system uses a different one) so that you don't have to enter the command every time you log in
 
 ```bash
 echo 'export NEAR_ENV=<network>' >> ~/.bashrc
 ```
 
-### NEAR Login
-
+#### NEAR Login
 
 And now you can make a login:
 
@@ -88,5 +87,4 @@ And now you can make a login:
 near login
 ```
 
-This command launches a web browser allowing for the authorization of a full access key to be copied locally
-
+This command launches a web browser allowing for the authorization of a full access key to be copied locally.

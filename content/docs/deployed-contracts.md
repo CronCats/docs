@@ -6,9 +6,15 @@ previous: '/docs/join-croncat/'
 
 # Deployed Contracts
 
-Here are the deployed contracts on each network supporting croncat:
+Here are the deployed contracts on each network supporting Croncat:
 
-## Manager
+## Cosmos
+
+The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be deployed to the [Juno network](https://www.junonetwork.io) first, with other networks in the interchain following.
+
+## NEAR Protocol
+
+### Manager
 
 | Network | Contract Account | Live |
 |----|----|----|
@@ -17,7 +23,7 @@ Here are the deployed contracts on each network supporting croncat:
 | Guildnet | [manager_v1.croncat.guildnet](https://explorer.guildnet.near.org/accounts/manager_v1.croncat.guildnet) | [x] |
 | Betanet | [manager_v1.croncat.betanet](https://explorer.betanet.near.org/accounts/manager_v1.croncat.betanet) | [ ] |
 
-## Manager Contract ABI:
+### Manager Contract ABI:
 
 ```json
 "manager": {
@@ -48,7 +54,7 @@ Here are the deployed contracts on each network supporting croncat:
 ```
 
 
-## Rewards
+### Rewards
 
 | Network | Contract Account | Live |
 |----|----|----|
@@ -57,7 +63,7 @@ Here are the deployed contracts on each network supporting croncat:
 | Guildnet | [rewards.croncat.guildnet](https://explorer.guildnet.near.org/accounts/rewards.croncat.guildnet) | [ ] |
 | Betanet | [rewards.croncat.betanet](https://explorer.betanet.near.org/accounts/rewards.croncat.betanet) | [ ] |
 
-## Rewards Contract ABI:
+### Rewards Contract ABI:
 
 ```json
 "manager": {

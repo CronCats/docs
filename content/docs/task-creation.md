@@ -7,16 +7,22 @@ next: '/docs/task-monitoring/'
 
 # Task Creation
 
-## Basic Flow
+## Cosmos
+
+This section will be fleshed out when the [CosmWasm smart contracts](https://github.com/CronCats/cw-croncat) are complete.
+
+## NEAR Protocol
+
+### Basic Flow
 
 Croncat tasks follow a very straight forward flow:
 
 1. Deploy or find a contract to a NEAR blockchain
-2. Decide how often a contract should be called & estimate it's transaction fee needs.
+2. Decide how often a contract should be called & estimate its transaction fee needs.
 3. Create the task configuration within croncat
 4. Monitor the ongoing progress of the task
 
-## Configuration Reference
+### Configuration Reference
 
 Each field within croncat serves a specific purpose, the following details show what kinds of data are acceptable. [View Source](https://github.com/Cron-Near/contracts/blob/main/manager/src/lib.rs#L49)
 
@@ -34,7 +40,7 @@ Each field within croncat serves a specific purpose, the following details show 
 
 *Note that The smallest interval that can be described by a Cron expression is 60 blocks (~one minute). Intervals less than that need to be handled otherwise.
 
-## Simple Task Creation Example
+### Simple Task Creation Example
 
 Let's say you have a contract "counter" that increments a storage integer, and you want it to trigger every 5 minutes. Creating an ongoing task will look like this:
 
@@ -69,12 +75,12 @@ This is completed by making sure the transaction is signed by the account that w
 --accountId YOUR_NEAR_ACCT.testnet --amount 10
 ```
 
-**Important thing to note:** You will get a task hash upon successful creation. Save this hash as its your access to monitor and update the task in the future.
+**Important thing to note:** You will get a task hash upon successful creation. Save this hash as it's your access to monitor and update the task in the future.
 
 **Very important thing to note:** the `--amount` flag is how you are attaching real NEAR tokens to your task. If you specify a "deposit" of 10, and then the `--amount` is less than 10, the task will never run.
 
 
-## How to get Task Hash
+### How to get Task Hash
 
 ```bash
 near view <CONTRACT_ACCOUNT> get_hash '{"contract_id": "<CONTRACT_ID>","function_id": "<FUNCTION>","cadence": "0 0 * * * *","owner_id": "<OWNER_ID>"}'
@@ -85,7 +91,7 @@ Example (get Task Hash from "ping" function):
 near view manager_v1.croncat.testnet get_hash '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","owner_id": "jakson.testnet"}'
 ```
 
-## Refill Balance
+### Refill Balance
 
 If you run out of balance on a task, here's a way to refill the balance:
 
@@ -100,7 +106,7 @@ Example:
 near call manager_v1.croncat.testnet refill_balance '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet --amount 5
 ```
 
-## Remove task
+### Remove task
 
 When deleting a task, all unused balance will be returned to the wallet of the task owner.
 
@@ -109,12 +115,12 @@ When deleting a task, all unused balance will be returned to the wallet of the t
 near call <CONTRACT_ACCOUNT> remove_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}' --accountId jakson.testnet
 ```
 
-Example
+Example:
 
 ```bash
 near call manager_v1.croncat.testnet remove_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1"}' --accountId <accountId>
 ```
 
-## More Examples
+### More Examples
 
 For deeper examples of contracts & task creation, [view all examples here](/docs/examples).

@@ -22,7 +22,7 @@ Once you have a task hash, you can use the following command to retrieve the cur
 croncat task r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4=
 ```
 
-This is just a shortcut for the method available using near-cli as well:
+This is just a shortcut for the method available using NEAR CLI as well:
 
 ```bash
 near view manager_v1.croncat.testnet get_task '{"task_hash": "r2JvrGPvDkFUuqdF4x1+L93aYKGmgp4GqXT4UAK3AE4="}'

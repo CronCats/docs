@@ -8,7 +8,9 @@ prev: '/docs/tutorials/'
 
 ## NOTE: All pets have been claimed! You can read this tutorial to learn, but no pets will be distributed.
 
-Learn how to use croncat by earning a special (and powerful) pixel pet! This tutorial covers the process of creating and watching a croncat task from start to finish. It is intended to show you the process through step by step examples. The solution to this challenge will award you with a 1 of a kind pixelpet! Note: the solution is not fully documented here, you will need to take notes along the way to create the final cli command.
+Learn how to use croncat by earning a special (and powerful) pixel pet! This tutorial covers the process of creating and watching a croncat task from start to finish. It is intended to show you the process through step-by-step examples. The solution to this challenge will award you with a 1 of a kind pixelpet! 
+
+**Note**: the solution is not fully documented here, you will need to take notes along the way to create the final CLI command. Also note that this example interacts with NEAR Protocol only at this time.
 
 ## The Challenge
 
@@ -65,7 +67,7 @@ Now that you have some idea of what data is needed for a cron task, time to look
 
 Time for a little secret sauce ;)
 
-You may be used to seeing near-cli commands that looks something like this:
+You may be used to seeing NEAR CLI commands that looks something like this:
 
 ```bash
 near call counter.near increment '{"add": 3}' --accountId cool_tutorials.near --amount 0.1

@@ -7,16 +7,18 @@ next: '/docs/task-monitoring/'
 
 # Contract Integration
 
-First off -- why you would want this?
+First off — why you would want this?
 In certain situations all that is needed is a simple task being scheduled by a person, that is easily managed checking on its progress every so often.
 
 A more advanced use would be to integrate logic for scheduling directly inside the contracts functionality, such that the contract can schedule and maintain a task. This effectively allows a contract to have a fully autonomous runtime, a decentralized automonous business appears! So, if you would like to integrate cron within a contract, here's the full CRUD example with all the cases for interacting directly. Bonus points for setting this up with a DAO :)
+
+**Note**: the example on this page is for NEAR Protocol. There will be an updated example for Cosmos once the [CosmWasm smart contracts](https://github.com/CronCats/cw-croncat) are complete.
 
 # Example: Cross-Crontract Cron Task Management
 
 [View Full Source](https://github.com/Cron-Near/contracts/tree/main/examples/cross-contract)
 
-This example shows how to setup a cross-contract implementation with croncat. The demo functionality shows an on-chain indexing of balances in a time series format. This contract allows scheduling, updating, removing & checking status.
+This example shows how to set up a cross-contract implementation with croncat. The demo functionality shows an on-chain indexing of balances in a time series format. This contract allows scheduling, updating, removing & checking status.
 
 ## Contract Setup
 

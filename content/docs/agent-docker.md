@@ -11,7 +11,7 @@ Welcome friend! If you are here, you're likely interested in setting up a cron a
 
 As a task runner, you can provide Cron with a reliable ongoing triggering mechanism by registering your server as an official Cron agent. This will take a few steps, so let's get started! 
 
-It's important that you have the near-cli installed, you can [click here to get it setup first](https://github.com/near/near-cli/).
+It's important that you have the NEAR CLI installed, you can [click here to get it setup first](https://github.com/near/near-cli/).
 
 The recommended and easiest way to get setup running your Cron Agent is to use Docker. The following installation guide assumes you have Docker installed and running.
 
