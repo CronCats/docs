@@ -66,15 +66,15 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | [manager_v1.croncat.near](https://explorer.near.org/accounts/manager_v1.croncat.near)               | [✕] |
-| Testnet | [manager_v1.croncat.testnet](https://explorer.testnet.near.org/accounts/manager_v1.croncat.testnet) | [✕] |
+| Mainnet | Soon™ | [] |
+| Testnet | Soon™ | [] |
 
 #### Rules
 
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | [manager_v1.croncat.near](https://explorer.near.org/accounts/manager_v1.croncat.near)               | [✕] |
-| Testnet | [manager_v1.croncat.testnet](https://explorer.testnet.near.org/accounts/manager_v1.croncat.testnet) | [✕] |
+| Mainnet | Soon™ | [] |
+| Testnet | Soon™ | [] |
 
 ---
 
