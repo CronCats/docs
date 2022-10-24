@@ -6,17 +6,11 @@
           <Logo :width="600" :isDarkMode="this.$root.$options.store.isDarkMode" />
         </div>
         <h1 class="text-4xl text-center lg:text-5xl">
-          Decentralized Scheduling for Blockchain Transactions 
+          Decentralized Scheduling for Blockchain Transactions
         </h1>
         <p class="text-xl font-medium text-center">
           Schedule tasks for any contract. Automate anything your contract needs
         </p>
-
-        <div class="py-4">
-          <code class="block px-4 py-1 select-all bg-ui-border text-ui-typo"
-            >npm i -g croncat && croncat tasks</code
-          >
-        </div>
 
         <div class="flex justify-center mt-8">
           <g-link
