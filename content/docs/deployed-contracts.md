@@ -35,14 +35,14 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|----|
 | Mainnet | Soon™                                                                                                                | [] |
-| Testnet | Issue deploying [(Discord)](https://discord.com/channels/798583171548840026/1033564974779469874/1033564974779469874) | [] |
+| Testnet | `osmo1lxv5drw59calg0hfrqgh63afqk7c2g07ud069t3cpdpmk0p0hmesk0pcly` | [] |
 
 #### Rules
 
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|----|
 | Mainnet | Soon™                                                                                                                | [] |
-| Testnet | Issue deploying [(Discord)](https://discord.com/channels/798583171548840026/1033564974779469874/1033564974779469874) | [] |
+| Testnet | `osmo1llzda3g5f2cd0nd34jnmlfmrftg249e0hfxulwf7dcnwce0chweqnkav8z` | [] |
 
 ## Stargaze
 
