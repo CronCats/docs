@@ -35,14 +35,14 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|----|
 | Mainnet | Soon™                                                                                                                | [] |
-| Testnet | `osmo1sqlpugu0qh2qv657x7chhaz507pv5wdcck3kj8fz73gxm8uunl4skaapsv` | [] |
+| Testnet | `osmo14vnvdwc8kcysymarla8476654r2l6hqtyy3jl32ysxrrllzkhytqy420td` | [] |
 
 #### Rules
 
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|----|
 | Mainnet | Soon™                                                                                                                | [] |
-| Testnet | `osmo1ctj8hnqugucq4d9eyk5etrpyldh5gjameg5qmuur8c0vwrkwl8vqhd26m6` | [] |
+| Testnet | `osmo16px0ca5elm0ff06l5ev5hyfduwc3vrx29x35yqpa3q2mnve7ehzsxsv8yq` | [] |
 
 ## Stargaze
 
@@ -51,14 +51,14 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|------|
 | Mainnet | Soon™                                                                                                                | []   |
-| Testnet | `stars1s4vvwnh2w53mc5avty9439tjfs652kvgsu6tfpp2tzv0npttzy7s4jxsh5` | [✕]  |
+| Testnet | `stars1vrf82kjkjw7wk3kx09t6pks7mte0flwhtaqqz8rcu9eff6zrjmjsqqhwpt` | [✕]  |
 
 #### Rules
 
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|------|
 | Mainnet | Soon™                                                                                                                | []   |
-| Testnet | `stars1evtakx5dcvfc8vmuw5n3jq6c028xyn3ltzv4qjnxkpzqpchxrxgsuygzad` | [✕]  |
+| Testnet | `stars14rp2tpns3c3sn3aznsgmvfecz4hltc2hyae6zzvauyc5wfnf9aaqdd6kcv` | [✕]  |
 
 ## Archway
 
