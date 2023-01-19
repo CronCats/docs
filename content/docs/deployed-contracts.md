@@ -19,14 +19,14 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
 | Mainnet | `juno1gvu90ulpql5zaes62rnep0cwrndrtdj80lwkywa7uph7eezdsp9qgz37yh` | [✕] |
-| Testnet | `juno174ncqgapq7fudqj64ut4ue47gevlqp93guecjelnkquruvnpjdgsuk046w` | [✕] |
+| Testnet | `juno1gqkv06dxrccavckw8ydwaxm353pvlrtx0cgxfehvn0gjvlwjfscq58nn8w` | [✕] |
 
 #### Rules
 
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
 | Mainnet | `juno1axv2zrp7gvgjy6jnmn0zscnsdgywuxh0hmp4v5nejndq05wmza9srmy9qz` | [✕] |
-| Testnet | `juno1kl7nruktwljv0e3p6dg99uelqyxldm0vl5ujrj7up4yv8x6gxtssucxrgs` | [✕] |
+| Testnet | `juno1ywyp2kgxdkv8wz0sqgfme8n0vlu0rfcgf9cyhyr4qmmclsnyx69sqqk3hj` | [✕] |
 
 ## Osmosis
 
@@ -35,14 +35,14 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|----|
 | Mainnet | Soon™                                                                                                                | [] |
-| Testnet | `osmo14vnvdwc8kcysymarla8476654r2l6hqtyy3jl32ysxrrllzkhytqy420td` | [] |
+| Testnet | `osmo1j5tr7329ff843r7u6htjnghylecy3ejc5kxzk0p4yyfuhm5lwr2qa89pl8` | [] |
 
 #### Rules
 
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|----|
 | Mainnet | Soon™                                                                                                                | [] |
-| Testnet | `osmo16px0ca5elm0ff06l5ev5hyfduwc3vrx29x35yqpa3q2mnve7ehzsxsv8yq` | [] |
+| Testnet | `osmo1zetastr0yz5rcnhg7p8hc0ye3de9yg2l3yye3dnpp0mdn3qc5l5q09x5yw` | [] |
 
 ## Stargaze
 
@@ -51,14 +51,14 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|------|
 | Mainnet | Soon™                                                                                                                | []   |
-| Testnet | `stars1vrf82kjkjw7wk3kx09t6pks7mte0flwhtaqqz8rcu9eff6zrjmjsqqhwpt` | [✕]  |
+| Testnet | `stars1mesz5kqedgq3vwx6kvxvckk4dg5k7hr2840f3r3xkhyg00dvh9gskk6f9q` | [✕]  |
 
 #### Rules
 
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|------|
 | Mainnet | Soon™                                                                                                                | []   |
-| Testnet | `stars14rp2tpns3c3sn3aznsgmvfecz4hltc2hyae6zzvauyc5wfnf9aaqdd6kcv` | [✕]  |
+| Testnet | `stars13lk0cfjyy4zyy9ynv44r5jxl58gfgzhy5xxpetvnrdvjen9m9a2smfqd5x` | [✕]  |
 
 ## Archway
 
