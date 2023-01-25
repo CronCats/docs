@@ -18,14 +18,14 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | `juno1gvu90ulpql5zaes62rnep0cwrndrtdj80lwkywa7uph7eezdsp9qgz37yh` | [✕] |
+| Mainnet | `juno1yaxs8l9xa4xg7lk0aqxatxqkk5f3mcwetwg7vvlqu7uxc74dlf6qhkx3xj` | [✕] |
 | Testnet | `juno1gqkv06dxrccavckw8ydwaxm353pvlrtx0cgxfehvn0gjvlwjfscq58nn8w` | [✕] |
 
 #### Rules
 
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | `juno1axv2zrp7gvgjy6jnmn0zscnsdgywuxh0hmp4v5nejndq05wmza9srmy9qz` | [✕] |
+| Mainnet | `juno12e7uc4ftqtclvzz9yd44sn6rsxey07u59qakxtnxggpcu88d9smqvwmke0` | [✕] |
 | Testnet | `juno1ywyp2kgxdkv8wz0sqgfme8n0vlu0rfcgf9cyhyr4qmmclsnyx69sqqk3hj` | [✕] |
 
 ## Osmosis
