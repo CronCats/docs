@@ -14,67 +14,39 @@ The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be
 
 ## Juno
 
-#### Manager
+#### Factory
 
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | `juno1yaxs8l9xa4xg7lk0aqxatxqkk5f3mcwetwg7vvlqu7uxc74dlf6qhkx3xj` | [✕] |
-| Testnet | `juno1gqkv06dxrccavckw8ydwaxm353pvlrtx0cgxfehvn0gjvlwjfscq58nn8w` | [✕] |
-
-#### Rules
-
-| Network | Contract address                                                                                    | Live |
-|----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | `juno12e7uc4ftqtclvzz9yd44sn6rsxey07u59qakxtnxggpcu88d9smqvwmke0` | [✕] |
-| Testnet | `juno1ywyp2kgxdkv8wz0sqgfme8n0vlu0rfcgf9cyhyr4qmmclsnyx69sqqk3hj` | [✕] |
+| Mainnet | `` | [✕] |
+| Testnet | `juno1x82wr3jkfurkgm8za3vayjr5ty932vn8nsmauvkxe4n35aj632tq5lguvl` | [✕] |
 
 ## Osmosis
 
-#### Manager
+#### Factory
 
-| Network | Contract address                                                                                                     | Live |
-|----|----------------------------------------------------------------------------------------------------------------------|----|
-| Mainnet | Soon™                                                                                                                | [] |
-| Testnet | `osmo1j5tr7329ff843r7u6htjnghylecy3ejc5kxzk0p4yyfuhm5lwr2qa89pl8` | [] |
-
-#### Rules
-
-| Network | Contract address                                                                                                     | Live |
-|----|----------------------------------------------------------------------------------------------------------------------|----|
-| Mainnet | Soon™                                                                                                                | [] |
-| Testnet | `osmo1zetastr0yz5rcnhg7p8hc0ye3de9yg2l3yye3dnpp0mdn3qc5l5q09x5yw` | [] |
+| Network | Contract address                                                                                  | Live |
+|----|---------------------------------------------------------------------------------------------------|----|
+| Mainnet | Soon™                                                                                             | [] |
+| Testnet | `osmo1j5tr7329ff843r7u6htjnghylecy3ejc5kxzk0p4yyfuhm5lwr2qa89pl8` (somewhat outdated, RPC issues) | [] |
 
 ## Stargaze
 
-#### Manager
+#### Factory
 
 | Network | Contract address                                                                                                     | Live |
 |----|----------------------------------------------------------------------------------------------------------------------|------|
 | Mainnet | Soon™                                                                                                                | []   |
-| Testnet | `stars1mesz5kqedgq3vwx6kvxvckk4dg5k7hr2840f3r3xkhyg00dvh9gskk6f9q` | [✕]  |
-
-#### Rules
-
-| Network | Contract address                                                                                                     | Live |
-|----|----------------------------------------------------------------------------------------------------------------------|------|
-| Mainnet | Soon™                                                                                                                | []   |
-| Testnet | `stars13lk0cfjyy4zyy9ynv44r5jxl58gfgzhy5xxpetvnrdvjen9m9a2smfqd5x` | [✕]  |
+| Testnet | `stars1ysuhjlsvwkazu4f43tfzk3a5afnlymx4znnxy7fx0e9d6nlluq9sqqu9rr` | [✕]  |
 
 ## Archway
 
-#### Manager
+#### Factory
 
 | Network | Contract address                                                                                    | Live |
 |----|-----------------------------------------------------------------------------------------------------|----|
 | Mainnet | Soon™ | [] |
-| Testnet | Soon™ | [] |
-
-#### Rules
-
-| Network | Contract address                                                                                    | Live |
-|----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | Soon™ | [] |
-| Testnet | Soon™ | [] |
+| Testnet | `archway1g8s22s8mkgtu8p7zpy3lrmjl09jj76wkgl8c0xmt4hm7jc9vwq9qhk6u3t` | [] |
 
 ---
 
