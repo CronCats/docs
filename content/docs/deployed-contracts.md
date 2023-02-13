@@ -12,6 +12,15 @@ Here are the deployed contracts on each network supporting Croncat:
 
 The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be deployed to the [Juno network](https://www.junonetwork.io) first, with other networks in the interchain following.
 
+## Neutron
+
+#### Factory
+
+| Network | Contract address                                                                                    | Live |
+|----|-----------------------------------------------------------------------------------------------------|----|
+| Mainnet | `` | [✕] |
+| Testnet | `neutron1wr6vc3g4caz9aclgjacxewr0pjlre9wl2uhq73rp8mawwmqaczsq5smp3h` | [✕] |
+
 ## Juno
 
 #### Factory
