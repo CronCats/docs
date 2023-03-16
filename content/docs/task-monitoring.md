@@ -9,8 +9,8 @@ next: '/docs/contract-integration/'
 
 There are two ways to view tasks:
 
-* [Croncat Website](https://cron.cat/tasks)
-* Croncat CLI
+* [CronCat Website](https://cron.cat/tasks)
+* CronCat CLI
 
 The website is the easiest for quickly viewing all active tasks, however not as helpful for understanding your task directly.
 

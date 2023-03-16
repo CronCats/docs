@@ -12,11 +12,11 @@ next: '/docs/validator-croncat/'
 
 Development has been much easier since the invention of the `.env` file. You can easily set your environment variables and values with the syntax ENV_VARIABLE = VALUE and boom!
 
-Env file allows you to customize individual variables for your environment. `.env` files are line delimitated text files, meaning that each new line represents a single variable. By convention .env variable names are uppercase words separated by underscores. Variable names are followed directly by an = which, in turn is followed directly by the value.
+Env file allows you to customize individual variables for your environment. `.env` files are line delimited text files, meaning that each new line represents a single variable. By convention .env variable names are uppercase words separated by underscores. Variable names are followed directly by an = which, in turn is followed directly by the value.
 
 ## .env setup
 
-After installing Croncat Cli [How to install Agent Cli](https://docs.cron.cat/docs/agent-cli/) you want to run Croncat with notifications and uptime monitoring, or configure the different settings. To do this, you need to run the following command:
+After installing CronCat Cli [How to install Agent Cli](https://docs.cron.cat/docs/agent-cli/) you want to run CronCat with notifications and uptime monitoring, or configure the different settings. To do this, you need to run the following command:
 
 ```bash
 cp /lib/node_modules/croncat/.env.example .env
@@ -46,7 +46,7 @@ SLACK_CHANNEL=general
 HEARTBEAT=false
 HEARTBEAT_URL=GET_REQUEST_URL_FOR_STATUS_SERVICE
 ```
-## Croncat .env variables
+## CronCat .env variables
 
 Let's take a look at each variable:
 

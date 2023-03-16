@@ -4,9 +4,9 @@ sidebar: 'docs'
 previous: '/docs/'
 ---
 
-# Join Croncat
+# Join CronCat
 
-Croncat is forging the path to a fully autonomous & sustainable utility for applications on blockchain. We need your help to innovate the scheduled transaction layer, push the boundaries of automated staked profits and grow the network of applications & agents using croncat.
+CronCat is forging the path to a fully autonomous & sustainable utility for applications on blockchain. We need your help to innovate the scheduled transaction layer, push the boundaries of automated staked profits and grow the network of applications & agents using croncat.
 
 ## For Applications & Developers
 [developers]: #developers

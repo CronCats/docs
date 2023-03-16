@@ -1,5 +1,5 @@
 ---
-description: 'Create a task in croncat specifying different configuration params'
+description: 'Create a task in CronCat specifying different configuration params'
 sidebar: 'docs'
 prev: '/docs/'
 next: '/docs/task-monitoring/'
@@ -9,22 +9,36 @@ next: '/docs/task-monitoring/'
 
 ## Cosmos
 
+### Create a one-time task
+
+When creating a task that's meant to execute once, we use the [Interval](https://docs.rs/croncat-sdk-tasks/latest/croncat_sdk_tasks/types/struct.TaskRequest.html) type of [Once](https://docs.rs/croncat-sdk-tasks/latest/croncat_sdk_tasks/types/enum.Interval.html).
+
+CronCat tasks can have simple criteria (eg. execute my task at the future block height 123456789, or when a given timestamp is reached) or more event-driven criteria. The latter utilizes the "if-this-then-that" capabilities of CronCat, and means the task will populate the fields [`queries`](https://docs.rs/croncat-sdk-tasks/latest/croncat_sdk_tasks/types/struct.TaskRequest.html#structfield.queries) and/or [`transforms`](https://docs.rs/croncat-sdk-tasks/latest/croncat_sdk_tasks/types/struct.TaskRequest.html#structfield.transforms). For the purpose of this example, we'll stick to the simpler task.
+
+
+| Create from | Link      | Info                                                                                                   |
+|-------------|-----------|--------------------------------------------------------------------------------------------------------|
+| CosmWasm    | AccountId | Account to direct all execution calls against                                                          |
+| Frontend    | String    | Contract method this task will be executing                                                            |
+| NodeJS      | String    | Crontab Spec String. Defines the interval spacing of execution                                         |
+|             |           |                                                                                                        |
+
 This section will be fleshed out when the [CosmWasm smart contracts](https://github.com/CronCats/cw-croncat) are complete.
 
 ## NEAR Protocol
 
 ### Basic Flow
 
-Croncat tasks follow a very straight forward flow:
+CronCat tasks follow a very straight forward flow:
 
 1. Deploy or find a contract to a NEAR blockchain
 2. Decide how often a contract should be called & estimate its transaction fee needs.
-3. Create the task configuration within croncat
+3. Create the task configuration within CronCat
 4. Monitor the ongoing progress of the task
 
 ### Configuration Reference
 
-Each field within croncat serves a specific purpose, the following details show what kinds of data are acceptable. [View Source](https://github.com/Cron-Near/contracts/blob/main/manager/src/lib.rs#L49)
+Each field within CronCat serves a specific purpose, the following details show what kinds of data are acceptable. [View Source](https://github.com/Cron-Near/contracts/blob/main/manager/src/lib.rs#L49)
 
 | Field | Type | Description |
 | ------- | ------- | ------- |

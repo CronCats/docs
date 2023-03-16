@@ -1,14 +1,15 @@
 ---
-description: 'Pre-requirements for running Croncat Agent'
+description: 'Pre-requirements for running CronCat Agent'
 sidebar: 'docs'
+prev: '/docs/agents-cosmos/'
 next: '/docs/agent-changelog/'
 ---
 
 # Agent Pre-Reqs
 
-## Pre-requirements for Croncat Agent 
+## Pre-requirements for CronCat Agent 
 
-Before you start [installing the Croncat Agent Cli](/docs/agent-cli) you need to prepare your computer/server/vps.
+Before you start [installing the CronCat Agent Cli](/docs/agent-cli) you need to prepare your computer/server/vps.
 
 ## Cosmos
 

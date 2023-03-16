@@ -1,5 +1,5 @@
 ---
-description: 'Croncat Agent Changelog'
+description: 'CronCat Agent Changelog'
 sidebar: 'docs'
 prev: '/docs/pre-reqs-agent/'
 next: '/docs/agent-cli/'
@@ -46,7 +46,7 @@ Cleanup
 
 [Release](https://github.com/Cron-Near/croncat/releases/tag/1.6.0)
 
-## 1.5.2. Croncat CLI
+## 1.5.2. CronCat CLI
 
 Added the following Features:
 

@@ -1,5 +1,5 @@
 ---
-description: 'Croncat Agent FAQ'
+description: 'CronCat Agent FAQ'
 sidebar: 'docs'
 prev: '/docs/agent-cli/'
 #next: '/docs/agent-docker/'
@@ -12,7 +12,7 @@ Didn't find information about the questions of interest? Welcome to the FAQ!
 ## How to run multiple agents in one machine
 
 
-After [installing Croncat Agent](/docs/agent-cli/) and registering accounts, you can run multiple agents on your machine. To do this, you need to do `near login` for all accounts on which you want to run the agent. Next, you need to start a `screen` session for each agent. For example, you have 3 accounts: agent-1.testnet, agent-2.testnet, agent-3.testnet
+After [installing CronCat Agent](/docs/agent-cli/) and registering accounts, you can run multiple agents on your machine. To do this, you need to do `near login` for all accounts on which you want to run the agent. Next, you need to start a `screen` session for each agent. For example, you have 3 accounts: agent-1.testnet, agent-2.testnet, agent-3.testnet
 
 Start a new session:
 
@@ -41,10 +41,10 @@ tail -n 1000 -f log-1
 The same should be done for agent-2.testnet and agent-3.testnet. But you need to change `screen -S croncat-1` to `screen -S croncat-2`, `log-1` to `log-2`, etc.
 
 
-## Find out the status of Croncat Agent
+## Find out the status of CronCat Agent
 
 
-### Croncat status
+### CronCat status
 
 Through the command `croncat status <accountId>`, you can find out the status of the agent.
 
@@ -88,7 +88,7 @@ The total number of tasks performed by the agent.
 Last missed slots by agent.
 
 
-### Croncat run
+### CronCat run
 
 Now let's look at the agent start command:
 
@@ -127,15 +127,15 @@ The status indicates the activity of the agent. The "Pending" status means that 
 
 Agent account [registered](/docs/agent-cli/#3-register-your-agent) in the system.
 
-## How to update Croncat Agent Cli
+## How to update CronCat Agent Cli
 
-To get latest Croncat version:
+To get latest CronCat version:
 
 ```bash
 curl -s https://github.com/Cron-Near/croncat/releases/latest |  grep -Eo "[0-9].[0-9]*.[0-9]"
 ```
 
-To update a Croncat Agent just enter the command:
+To update a CronCat Agent just enter the command:
 
 ```bash
 npm update croncat

@@ -1,5 +1,5 @@
 ---
-description: 'Run croncat inside a docker image'
+description: 'Run CronCat inside a docker image'
 sidebar: 'docs'
 prev: '/docs/agent-faq/'
 next: '/docs/env-file/'
@@ -19,7 +19,7 @@ The recommended and easiest way to get setup running your Cron Agent is to use D
 
 ### Install
 
-Pull and build the croncat image:
+Pull and build the CronCat image:
 
 ```bash
 docker build -t croncat .
@@ -35,7 +35,7 @@ near login
 
 Being logged in allows your cron agent to have a funded account. If you do not have a near account with 1 NEAR or more, you can setup one here: [Setup NEAR Wallet](https://wallet.near.org/)
 
-Alternatively, you can create a new set of keys just for croncat agent:
+Alternatively, you can create a new set of keys just for CronCat agent:
 
 ```bash
 near generate-key agent-007.testnet
@@ -54,7 +54,7 @@ Once generated, copy the public key (which will be used to add as a signer for a
 near add-key your_account.testnet ed25519:EkiM...
 ```
 
-## 2. Test out Croncat
+## 2. Test out CronCat
 
 Run docker in detached mode and set the agent account id:
 
@@ -89,7 +89,7 @@ alias croncat="docker run --rm -it croncat ./croncat-cli"
 
 ## 4. Register Your Agent
 
-To be able to earn rewards with croncat, the manager needs to know which account will be earning rewards. You can register by the following:
+To be able to earn rewards with CronCat, the manager needs to know which account will be earning rewards. You can register by the following:
 
 ```bash
 # croncat register <agent account> <rewards account>
@@ -100,7 +100,7 @@ Note, you if make your rewards account different than your agent account, you wi
 
 ## 5. Running in Production
 
-Run the croncat agent and set the agent account id:
+Run the CronCat agent and set the agent account id:
 
 ```bash
 croncat go agent-007.testnet

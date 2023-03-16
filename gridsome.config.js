@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'croncat',
+  siteName: 'CronCat',
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png',
@@ -37,18 +37,6 @@ module.exports = {
             ],
           },
           {
-            title: 'Agent',
-            items: [
-              '/docs/pre-reqs-agent/',
-              '/docs/agent-changelog/',
-              '/docs/agent-cli/',
-              '/docs/agent-faq/',
-              '/docs/agent-docker/',
-              '/docs/env-file/',
-              '/docs/validator-croncat/',
-            ],
-          },
-          {
             title: 'Tasks',
             items: [
               '/docs/task-creation/',
@@ -70,7 +58,19 @@ module.exports = {
             title: 'Tutorials',
             items: [
               '/docs/tutorials/',
-              '/docs/tutorials-pixel-pet/',
+            ],
+          },
+          {
+            title: 'Agent',
+            items: [
+              '/docs/agents-cosmos/',
+              '/docs/pre-reqs-agent/',
+              '/docs/agent-changelog/',
+              '/docs/agent-cli/',
+              '/docs/agent-faq/',
+              '/docs/agent-docker/',
+              '/docs/env-file/',
+              '/docs/validator-croncat/',
             ],
           },
         ],

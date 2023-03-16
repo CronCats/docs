@@ -1,20 +1,19 @@
 ---
-description: 'How to run validator & Croncat'
+description: 'How to run validator & CronCat'
 sidebar: 'docs'
 ---
 
-# Validator + Croncat
+# Validator + CronCat
 
-Benefits of Croncat
+Benefits of CronCat:
 
-Fault tolerant: Our agents scale to never go down
-Decentralized: Covering many hosting providers, so you never miss a ping
-Cost efficient: Less what your active validator makes in 1 epoch
+- Fault tolerant: Our agents scale to never go down
+- Decentralized: Covering many hosting providers, so you never miss a ping
+- Cost-efficient: Less what your active validator makes in 1 epoch
 
+## How to run validator & CronCat
 
-## How to run validator & Croncat
-
-Croncat is a great helper for NEAR validators too! Such a necessary and simple action as "ping" can be performed on the blockchain using Croncat ;)
+CronCat is a great helper for NEAR validators too! Such a necessary and simple action as "ping" can be performed on the blockchain using CronCat ;)
 
 ### Server Requirements
 
@@ -56,7 +55,7 @@ And run:
 ./ping_install.sh 
 ```
 
-During the installation process, you will need to enter the name of the pool (example: jacksonPool) and the name of the account, that is, the wallet (example: jackson) and choose how the ping will be launched: via Crontab (locally) or via Croncat (via blockchain).
+During the installation process, you will need to enter the name of the pool (example: jacksonPool) and the name of the account, that is, the wallet (example: jackson) and choose how the ping will be launched: via Crontab (locally) or via CronCat (via blockchain).
 
 ### Ping Manual
 
@@ -72,7 +71,7 @@ Example:
 near call jakson.pool.f863973.m0 ping '{}' --accountId jackson.testnet --gas=300000000000000
 ```
 
-And this is how the ping task is installed in Croncat (on the Testnet network):
+And this is how the ping task is installed in CronCat (on the Testnet network):
 
 ```bash
 near call manager_v1.croncat.testnet create_task '{"contract_id": "<POOL>","function_id": "ping","cadence": "0 0 * * * *","recurring": true,"deposit": "0","gas": 9000000000000}' --accountId "<ACCOUNT>" --amount 10
@@ -83,6 +82,6 @@ Example:
 near call manager_v1.croncat.testnet create_task '{"contract_id": "jakson.pool.f863973.m0","function_id": "ping","cadence": "0 0 * * * *","recurring": true,"deposit": "0","gas": 9000000000000}' --accountId "jakson.testnet" --amount 10
 ```
 
-## Croncat Agent + Validator
+## CronCat Agent + Validator
 
-Using the ping setup script you can also install the Croncat Agent to support decentralization and get rewards! You just need to agree with the Ping Tool suggestion during the installation process.
+Using the ping setup script you can also install the CronCat Agent to support decentralization and get rewards! You just need to agree with the Ping Tool suggestion during the installation process.

@@ -1,5 +1,5 @@
 ---
-description: 'Run croncat directly via CLI'
+description: 'Run CronCat directly via CLI'
 sidebar: 'docs'
 prev: '/docs/agent-changelog/'
 next: '/docs/agent-faq/'
@@ -31,7 +31,7 @@ near login
 
 Being logged in allows your cron agent to have a funded account. If you do not have a near account with 1 NEAR or more, you can setup one here: [Setup NEAR Wallet](https://wallet.near.org/)
 
-Alternatively, you can create a new set of keys just for croncat agent:
+Alternatively, you can create a new set of keys just for CronCat agent:
 
 ```bash
 near generate-key agent-007.testnet
@@ -59,7 +59,7 @@ croncat tasks
 
 ## 3. Register Your Agent
 
-To be able to earn rewards with croncat, the manager needs to know which account will be earning rewards. You can register by the following:
+To be able to earn rewards with CronCat, the manager needs to know which account will be earning rewards. You can register by the following:
 
 ```bash
 # croncat register <agent account> <rewards account>
@@ -70,7 +70,7 @@ Note, you if make your rewards account different than your agent account, you wi
 
 ## 4. Testing Task Runner
 
-Run the croncat agent and set the agent account id:
+Run the CronCat agent and set the agent account id:
 
 ```bash
 croncat go agent-007.testnet
@@ -182,7 +182,7 @@ croncat tasks
 The installation process on RPI is identical to the above and runs without errors.
 
 
-## Croncat Agent DAEMON
+## CronCat Agent DAEMON
 
 To setup an agent that has auto reboot capability, do the following steps:
 

@@ -6,7 +6,7 @@ previous: '/docs/join-croncat/'
 
 # Deployed Contracts
 
-Here are the deployed contracts on each network supporting Croncat:
+Here are the deployed contracts on each network supporting CronCat:
 
 ## Interchain (Cosmos blockchains)
 

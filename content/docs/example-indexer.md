@@ -16,7 +16,7 @@ A more advanced use would be to integrate logic for scheduling directly inside t
 
 [View Full Source](https://github.com/Cron-Near/contracts/tree/main/examples/cross-contract)
 
-This example shows how to setup a cross-contract implementation with croncat. The demo functionality shows an on-chain indexing of balances in a time series format. This contract allows scheduling, updating, removing & checking status.
+This example shows how to setup a cross-contract implementation with CronCat. The demo functionality shows an on-chain indexing of balances in a time series format. This contract allows scheduling, updating, removing & checking status.
 
 ## Contract Setup
 
@@ -84,7 +84,7 @@ Key things to note:
 * Parameters in this example will vary from your implementation, this is just a sample.
 
 ```rust
-/// Create a new scheduled task, registering the "tick" method with croncat
+/// Create a new scheduled task, registering the "tick" method with CronCat
 ///
 /// ```bash
 /// near call crosscontract.testnet schedule '{ "function_id": "tick", "period": "0 */1 * * * *" }' --accountId YOUR_ACCOUNT.testnet

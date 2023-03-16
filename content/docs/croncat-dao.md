@@ -5,26 +5,26 @@ prev: '/docs/values-vision/'
 next: '/docs/join-croncat/'
 ---
 
-# Croncat DAO
+# CronCat DAO
 Enabling a community to own, grow & maintain the blockchain scheduling utility.
 
 # Mission
-Provide a well balanced group of persons capable of furthering the development of Croncat, maintaining core business objectives that sustain the network & act on community improvement initiatives.
+Provide a well balanced group of persons capable of furthering the development of CronCat, maintaining core business objectives that sustain the network & act on community improvement initiatives.
 
 ### Core Values
 * Stability
 * Economic Sustainability
 * Community Ownership
 
-# Are you a Croncat?
-Croncat is an organism owned & maintained by dedicated people coming from a diverse set of perspectives. 
-Here are the classifications of what makes up the types of people in Croncat DAO:
+# Are you a CronCat?
+CronCat is an organism owned & maintained by dedicated people coming from a diverse set of perspectives. 
+Here are the classifications of what makes up the types of people in CronCat DAO:
 * **Founder** - Core contributors that provide vision, implementation & leadership
 * **Agent** - The operator executing the tasks & runtime dictated by the DAO
 * **Application** - Entities that need scheduled transactions
 * **Commander** - Individuals that contribute to initiatives defined by the DAO, receive retainer stipend based on performance (Example: Growth Hacker)
 
-Becoming part of the Croncat DAO is much different than token based DAOs. It requires real interaction and participation in community development, governance, research & network growth. To maintain a seat on Croncat DAO, you believe in the vision, aspire to further the mission statement, and generally provide your personal perspective to create positive outcomes for the Croncat community as a whole. Maintaining a seat on the DAO requires interactions like voting at minimum 5 times per year.
+Becoming part of the CronCat DAO is much different than token based DAOs. It requires real interaction and participation in community development, governance, research & network growth. To maintain a seat on CronCat DAO, you believe in the vision, aspire to further the mission statement, and generally provide your personal perspective to create positive outcomes for the CronCat community as a whole. Maintaining a seat on the DAO requires interactions like voting at minimum 5 times per year.
 
 # Governance & Operations
 ### Council Responsibilities
@@ -48,7 +48,7 @@ Council members are responsible to the DAO, and have a requirement to on-chain a
 Council Change: Adding/Removing council members only when deemed appropriate by DAO.
 
 ### Core Operations:
-Croncat core contracts have several variables that can be adjusted by the DAO to further align the needs of agents and applications. The purpose was to allow cron to not have a static economic model, but rather adjust to the runtime needs. The following variables define the name, type and intent of each parameter. Note that these settings are only allowed to be adjusted by DAO founders, but can be voted upon by members.
+CronCat core contracts have several variables that can be adjusted by the DAO to further align the needs of agents and applications. The purpose was to allow cron to not have a static economic model, but rather adjust to the runtime needs. The following variables define the name, type and intent of each parameter. Note that these settings are only allowed to be adjusted by DAO founders, but can be voted upon by members.
 
 | Variable | Type | Description |
 |---|---|---|
@@ -69,7 +69,7 @@ The following additional settings are not available in the NEAR implementation:
 |slot_granularity| u64     | The total amount of blocks to cluster into a window of execution. Example: If there are 1000 blocks and slot granularity is 100 then there will be 10 “buckets” where tasks will be slotted.                           |
 
 ### Core Deployment
-Croncat is a living creature, developed by people and autonomously operating on the blockchain. Development will continue to be fluid, where features will be added from time to time. When a new feature is ready to be deployed, the compiled contract code will be staged on-chain, and submitted as an upgrade proposal. Core DAO members will be responsible for testing & ensuring the upgrade will not be malicious, align with all representative parties of cron DAO and meet all coding standards for production contracts. Upon successful approval of upgrade, the croncat contract will utilize a migration function to handle any/all state changes needed. In the event that there are backward incompatibilities, the DAO can decide to launch an entirely new deployed contract. This type of change will need to be communicated among all integration partnerships, publicly disclosed on social and website and maintain the legacy contract until all tasks have been completed.
+CronCat is a living creature, developed by people and autonomously operating on the blockchain. Development will continue to be fluid, where features will be added from time to time. When a new feature is ready to be deployed, the compiled contract code will be staged on-chain, and submitted as an upgrade proposal. Core DAO members will be responsible for testing & ensuring the upgrade will not be malicious, align with all representative parties of cron DAO and meet all coding standards for production contracts. Upon successful approval of upgrade, the croncat contract will utilize a migration function to handle any/all state changes needed. In the event that there are backward incompatibilities, the DAO can decide to launch an entirely new deployed contract. This type of change will need to be communicated among all integration partnerships, publicly disclosed on social and website and maintain the legacy contract until all tasks have been completed.
 
 # DAO Economic Governance:
 The cron DAO will be responsible for appropriately allocating funds towards initiatives that benefit the whole croncat community. The following are possible incentives, each to be approved and potentially implemented by the DAO. Unless otherwise noted, each item will be available to be voted upon by all DAO members. Specific amounts are left out of this document, as they are to be proposed within the DAO.

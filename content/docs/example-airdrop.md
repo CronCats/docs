@@ -21,7 +21,7 @@ Here's a few examples of why you would want to airdrop:
 2. You created a token "$RAD" and want to distribute some amount of $RAD to your community based on their help.
 3. You want to gift $NEAR to your friends and family on a weekly basis, because thats how nice you are.
 
-In all of these scenarios, you need croncat to help airdrop! Croncat will take care of making the transactions happen, so you do not need to script tons of calls to the blockchain.
+In all of these scenarios, you need CronCat to help airdrop! CronCat will take care of making the transactions happen, so you do not need to script tons of calls to the blockchain.
 
 ## Contract Source Example
 
@@ -163,7 +163,7 @@ You will notice three important things:
 
 [View full task creation details here](/docs/task-creation)
 
-Now that the task has been registered with the cron manager, the task will now be triggered/executed by the croncat agents at the scheduled time! 
+Now that the task has been registered with the cron manager, the task will now be triggered/executed by the CronCat agents at the scheduled time! 
 
 **Hooray!**
 
