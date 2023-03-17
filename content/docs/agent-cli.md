@@ -96,7 +96,7 @@ tail -n 1000 -f log
 # Resume session
 screen -rD croncat
 
-# Stop croncat
+# Stop CronCat
 Ctrl+c
 ```
 

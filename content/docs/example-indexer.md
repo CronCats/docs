@@ -168,4 +168,4 @@ pub fn status_callback(&self, #[callback] task: Option<Task>) -> Option<Task> {
 }
 ```
 
-There's a lot of information in this guide, and you've probably got questions. Do not hesitate to reach out and get help with further integrating croncat!
+There's a lot of information in this guide, and you've probably got questions. Do not hesitate to reach out and get help with further integrating CronCat!

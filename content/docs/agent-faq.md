@@ -20,7 +20,7 @@ Start a new session:
 screen -S croncat-1
 ```
 
-Start the croncat agent:
+Start the CronCat agent:
 
 ```bash
 croncat go agent-1.testnet > log-1 2>&1

@@ -18,7 +18,7 @@ Added more process exits to allow better handling of auto-restart
 ## 1.6.3. CLI Features & Config
 
 Updates:
-- Added new CLI command croncat daemon, see README.md for details
+- Added new CLI command CronCat daemon, see README.md for details
 - Added configurations for RPCs, see README.md for details
 - Fixed slack provider for .env variables
 

@@ -28,7 +28,7 @@ Becoming part of the CronCat DAO is much different than token based DAOs. It req
 
 # Governance & Operations
 ### Council Responsibilities
-DAO council will be the sole responsible entity for the development and promotion of croncat. The council will be made up of different types of persons, each bringing a unique viewpoint to the governance process to align and balance the DAO. You can think of the council representing 3 core entities: Founders, Producers, Consumers. The council will have the power to enact proposals, fund development & marketing, provide guidance on integrations and onboard further community members.
+DAO council will be the sole responsible entity for the development and promotion of CronCat. The council will be made up of different types of persons, each bringing a unique viewpoint to the governance process to align and balance the DAO. You can think of the council representing 3 core entities: Founders, Producers, Consumers. The council will have the power to enact proposals, fund development & marketing, provide guidance on integrations and onboard further community members.
 
 Council members are responsible to the DAO, and have a requirement to on-chain activity periodically to maintain their council seat. By staying active on the chain activities, members not only keep the community inline with their perspective, but also help create a wider base for decisions. Council members are also responsible for doing the research and diligence necessary to make sound decisions for fund allocations.
 
@@ -53,10 +53,10 @@ CronCat core contracts have several variables that can be adjusted by the DAO to
 | Variable | Type | Description |
 |---|---|---|
 |paused|Boolean|In case of runtime emergency, the contract can be paused|
-|owner_id|AccountId|This account represents the active DAO managing the croncat contract|
+|owner_id|AccountId|This account represents the active DAO managing the CronCat contract|
 |agent_fee|Balance|The per-task fee which accrues to the agent for executing the task.|
 |gas_price|Balance|This is the gas price, as set by the genesis config of near runtime. In the event that config changes, the setting can be updated to reflect that value.|
-|slot_granularity|u64|The total amount of blocks to cluster into a window of execution. Example: If there are 1000 blocks and slot granularity is 100 then there will be 10 “buckets” where tasks will be slotted.|
+|slot_granularity|u64|The total amount of blocks to cluster into a window of execution. Example: If there are 1000 blocks and slot granularity is 100 then there will be 10 "buckets" where tasks will be slotted.|
 
 The following additional settings are not available in the NEAR implementation:
 
@@ -66,20 +66,20 @@ The following additional settings are not available in the NEAR implementation:
 |agent_active_indices| Number  | In order to even out the tasks across agents we increment numbers contained in here and offset that value from the agent active queue, when choosing where to begin on                                                 |
 |agents_eject_threshold| Number  | How many slots an agent can miss before being removed from the active queue                                                                                                                                            |
 |agent_nomination_duration| Number  | The duration a prospective agent has to nominate themselves. If they fail to nominate within this timespan of seconds, the second agent in the pending queue can nominate themselves to be an active agent, and so on. |
-|slot_granularity| u64     | The total amount of blocks to cluster into a window of execution. Example: If there are 1000 blocks and slot granularity is 100 then there will be 10 “buckets” where tasks will be slotted.                           |
+|slot_granularity| u64     | The total amount of blocks to cluster into a window of execution. Example: If there are 1000 blocks and slot granularity is 100 then there will be 10 "buckets" where tasks will be slotted.                           |
 
 ### Core Deployment
-CronCat is a living creature, developed by people and autonomously operating on the blockchain. Development will continue to be fluid, where features will be added from time to time. When a new feature is ready to be deployed, the compiled contract code will be staged on-chain, and submitted as an upgrade proposal. Core DAO members will be responsible for testing & ensuring the upgrade will not be malicious, align with all representative parties of cron DAO and meet all coding standards for production contracts. Upon successful approval of upgrade, the croncat contract will utilize a migration function to handle any/all state changes needed. In the event that there are backward incompatibilities, the DAO can decide to launch an entirely new deployed contract. This type of change will need to be communicated among all integration partnerships, publicly disclosed on social and website and maintain the legacy contract until all tasks have been completed.
+CronCat is a living creature, developed by people and autonomously operating on the blockchain. Development will continue to be fluid, where features will be added from time to time. When a new feature is ready to be deployed, the compiled contract code will be staged on-chain, and submitted as an upgrade proposal. Core DAO members will be responsible for testing & ensuring the upgrade will not be malicious, align with all representative parties of cron DAO and meet all coding standards for production contracts. Upon successful approval of upgrade, the CronCat contract will utilize a migration function to handle any/all state changes needed. In the event that there are backward incompatibilities, the DAO can decide to launch an entirely new deployed contract. This type of change will need to be communicated among all integration partnerships, publicly disclosed on social and website and maintain the legacy contract until all tasks have been completed.
 
 # DAO Economic Governance:
-The cron DAO will be responsible for appropriately allocating funds towards initiatives that benefit the whole croncat community. The following are possible incentives, each to be approved and potentially implemented by the DAO. Unless otherwise noted, each item will be available to be voted upon by all DAO members. Specific amounts are left out of this document, as they are to be proposed within the DAO.
+The cron DAO will be responsible for appropriately allocating funds towards initiatives that benefit the whole CronCat community. The following are possible incentives, each to be approved and potentially implemented by the DAO. Unless otherwise noted, each item will be available to be voted upon by all DAO members. Specific amounts are left out of this document, as they are to be proposed within the DAO.
 
 ### General Fund Management
 Cron DAO will maintain two areas of funds:
 
 1. **Treasury**: Funds allocated to treasury will contain collateral provided by tasks, accrued from staking interest, accrued from potential yield initiatives and initially seeded by cron DAO grant(s). The treasury use and allocation for all operations will be only controlled by founder level proposals and voted by founder level votes. Treasury will maintain a budget allocating the majority of funds towards operations and some towards incentives and growth. Treasury will focus on the goal of a fully self-sustaining income based on seeking revenue by accrued interest, developing features for efficiency or further revenues and maintaining the correct ratio of funds to keep ongoing tasks running.
 
-2. **Core Operations**: These funds will be automatically managed by the croncat core contracts, and utilized for task deposits, task gas fees, overhead for upcoming task needs and agent reward payout. No funds remaining on the core contracts shall be touched by members of the croncat DAO, unless fee structures are adjusted resulting in a collateral surplus. All changes to fee structures will be actioned directly from the DAO, and surplus or other situations must be handled by cron DAO treasury.
+2. **Core Operations**: These funds will be automatically managed by the CronCat core contracts, and utilized for task deposits, task gas fees, overhead for upcoming task needs and agent reward payout. No funds remaining on the core contracts shall be touched by members of the CronCat DAO, unless fee structures are adjusted resulting in a collateral surplus. All changes to fee structures will be actioned directly from the DAO, and surplus or other situations must be handled by cron DAO treasury.
 
 
 ### Treasury Collateral Uses
@@ -107,7 +107,7 @@ Operations will fund specific needs of the cron DAO that act like traditional bu
 ### DAO Viral Loops
 **Application Onboarding**
 
-Applications running tasks on cron are imperative to the success of croncat. Early integrations using cron should be encouraged by a few initiatives:
+Applications running tasks on cron are imperative to the success of CronCat. Early integrations using cron should be encouraged by a few initiatives:
 
 1. Early integrations will reward both application and ambassador. Applications will receive a set amount of free transactions and free agent fees paid for by cron DAO. See economics section for specific reward amounts.
 
@@ -117,17 +117,17 @@ Applications running tasks on cron are imperative to the success of croncat. Ear
 
 **Agent Onboarding**
 
-Agents keep the lights on for croncat and make the autonomy of cron possible. Agents will be incentivized primarily by rewards per task, but also encouraged in additional ways:
+Agents keep the lights on for CronCat and make the autonomy of cron possible. Agents will be incentivized primarily by rewards per task, but also encouraged in additional ways:
 
 1. Promote the use of cron by onboarding new applications or tasks.
 
-2. Refer others to become croncat agents.
+2. Refer others to become CronCat agents.
 
-3. Continuously run the croncat agent scripts for 1 year or more with minimal downtime. 
+3. Continuously run the CronCat agent scripts for 1 year or more with minimal downtime. 
 
 **Outreach, Community Expansion**
 
-Cron will rely on the community of croncat commanders to grow the adoption of cron and promote awareness. Commanders will be responsible for creating network effects by the following avenues:
+Cron will rely on the community of CronCat commanders to grow the adoption of cron and promote awareness. Commanders will be responsible for creating network effects by the following avenues:
 
 1. Post promotional materials for onboarding applications, agents and other commanders.
 

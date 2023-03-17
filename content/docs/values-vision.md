@@ -8,52 +8,38 @@ next: '/docs/croncat-dao/'
 # Values & Vision
 
 ### Forward:
-We owe the utmost respect to Paul Vixie for implementing the version of crontab that croncat is based on, without his early pioneering we would not have such a simple solution for common system tasks. [Source](https://en.wikipedia.org/wiki/Cron#Modern_versions)
+We owe the utmost respect to Paul Vixie for implementing the version of crontab that CronCat is based on, without his early pioneering we would not have such a simple solution for common system tasks. [Source](https://en.wikipedia.org/wiki/Cron#Modern_versions)
 
 ## What Is The Core Value Proposition Of CronCat? 
-CronCat aims to bring decentralized automation to every decentralized application. Without croncat, applications must utilize user-invoked transactions at the time of execution or run a trusted server that signs transactions on behalf of the users in a centralized manner. CronCat utilizes a network of users to execute transactions at the specific time needed in a sandboxed proxy setup. This opens up a layer of extra capabilities and freedom to application developers that previously relied on user interactions to trigger core functionality.
+CronCat aims to bring decentralized automation to every decentralized application. Without CronCat, applications must utilize user-invoked transactions at the time of execution or run a trusted server that signs transactions on behalf of the users in a centralized manner. CronCat utilizes a network of users to execute transactions at the specific time needed in a sandboxed proxy setup. This opens up a layer of extra capabilities and freedom to application developers that previously relied on user interactions to trigger core functionality.
 
 ### Key Benefits:
-* Decentralized Automation
-* End-to-end Blockchain Execution
-* Economically Sustainable
+* Decentralized automation
+* End-to-end blockchain execution
+* Economically sustainable
 
-## CronCat Economics: A Simple Snapshot
-**The underlying ethos of the CronCat crypto-economic design is to** create a utility service that enables an autonomous business built around (1) micropayments for runtime and (2) earned interest as a basis for operational costs.
+## CronCat Economics
 
-The economics of CronCat are aimed at achieving the above ethos by self-maintaining collateral movements (i.e. the Cron DAO will manage locked native tokens scheduled on a contract), and by DAO approved settings (i.e. DAO vote on how the interest from the tokens will be utilized to enhance and improve CronCat). Importantly, CronCat is not focussed on becoming extremely profitable, but rather a stable building block for decentralized applications to utilize for core runtime logic. A full overview of the CronCat economics will be published in a separate document.
+### CronCat DAO
 
-In general, Cron economics follows three core models.
+**The underlying ethos of the CronCat crypto-economic design is to** create a utility service that enables an autonomous business built around micropayments during task execution. In the near future, CronCat will launch a marketplace where end users can create "recipes" which are useful task strategies. Individuals who may be less technically savvy can then purchase a recipe (one-time) and use it whenever they wish. When the marketplace is launched, the CronCat DAO will take a small percentage, just the like the recipe creator. A full overview of the CronCat economics will be published in a separate document.
 
-### 1. Application Model
-* Applications will deposit some amount of collateral at task creation time.
-* Application will pay a small fee on top of the regular transaction gas fee.
-
-### 2. Agent Model
-* Agents will accrue rewards for running tasks, the balance being maintained and held within the cron manager contract until the agent withdraws rewards earned.
-* Agents will maintain enough balance to pay for transaction execution, making reward withdrawals when it is most efficient for their needs.
-
-### 3. Cron Core Model
-* Cron will maintain an escrow-style contract that acts as a treasury for deposited task balances.
-* Treasury balances will be broken up into buckets of immediate use, interest earning collateral and DAO holdings. 
-* Cron will maintain an ongoing treasury task for rebalancing each bucket holdings based on upcoming task execution needs.
+### Agent network
+* Agents will accrue rewards for running tasks, the balance being maintained and held within the CronCat [Manager contract](https://github.com/CronCats/cw-croncat/tree/211b829b3c719c3e7bbfef30c7d637e2ba8ccfaa/contracts/croncat-manager) until the agent withdraws rewards earned.
+* Agents will maintain enough balance to pay for transaction execution, making reward withdrawals when it is most efficient for their needs. (There is also a setting to auto-withdraw once the balance reaches a threshold.)
 
 # Long Term Vision & Future Development Plans
 ## 1. Long term viability
-Cron aims to achieve self-sustainability by a balance of both agents running tasks and task creators utilizing Cron with an increasing number of dApps and contracts. By design, cron allows task creators the freedom to utilize cron with minimal additional cost. This however, also provides a problem for the agents, as there must be enough tasks to warrant running the cron agent scripts. This problem is addressed by establishing phases of growth so the agent / task ratio maintains a semi-lucrative baseline. Such tiers of growth - and the timing of opening up new slots for future agents - will be managed by the Cron DAO. A brief overview of the main three phases is explained below: 
+CronCat will achieve self-sustainability by a balance of both agents running tasks and task creators utilizing CronCat with an increasing number of dApps and contracts. By design, this allows task creators the freedom to utilize automation with minimal additional cost. This however, also provides a problem for the agents, as there must be enough tasks to warrant running the agent daemon. This problem is addressed by establishing phases of growth so the agent / task ratio maintains a semi-lucrative baseline.
 
-**Phase 1**: In the very first phase, CronCat will incentivize new task creators, by allowing them to set up tasks with free fees or cron-matched budgets. The task threshold goal will be to achieve a minimum of 100 tasks per agent per day. This allows the cron service to maintain a steady availability of new agent seats as well as non-competing task execution. Task creators will receive a specific permission level within the cron DAO, to align the task execution costs with the needs of the community.
+This agent/task ratio is [set in configuration](https://github.com/CronCats/cw-croncat/blob/211b829b3c719c3e7bbfef30c7d637e2ba8ccfaa/packages/croncat-sdk-agents/src/types.rs#L77) on the Agents contract, and can be updated only by the CronCat DAO. This allows CronCat to be nimble and adaptive as tasks and agents increase.
 
-**Phase 2**: The second phase incentivizes the onboarding of Cron task agents. As mentioned above, agents will be allowed to onboard as the amount of tasks increases. Agents will be responsible for holding enough tokens to pay for the execution of tasks, and withdrawing their rewards to recoup the costs. Early agents will be incentivized by receiving rare NFTs and swag, in a first-come first-serve fashion. Agents will also receive a specific permission level within the cron DAO, to align the agents needs/wants with the community as a whole. Notably, agents should not expect to gain large sums for task execution, but rather a small profit by leaving a raspberry pi running for a year.
+Such tiers of growth — and the timing of opening up new slots for future agents — will be managed by the CronCat DAO, which lives on Juno network on DAO DAO. A brief overview of the main three phases is explained below: 
 
-**Phase 3**: The third phase will incentivize community growth via the Cron DAO. Cron believes in a diversified decentralized runtime, which will be maintained using only DAO based actions. The DAO governs the settings of Cron, maintains the development and most importantly provides community incentives for growth. Growth can happen by community members owning task onboarding, agent onboarding, developer tutorials & examples, publishing social marketing materials and more. The DAO will not issue a token, but rather grant participants higher levels of access in the governance process. This mitigates the issues with collateral creating friction early on, and gives believers in the project the power to make it more sustainable.
+**Phase 1**: In the very first phase, CronCat's first steps includes integration with dApps like [DAO DAO](https://daodao.zone/), [Vectis DAO](https://www.vectis.space), [Abstract OS](https://abstract.money), and numerous DeFi platforms. (And you! Please visit the examples section, or DM us on Twitter [@croncats](https://twitter.com/croncats).)
 
-## 2. Staking Profits
-Cron intentionally does not incur any task fees, as a way to make task execution cost cheaper. This means that the cron DAO and ongoing development needs to be funded by philanthropy or volunteers unless there is a different business model. Each task requires some amount of deposited collateral, which will sit unused until the task execution time slot.
+Progressive decentralization will be the approach for agents. You can read more about that [here](/docs/agents-cosmos).
 
-Cron will utilize the bulk of deposited funds for earning staked interest. Cron will maintain staked and available collateral by utilizing a cron task that calculates the forward-looking needs of task executions and re-allocating or removing staked balance. The interest earned by staked balances will be moved into a DAO-controlled escrow / treasury which will be used for furthering the cron service. Staking is currently not implemented, and will require the Cron DAO to make the necessary budget to develop this feature.
+**Phase 2**: The second phase will open up the agent registration to the public, incentivizing the onboarding new agents. As mentioned above, agents will be allowed to onboard as the amount of tasks increases. Agents will be responsible for holding enough tokens to pay for the execution of tasks. As they fulfill tasks, their performance metrics are updated. If agents stop fulfilling tasks for a given period, they will be removed from the active set, and a registered agent in the pending queue will be allowed in.
 
-## 3. Future Payments & Token Integrations
-Today, Cron only accepts the blockchain's native token for task creation and agent rewards. Cron believes that the growing DeFi and token space will continue to evolve and maintain coveted tokens that are in themselves of value to agents and cron. By enabling tasks to be created by any token that has native or high liquidity profile currency backing, tasks have the flexibility to be maintained by an applications native token. The token exchange rate must be provided by a DAO whitelisted DEX.
-
-Tokens backing task runtime will be used by cron potentially for earning interest in LP positions, token farming or other means of interest bearing holdings. Cron DAO will be allowed to maintain a list of tokens it will accept as reward for task execution. Token support is currently not implemented, and will require DAO to make the necessary budget to develop this feature.
+**Phase 3+**: CronCat has many avenues of growth including running a validator with special incentives, incorporating notification systems, MEV partnerships with protocols like [Skip](https://skip.money), and pushing interchain accounts (ICA) forward.

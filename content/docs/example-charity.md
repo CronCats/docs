@@ -97,7 +97,7 @@ You will notice three important things:
 
 [View full task creation details here](/docs/task-creation)
 
-Now that the task has been registered with the cron manager, the task will now be triggered/executed by the croncat agents at the scheduled time! 
+Now that the task has been registered with the cron manager, the task will now be triggered/executed by the CronCat agents at the scheduled time! 
 
 **Hooray!**
 

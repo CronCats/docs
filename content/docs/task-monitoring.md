@@ -1,5 +1,5 @@
 ---
-description: 'Watch tasks in croncat and access configuration'
+description: 'Watch tasks in CronCat and access configuration'
 sidebar: 'docs'
 prev: '/docs/task-creation/'
 next: '/docs/contract-integration/'

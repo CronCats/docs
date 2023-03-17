@@ -9,7 +9,7 @@ next: '/docs/example-charity/'
 
 [View Full Source](https://github.com/Cron-Near/contracts/tree/main/examples/counter)
 
-Increase or decrease an integer every 30 minutes with croncat! This example shows how a task can have recurring execution and you can view state that is changing over time (the count increases!).
+Increase or decrease an integer every 30 minutes with CronCat! This example shows how a task can have recurring execution and you can view state that is changing over time (the count increases!).
 
 ## Contract Source Example
 
@@ -80,7 +80,7 @@ You will notice three important things:
 
 [View full task creation details here](/docs/task-creation)
 
-Now that the task has been registered with the cron manager, the task will now be triggered/executed by the croncat agents at the scheduled time! 
+Now that the task has been registered with the cron manager, the task will now be triggered/executed by the CronCat agents at the scheduled time! 
 
 **Hooray!**
 
