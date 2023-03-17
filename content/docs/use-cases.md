@@ -101,5 +101,5 @@ Upon each state channel chain update (snapshot or close), the state & transactio
 
 ## Further Possibilities
 
-The use cases seem endless for cron, when there is some functionality that needs execution beyond the context of a single transactions maximum execution threshold (which is limited economically by gas). We would love to see what you can come up with that utilizes Near Cron!
+The use cases seem endless for CronCat tasks, when there is some functionality that needs execution beyond the context of a single transactions maximum execution threshold (which is limited economically by gas). We would love to see what you can come up with that utilizes CronCat!
 

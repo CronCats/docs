@@ -31,8 +31,6 @@ module.exports = {
               '/docs/',
               '/docs/use-cases/',
               '/docs/values-vision/',
-              '/docs/croncat-dao/',
-              '/docs/join-croncat/',
               '/docs/deployed-contracts/',
             ],
           },

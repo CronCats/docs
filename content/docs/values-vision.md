@@ -2,7 +2,7 @@
 description: 'The definitive guide to fundamentals, use cases, values & vision'
 sidebar: 'docs'
 prev: '/docs/use-cases/'
-next: '/docs/croncat-dao/'
+next: '/docs/deployed-contracts/'
 ---
 
 # Values & Vision
@@ -42,4 +42,4 @@ Progressive decentralization will be the approach for agents. You can read more 
 
 **Phase 2**: The second phase will open up the agent registration to the public, incentivizing the onboarding new agents. As mentioned above, agents will be allowed to onboard as the amount of tasks increases. Agents will be responsible for holding enough tokens to pay for the execution of tasks. As they fulfill tasks, their performance metrics are updated. If agents stop fulfilling tasks for a given period, they will be removed from the active set, and a registered agent in the pending queue will be allowed in.
 
-**Phase 3+**: CronCat has many avenues of growth including running a validator with special incentives, incorporating notification systems, MEV partnerships with protocols like [Skip](https://skip.money), and pushing interchain accounts (ICA) forward.
+**Phase 3+**: CronCat has many avenues of growth including running a validator with special incentives, incorporating notification systems, MEV partnerships with protocols like [Skip](https://skip.money), and pushing interchain accounts (ICA) forward through deep integration.
