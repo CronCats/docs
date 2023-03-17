@@ -113,4 +113,11 @@ module.exports = {
       options: {},
     },
   ],
+  transformers: {
+    remark: {
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
+    }
+  }
 }

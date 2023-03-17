@@ -1,0 +1,8 @@
+html body .container .language-rust,
+html body .container .language-bash,
+html body .container .language-text,
+html body .container .language-js,
+html body .container .language-ts {
+    background: ghostwhite;
+    text-shadow: none;
+}
