@@ -21,14 +21,23 @@ For dApp integration, let's highlight some useful methods.
 
 ## Integration methods
 
+The queries listed below do not cover every message available for the factory contract. Instead, these highlight queries that integrating dApps/frontends will likely want to use, to take advantage of the architecture and ensure task creation, refilling, and withdrawal happen on the most up-to-date CronCat contracts. 
+
 ### `latest_contracts`
 
-This method returns all CronCat contract addresses with their version information, but only the latest version. It's considered best practice to always query for the latest contract address instead of, say, hardcoding a Tasks contract address in your dApp. This way, when improvements are added to new versions, your dApp can leverage the full power of automation as it gets better and better.
-
-#### CosmWasm
-
-
+This query method returns all CronCat contract addresses with their version information, but only the latest version. It's considered best practice to always query for the latest contract address instead of, say, hardcoding a Tasks contract address in your decentralized app. This way, when improvements are added to new versions, your dApp can leverage the full power of automation as it gets better and better.
 
 ### `latest_contract`
 
-Similar to `latest_contracts`, this method
+Similar to `latest_contracts`, this query returns one contract address based on the parameter `contract_name`. At the time of this writing, these contract keys are `String`s including:
+
+- `"tasks"` — this is likely the most common contract an integrating dApp will query for, since it contains the methods specific to task creation, refill of native tokens, and task removal. See more details in [the tasks section](/docs/contracts-tasks).
+- `"agents"` — as explained in [the agents section](/docs/contracts-agents), this contains logic essential for the CronCat agent network, who participate in fulfilling tasks at the proper time.
+- `"manager"` — the manager contract is a bit different from the others in that it contains the `proxy_call` method, which is what agents call to fulfill tasks, but it also executes methods sent from other CronCat contracts. For instance, the process of removing a task uses logic from the the tasks and the manager contract.
+
+## Remaining methods
+
+For other methods, please see the crate's documentation:
+
+- [Factory execute methods](https://docs.rs/croncat-sdk-manager/latest/croncat_sdk_manager/msg/enum.ManagerExecuteMsg.html)
+- [Factory query methods](https://docs.rs/croncat-sdk-manager/latest/croncat_sdk_manager/msg/enum.ManagerQueryMsg.html)

@@ -30,8 +30,8 @@ Without CronCat, applications must utilize user-invoked transactions at the time
 * Agents will accrue rewards for running tasks, the balance being maintained and held within the CronCat [Manager contract](https://github.com/CronCats/cw-croncat/tree/211b829b3c719c3e7bbfef30c7d637e2ba8ccfaa/contracts/croncat-manager) until the agent withdraws rewards earned.
 * Agents will maintain enough balance to pay for transaction execution, making reward withdrawals when it is most efficient for their needs. (There is also a setting to auto-withdraw once the balance reaches a threshold.)
 
-# Long Term Vision & Future Development Plans
-## 1. Long term viability
+## Long Term Vision & Future Development Plans
+
 CronCat will achieve self-sustainability by a balance of both agents running tasks and task creators utilizing CronCat with an increasing number of dApps and contracts. By design, this allows task creators the freedom to utilize automation with minimal additional cost. This however, also provides a problem for the agents, as there must be enough tasks to warrant running the agent daemon. This problem is addressed by establishing phases of growth so the agent / task ratio maintains a semi-lucrative baseline.
 
 This agent/task ratio is [set in configuration](https://github.com/CronCats/cw-croncat/blob/211b829b3c719c3e7bbfef30c7d637e2ba8ccfaa/packages/croncat-sdk-agents/src/types.rs#L77) on the Agents contract, and can be updated only by the CronCat DAO. This allows CronCat to be nimble and adaptive as tasks and agents increase.
