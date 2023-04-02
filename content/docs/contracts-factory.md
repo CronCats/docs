@@ -21,13 +21,15 @@ For dApp integration, let's highlight some useful methods.
 
 ## Integration methods
 
-The queries listed below do not cover every message available for the factory contract. Instead, these highlight queries that integrating dApps/frontends will likely want to use, to take advantage of the architecture and ensure task creation, refilling, and withdrawal happen on the most up-to-date CronCat contracts. 
+The queries listed below do not cover every message available for the factory contract. Instead, these highlight queries that integrating dApps/frontends will likely want to use, to take advantage of the architecture and ensure task creation, refilling, and withdrawal happen on the most up-to-date CronCat contracts.
 
-### `latest_contracts`
+### Queries
+
+#### `latest_contracts`
 
 This query method returns all CronCat contract addresses with their version information, but only the latest version. It's considered best practice to always query for the latest contract address instead of, say, hardcoding a Tasks contract address in your decentralized app. This way, when improvements are added to new versions, your dApp can leverage the full power of automation as it gets better and better.
 
-### `latest_contract`
+#### `latest_contract`
 
 Similar to `latest_contracts`, this query returns one contract address based on the parameter `contract_name`. At the time of this writing, these contract keys are `String`s including:
 
@@ -37,7 +39,7 @@ Similar to `latest_contracts`, this query returns one contract address based on 
 
 ## Remaining methods
 
-For other methods, please see the crate's documentation:
+The majority of the factory methods are not helpful in integration and will be omitted. For details on the other methods, please see the crate's documentation:
 
 - [Factory execute methods](https://docs.rs/croncat-sdk-manager/latest/croncat_sdk_manager/msg/enum.ManagerExecuteMsg.html)
 - [Factory query methods](https://docs.rs/croncat-sdk-manager/latest/croncat_sdk_manager/msg/enum.ManagerQueryMsg.html)

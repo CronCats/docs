@@ -50,6 +50,8 @@ let croncat_task = TaskRequest {
 };
 ```
 
+### Task fields
+
 Going over each field for this task:
 
 - `interval` — "Do this every 1 block, please." See the other Interval types here: xxx
