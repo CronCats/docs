@@ -31,44 +31,41 @@ module.exports = {
               '/docs/',
               '/docs/use-cases/',
               '/docs/values-vision/',
-              '/docs/deployed-contracts/',
             ],
+          },
+          {
+            title: 'Smart contracts',
+            items: [
+              '/docs/deployed-contracts/',
+              '/docs/contracts-factory/',
+              '/docs/contracts-manager/',
+              '/docs/contracts-tasks/',
+              '/docs/contracts-agents/',
+            ]
           },
           {
             title: 'Tasks',
             items: [
               '/docs/task-creation/',
               '/docs/task-monitoring/',
-              '/docs/contract-integration/',
             ],
           },
           {
             title: 'Examples',
             items: [
               '/docs/examples/',
-              '/docs/example-counter/',
-              '/docs/example-charity/',
-              '/docs/example-airdrop/',
-              '/docs/example-indexer/',
             ],
           },
-          {
-            title: 'Tutorials',
-            items: [
-              '/docs/tutorials/',
-            ],
-          },
+          // { Would like to keep this and uncomment later
+          //   title: 'Tutorials',
+          //   items: [
+          //     '/docs/tutorials/',
+          //   ],
+          // },
           {
             title: 'Agent',
             items: [
               '/docs/agents-cosmos/',
-              '/docs/pre-reqs-agent/',
-              '/docs/agent-changelog/',
-              '/docs/agent-cli/',
-              '/docs/agent-faq/',
-              '/docs/agent-docker/',
-              '/docs/env-file/',
-              '/docs/validator-croncat/',
             ],
           },
         ],

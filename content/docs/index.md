@@ -52,8 +52,6 @@ CronCat brings decentralized automation to every decentralized application or co
 
 If you want to utilize CronCat in your dApp or project: [Start Here](/docs/task-creation)
 
-If you want your deployed contract to directly schedule cron tasks: [Read More](/docs/contract-integration)
-
 ## For Agents
 [agents]: #agents
 

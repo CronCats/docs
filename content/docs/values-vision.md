@@ -2,7 +2,6 @@
 description: 'The definitive guide to fundamentals, use cases, values & vision'
 sidebar: 'docs'
 prev: '/docs/use-cases/'
-next: '/docs/deployed-contracts/'
 ---
 
 # Values & Vision
@@ -10,8 +9,11 @@ next: '/docs/deployed-contracts/'
 ### Forward:
 We owe the utmost respect to Paul Vixie for implementing the version of crontab that CronCat is based on, without his early pioneering we would not have such a simple solution for common system tasks. [Source](https://en.wikipedia.org/wiki/Cron#Modern_versions)
 
-## What Is The Core Value Proposition Of CronCat? 
-CronCat aims to bring decentralized automation to every decentralized application. Without CronCat, applications must utilize user-invoked transactions at the time of execution or run a trusted server that signs transactions on behalf of the users in a centralized manner. CronCat utilizes a network of users to execute transactions at the specific time needed in a sandboxed proxy setup. This opens up a layer of extra capabilities and freedom to application developers that previously relied on user interactions to trigger core functionality.
+## What is the Core Value Proposition of CronCat? 
+
+**CronCat aims to bring decentralized automation to every decentralized application.**
+
+Without CronCat, applications must utilize user-invoked transactions at the time of execution or run a trusted server that signs transactions on behalf of the users in a centralized manner. CronCat utilizes a network of users to execute transactions at the specific time needed in a sandboxed proxy setup. This opens up a layer of extra capabilities and freedom to application developers that previously relied on user interactions to trigger core functionality.
 
 ### Key Benefits:
 * Decentralized automation
