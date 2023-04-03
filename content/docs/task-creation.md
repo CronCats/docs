@@ -1,7 +1,7 @@
 ---
 description: 'Create a task in CronCat specifying different configuration params'
 sidebar: 'docs'
-prev: '/docs/'
+prev: '/docs/task-anatomy/'
 next: '/docs/task-monitoring/'
 ---
 

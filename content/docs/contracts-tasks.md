@@ -9,7 +9,7 @@ next: '/docs/contracts-agents/'
 
 As the name implies, the tasks contract contains core logic dealing with CronCat tasks. Tasks are the fundamental entity that end users and/or integrating contracts create, describing in detail what "actions" should occur, and under which conditions, if any.
 
-You may review the [task fields section](/docs/examples/#task-fields) for details explanations on what's involved in a CronCat task.
+You may review the [anatomy of a task](/docs/task-anatomy/) for details explanations on what's involved in the fields of a CronCat task.
 
 As mentioned in the [manager section](/docs/contracts-manager#shared-logic), there exists an interplay between the tasks contract and the manager contract, since the manager contract contains the stored tokens associated with a task.
 
@@ -67,7 +67,7 @@ This method takes one argument, `task`, which is a [TaskRequest struct](https://
 
 CronCat automation uses a decentralized agent network, which run a lightweight daemon that automatically executes transactions at the proper moment defined in the tasks. The agents are paid a small percentage above the total gas sent in their transactions. When creating a task, you must attach native tokens with the creation of the task, as a means of participating in the incentivized network.
 
-Please see the list of [task fields](/docs/examples/#task-fields) included in the examples section. 
+Please see the [anatomy of a task](/docs/task-anatomy/) for further details. 
 
 A task can stop by:
 
