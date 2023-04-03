@@ -61,3 +61,27 @@ This query takes one argument, `task` which is a [Task struct](https://docs.rs/c
 
 #### `create_task`
 
+This is one of the more important methods, since it creates the CronCat task that'll execute exactly as designated according to the fields provided.
+
+This method takes one argument, `task`, which is a [TaskRequest struct](https://docs.rs/croncat-sdk-tasks/latest/croncat_sdk_tasks/types/struct.TaskRequest.html).
+
+CronCat automation uses a decentralized agent network, which run a lightweight daemon that automatically executes transactions at the proper moment defined in the tasks. The agents are paid a small percentage above the total gas sent in their transactions. When creating a task, you must attach native tokens with the creation of the task, as a means of participating in the incentivized network.
+
+Please see the list of [task fields](/docs/examples/#task-fields) included in the examples section. 
+
+A task can stop by:
+
+1. The owner setting the `stop_on_fail` field to `true`, and upon execution of the task, a task action fails (returning a non-zero code)
+2. A task having an interval of `Once` and successfully completing its execution.
+3. A task becoming invalid by defining an end-boundary for a time of block that has elapsed.
+4. The owner removing the task by calling the `remove_task` method.
+
+When a task stops or is removed, the remaining balance (in native and fungible tokens) is returned to the owner.
+
+**Note**: for security purposes, a task hash must be unique. This means immediately attempting to create the same task twice will fail, and this is expected. If you wish to extend a recurring task or add more balance to an existing task, please see the available [methods on the manager contract](/docs/contracts-manager/#execute-methods), which is the contract that stores funds necessary for operation.
+
+#### `remove_task`
+
+This method can only be called by the owner of an existing task, removing it and returning the remaining balance of native and fungible tokens included with the task.
+
+It takes one argument, `task_hash`, and will remove the task from state and signal the manager smart contract to return the remaining balances.
