@@ -42,10 +42,22 @@ This query also takes one argument, `account_id`, returning information about th
 
 #### `register_agent`
 
-This method is called to register an agent. There is an option argument, `payable_account_id`, where a beneficiary of the rewards can be set. 
+This method is called to register an agent. There is an option argument, `payable_account_id`, where a beneficiary of the rewards can be set. If no argument is provided, the sender will be set as the beneficiary.
 
 When public registration is enabled, any interchain account that has passed the necessary requirements can call this method. Agents will likely be placed in the pending queue after calling this method, and will want to check their status by querying with `get_agent`. When the status comes back as `Nominated` the agent can proceed to call `check_in_agent`.
 
 #### `check_in_agent`
 
+When an [agent's status](https://docs.rs/croncat-sdk-agents/latest/croncat_sdk_agents/types/enum.AgentStatus.html) becomes `Nominated`, the agent will want to call this method. The method will confirm on-chain logic, then add the agent into active set, changing its status to `Active`.
 
+There are configuration values that help maintain a reasonable number of agents based on the amount of total tasks. If the number of tasks were to rise significantly for a few months and then experience a dip, it's expected behavior that some agents would be removed. This is why the agent daemon is checking its status regularly, and will automatically call this method when it needs to.
+
+#### `unregister_agent`
+
+An agent may wish to stop participating in the agent network and unregister. They call this method from the agent address and it will remove them from the active set, sending remaining rewards if applicable. In the case that an agent wishes to unregister, but are no longer active, provide this optional argument and value: `from_behind: true`. See the [crate documentation](https://docs.rs/croncat-sdk-agents/latest/croncat_sdk_agents/msg/enum.ExecuteMsg.html#variant.UnregisterAgent) for more details.  
+
+#### `update_agent`
+
+When registering, an agent can provide an optional `payable_account_id`. This address will receive the rewards when the agent calls the [`agent_withdraw` method](/docs/contracts-manager/#agent_withdraw) on the manager contract, which is the contract holding essential funds.
+
+This method allows an agent to update their beneficiary account, by providing a new `payable_account_id`.

@@ -44,3 +44,7 @@ An owner may refill the native tokens attached to their task. It takes one argum
 #### `refill_task_cw20_balance`
 
 Similar to the previous method, this refills cw20 balances that are included in the task, if called by the owner.
+
+#### `agent_withdraw`
+
+When an agent wishes to withdraw their rewards, they call this method. Note that this method lives in the manager contract since it's where all essential funds are stored, including the agent rewards. The rewards will be sent to the agent's `payable_account_id`.
