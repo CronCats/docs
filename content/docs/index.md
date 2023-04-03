@@ -56,3 +56,8 @@ If you want to utilize CronCat in your dApp or project: [Start Here](/docs/task-
 [agents]: #agents
 
 If you want to run CronCat agent and earn rewards: [Start Here](/docs/agents-cosmos)
+
+## Other Resources
+
+- [Osmosis Ecosystem Spotlight](https://medium.com/osmosis/osmosis-ecosystem-spotlight-croncat-cd52862790d2) blog. This contains explanations of how CronCat works, though it was written before some incredible enhancements like the queries and transforms that allow for "if-this-then-that" functionality.
+

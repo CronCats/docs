@@ -46,6 +46,7 @@ module.exports = {
           {
             title: 'Tasks',
             items: [
+              '/docs/task-anatomy/',
               '/docs/task-creation/',
               '/docs/task-monitoring/',
             ],

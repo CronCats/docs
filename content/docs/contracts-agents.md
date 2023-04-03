@@ -6,15 +6,35 @@ prev: '/docs/contracts-tasks/'
 
 # Agents contract
 
-The agent network consists of folks running the [agent daemon](https://github.com/CronCats/croncat-rs), and registering to be an agent. In the early launch of CronCat on the interchain, progressive decentralization will occur. Details to this process and decision [are covered here](/docs/agents-cosmos/#launch-plan).
+The agent network consists of folks running the [agent daemon](https://github.com/CronCats/croncat-rs), and registering to be an agent. Agents earn rewards based on a percentage of the gas spent each time they fulfill a task. In the early launch of CronCat on the interchain, progressive decentralization will occur. Details to this process and decision [are covered here](/docs/agents-cosmos/#launch-plan).
 
 When progressive decentralization is activated, the public will be able to run a CronCat agent.
+
+The agents contract keeps track of:
+
+- Which agents are active
+- Which agents are pending
+- Each agent's "track record" for fulfilling tasks
+
+## Agent status
 
 Every agent has a status (the [AgentStatus enum](https://docs.rs/croncat-sdk-agents/latest/croncat_sdk_agents/types/enum.AgentStatus.html)):
 
 - `Active` — Active agents are "on the hook" for fulfilling tasks on time. Active agents that do not fulfill their expected responsibility risk being removed.
 - `Pending` — Pending agents have registered, but at the time of registration, it was not necessary to include them in the active set. This logic is based on factors including the agent configuration's [`min_tasks_per_agent` field](https://docs.rs/croncat-sdk-agents/latest/croncat_sdk_agents/types/struct.Config.html#structfield.min_tasks_per_agent). 
 - `Nominated` — A nominated agent is able to join the active set. When an agent queries their status and the response tells them they're nominated, the next step is to call `check_in_agent`.
+
+## Agent configuration
+
+The agent contract also contains configuration that can only be updated by the CronCat factory contract, controlled solely by the CronCat DAO. This configuration includes items like:
+
+- `min_tasks_per_agent` — This is essentially used as a ratio, "one agent should handle this many tasks, if not more." It is used to determine when to let a pending agent into the active set.
+
+- `agent_nomination_duration` — When tasks increase such that a new agent can be let in, we cannot guarantee that the first pending agent is still online and will respond. We must wait a given duration before opening up the slot to the next person in line, and the next… This field determines that waiting duration.
+
+- `min_coins_for_agent_registration` — There's a small check during agent registration to ensure there's a minimal, base amount making them capable of performing as an agent. This will use the `denom` associated with the manager contract.
+
+- `agents_eject_threshold` — If an agent is offline or otherwise unresponsive, they may be ejected. (**Note**: an active agent may also be removed if there becomes an imbalance between the number of tasks and agents.)
 
 ## Integration methods
 

@@ -16,7 +16,7 @@ The website is the easiest for quickly viewing all active tasks and providing de
 
 Using the CLI, you can access a task directly, however it will require a hash of the task. You obtain the hash at the creation of each task (as noted in [task creation](/docs/task-creation)).
 
-Once you have a task hash, and know the version of the Tasks contract you created, you can a command similar to this to retrieve the current status and other details:
+Once you have a task hash, and know the version of the tasks contract you created, you can a command similar to this to retrieve the current status and other details:
 
 ```bash
 junod q wasm contract-state smart juno1g4xg47yzytu79hslsw2wlw0r6sz5unpf4ln3jjjlg7rfy2nl9n7s9a52n7 '{"task":{"task_hash":"juno:564d9acab76c256659634415d14625812103bc8e87308c5c3c290045e17"}}'

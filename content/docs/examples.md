@@ -23,7 +23,7 @@ Let's talk about this simple demonstration and it's components.
 
 Following the README in the **boolean contract caller** example, you can deploy and experiment with an existing boolean contract on Juno testnet, utilizing the CronCat contracts and agents live on that network. When instantiating the example contract, you'll provide two arguments, `croncat_factory_address` and `boolean_address`, which are the addresses to those contract.
 
-CronCat uses a factory architecture built to handle future contract migrations and version upgrades. This means that dApps integrating with CronCat to utilize automation will simply call the Factory contract, asking for the latest version of the contract they wish to call. Practically speaking, this typically means querying the Factory, asking for the address to the latest Tasks contract, which is where we'll be creating a new CronCat task.
+CronCat uses a factory architecture built to handle future contract migrations and version upgrades. This means that dApps integrating with CronCat to utilize automation will simply call the Factory contract, asking for the latest version of the contract they wish to call. Practically speaking, this typically means querying the Factory, asking for the address to the latest tasks contract, which is where we'll be creating a new CronCat task.
 
 CronCat tasks are quite powerful, having granular options to help specify the exact needs of the creator. Pay attention to the `TaskRequest` object created in the boolean contract caller example. You'll note that there are several unused fields, like the ones with a value of `None`.
 
@@ -52,15 +52,17 @@ let croncat_task = TaskRequest {
 
 ### Task fields
 
-Going over each field for this task:
+Going over each field for this example task:
 
-- `interval` — "Do this every 1 block, please." See the other Interval types here: xxx
-- `boundary` — There's no beginning or ending boundaries, but you can define a valid window if you wish. These can be defined by block heights or by timestamps. xxx
+- `interval` — "Do this every 1 block, please."
+- `boundary` — There's no beginning or ending boundaries, but you can define a valid window if you wish. These can be defined by block heights or by timestamps.
 - `stop_on_fail` — If the contract I call fails, consider this task done, returning remaining balance to the owner.
 - `actions` — We can provide multiple Actions (Cosmos messages) but only have one in the example above. For security purposes, not every Cosmos message is allowed, with new messages being added after careful scrutiny. At the time of this writing, the two Cosmos messages that are allowed are Wasm Execute and Bank messages. (See `validate_msg_calculate_usage` where this is enforced, and where updates will occur.)
 - `queries` — For event-based tasks, you may provide any query and even capture the value and use it elsewhere in the task.
 - `transforms` — Like queries, transforms dictate how a query value is injected into an Action or subsequent queries.
 - `cw20` — Optional cw20's included in this task.
+
+**Note**: see the [Anatomy of a Task section](/docs/task-anatomy/) for further details on these fields.
 
 ## Create task from the CLI
 
