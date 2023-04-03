@@ -192,7 +192,7 @@
             Decentralized Execution
           </h3>
           <p class="text-lg text-left">
-            All tasks are triggered by a network of croncat agents. Your task parameters are sandboxed away from any tampering.
+            All tasks are triggered by a network of CronCat agents. Your task parameters are sandboxed away from any tampering.
           </p>
         </div>
       </div>
@@ -225,7 +225,7 @@ export default {
   metaInfo() {
     const title = 'Croncat - Developer Docs'
     const description =
-      'Schedule tasks for any contract using standard cron expression, executed by a decentralized network of croncat agents. Useful for subscriptions, auctions & more'
+      'Schedule tasks for any contract using standard cron expression, executed by a decentralized network of CronCat agents. Useful for subscriptions, auctions & more'
     const ogImage = 'https://docs.cron.cat/OG_Image.png'
 
     return {

@@ -1,124 +1,95 @@
 ---
 description: 'Actively maintained contracts by network'
 sidebar: 'docs'
-previous: '/docs/join-croncat/'
 ---
 
 # Deployed Contracts
 
-Here are the deployed contracts on each network supporting Croncat:
+Here are the deployed contracts on each network supporting CronCat:
 
-## Interchain (Cosmos blockchains)
-
-The [CosmWasm smart contract(s)](https://github.com/CronCats/cw-croncat) will be deployed to the [Juno network](https://www.junonetwork.io) first, with other networks in the interchain following.
-
+<!-- This section intentionally commented out until we resolve an FFI error currently under investigation by the Neutron team.
 ## Neutron
 
 #### Factory
 
-| Network | Contract address                                                                                    | Live |
-|----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | `` | [✕] |
-| Testnet | `neutron1wr6vc3g4caz9aclgjacxewr0pjlre9wl2uhq73rp8mawwmqaczsq5smp3h` | [✕] |
+| Network | Contract address                                                     |
+|----|----------------------------------------------------------------------|
+| Mainnet | Soon™                                                                |
+| Testnet | `neutron1wr6vc3g4caz9aclgjacxewr0pjlre9wl2uhq73rp8mawwmqaczsq5smp3h` |
+
+#### Query latest contracts
+
+Testnet 
+
+    neutrond q wasm contract-state smart neutron1wr6vc3g4caz9aclgjacxewr0pjlre9wl2uhq73rp8mawwmqaczsq5smp3h '{"latest_contracts":{}}' --node https://rpc.baryon.ntrn.info:443 --chain-id baryon-1
+
+-->
 
 ## Juno
 
 #### Factory
 
-| Network | Contract address                                                                                    | Live |
-|----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | `` | [✕] |
-| Testnet | `juno1x82wr3jkfurkgm8za3vayjr5ty932vn8nsmauvkxe4n35aj632tq5lguvl` | [✕] |
+| Network | Contract address                                                  |
+|----|-------------------------------------------------------------------|
+| Mainnet | Soon™                                                             |
+| Testnet | `juno1qzkcegjce9ezy5afs043r8kdf50lkugcgdxqgp4a902mayefssws5n5ydu` |
+
+#### Query latest contracts
+
+Testnet
+
+    junod q wasm contract-state smart juno1qzkcegjce9ezy5afs043r8kdf50lkugcgdxqgp4a902mayefssws5n5ydu '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
 
 ## Osmosis
 
 #### Factory
 
-| Network | Contract address                                                                                  | Live |
-|----|---------------------------------------------------------------------------------------------------|----|
-| Mainnet | Soon™                                                                                             | [] |
-| Testnet | `osmo1j5tr7329ff843r7u6htjnghylecy3ejc5kxzk0p4yyfuhm5lwr2qa89pl8` (somewhat outdated, RPC issues) | [] |
+| Network | Contract address |
+|----|------------------|
+| Mainnet | Soon™            |
+| Testnet | `osmo1lg4yl42z56g8fw7j33ep29x5rmh5qyaeu03kyhvjtj4scyz8tvwsdtju04` |
+
+**Note**: at the time of this writing, the latest contracts are not on Osmosis testnet yet, as we wait for a deployment of [`chain-registry`](https://www.npmjs.com/package/chain-registry). Will be up soon!
+
+#### Query latest contracts
+
+Testnet
+
+    osmosisd q wasm contract-state smart osmo1lg4yl42z56g8fw7j33ep29x5rmh5qyaeu03kyhvjtj4scyz8tvwsdtju04 '{"latest_contracts":{}}' --node https://rpc.testnet.osmosis.zone:443 --chain-id osmo-test-4
 
 ## Stargaze
 
 #### Factory
 
-| Network | Contract address                                                                                                     | Live |
-|----|----------------------------------------------------------------------------------------------------------------------|------|
-| Mainnet | Soon™                                                                                                                | []   |
-| Testnet | `stars1ysuhjlsvwkazu4f43tfzk3a5afnlymx4znnxy7fx0e9d6nlluq9sqqu9rr` | [✕]  |
+| Network | Contract address                                                                                                     |
+|----|----------------------------------------------------------------------------------------------------------------------|
+| Mainnet | Soon™                                                                                                                |
+| Testnet | `stars1ahejlx0g8cz90a4jzcd8znmtrzncfrt0ckexrhtztmfcqm3nk4tsmunwn7` |
+
+#### Query latest contracts
+
+Testnet
+
+    starsd q wasm contract-state smart stars1ahejlx0g8cz90a4jzcd8znmtrzncfrt0ckexrhtztmfcqm3nk4tsmunwn7 '{"latest_contracts":{}}' --node https://rpc.elgafar-1.stargaze-apis.com:443 --chain-id elgafar-1
+
+<!-- There's currently an issue using the deploy scripts with Archway, tracked here:
+https://github.com/CronCats/cw-croncat/issues/393
+
+Once this is resolved we can uncomment this section and these contextual notes.
 
 ## Archway
 
 #### Factory
 
-| Network | Contract address                                                                                    | Live |
-|----|-----------------------------------------------------------------------------------------------------|----|
-| Mainnet | Soon™ | [] |
-| Testnet | `archway1g8s22s8mkgtu8p7zpy3lrmjl09jj76wkgl8c0xmt4hm7jc9vwq9qhk6u3t` | [] |
+| Network | Contract address                                                                                    |
+|----|-----------------------------------------------------------------------------------------------------|
+| Mainnet | Soon™ |
+| Testnet | `archway1g8s22s8mkgtu8p7zpy3lrmjl09jj76wkgl8c0xmt4hm7jc9vwq9qhk6u3t` |
 
----
+#### Query latest contracts
 
-## NEAR Protocol
+Testnet
 
-#### Manager
+    archwayd q wasm contract-state smart archway1g8s22s8mkgtu8p7zpy3lrmjl09jj76wkgl8c0xmt4hm7jc9vwq9qhk6u3t '{"latest_contracts":{}}' --node https://rpc.constantine-1.archway.tech:443 --chain-id constantine-1
 
-| Network | Contract Account | Live |
-|----|----|----|
-| Mainnet | [manager_v1.croncat.near](https://explorer.near.org/accounts/manager_v1.croncat.near) | [✕] |
-| Testnet | [manager_v1.croncat.testnet](https://explorer.testnet.near.org/accounts/manager_v1.croncat.testnet) | [✕] |
-| Guildnet | [manager_v1.croncat.guildnet](https://explorer.guildnet.near.org/accounts/manager_v1.croncat.guildnet) | [✕] |
-| Betanet | [manager_v1.croncat.betanet](https://explorer.betanet.near.org/accounts/manager_v1.croncat.betanet) | [ ] |
-
-### NEAR Manager Contract ABI:
-
-```json
-"manager": {
-  "viewMethods": [
-    "version",
-    "get_info",
-    "get_tasks",
-    "get_task",
-    "get_tasks_by_owner",
-    "get_slot_tasks",
-    "get_slot_ids",
-    "get_agent_tasks",
-    "get_agent",
-    "get_agent_ids",
-    "get_hash",
-    "validate_cadence"
-  ],
-  "changeMethods": [
-    "create_task",
-    "remove_task",
-    "proxy_call",
-    "register_agent",
-    "update_agent",
-    "unregister_agent",
-    "withdraw_task_balance"
-  ]
-}
-```
-
-### NEAR Rewards
-
-| Network | Contract Account | Live |
-|----|----|----|
-| Mainnet | [rewards.croncat.near](https://explorer.near.org/accounts/rewards.croncat.near) | [✕] |
-| Testnet | [rewards.cron.testnet](https://explorer.testnet.near.org/accounts/rewards.cron.testnet) | [✕] |
-| Guildnet | [rewards.croncat.guildnet](https://explorer.guildnet.near.org/accounts/rewards.croncat.guildnet) | [ ] |
-| Betanet | [rewards.croncat.betanet](https://explorer.betanet.near.org/accounts/rewards.croncat.betanet) | [ ] |
-
-### NEAR Rewards Contract ABI:
-
-```json
-"manager": {
-  "viewMethods": [
-    "version",
-    "stats"
-  ],
-  "changeMethods": [
-    "pet_check_task_ownership"
-  ]
-}
-```
+-->

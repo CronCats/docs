@@ -2,7 +2,8 @@
   <Layout>
     <div class="pt-8 md:pt-16">
       <h1 class="text-center font-bold text-4xl text-ui-primary">
-        Oh no! There is nothing here.
+        Oh no! There is nothing here.<br/>
+        #gmeow, btw.
       </h1>
     </div>
     <div class="mb-10 flex items-center justify-center">
@@ -16,7 +17,7 @@
 <script>
 export default {
   metaInfo: {
-    title: '404 - Nothing here',
+    title: '404 - Nothing here.',
   },
 }
 </script>

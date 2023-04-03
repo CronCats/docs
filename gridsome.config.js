@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'croncat',
+  siteName: 'CronCat',
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png',
@@ -31,46 +31,41 @@ module.exports = {
               '/docs/',
               '/docs/use-cases/',
               '/docs/values-vision/',
-              '/docs/croncat-dao/',
-              '/docs/join-croncat/',
-              '/docs/deployed-contracts/',
             ],
           },
           {
-            title: 'Agent',
+            title: 'Smart contracts',
             items: [
-              '/docs/pre-reqs-agent/',
-              '/docs/agent-changelog/',
-              '/docs/agent-cli/',
-              '/docs/agent-faq/',
-              '/docs/agent-docker/',
-              '/docs/env-file/',
-              '/docs/validator-croncat/',
-            ],
+              '/docs/deployed-contracts/',
+              '/docs/contracts-factory/',
+              '/docs/contracts-manager/',
+              '/docs/contracts-tasks/',
+              '/docs/contracts-agents/',
+            ]
           },
           {
             title: 'Tasks',
             items: [
               '/docs/task-creation/',
               '/docs/task-monitoring/',
-              '/docs/contract-integration/',
             ],
           },
           {
             title: 'Examples',
             items: [
               '/docs/examples/',
-              '/docs/example-counter/',
-              '/docs/example-charity/',
-              '/docs/example-airdrop/',
-              '/docs/example-indexer/',
             ],
           },
+          // { Would like to keep this and uncomment later
+          //   title: 'Tutorials',
+          //   items: [
+          //     '/docs/tutorials/',
+          //   ],
+          // },
           {
-            title: 'Tutorials',
+            title: 'Agent',
             items: [
-              '/docs/tutorials/',
-              '/docs/tutorials-pixel-pet/',
+              '/docs/agents-cosmos/',
             ],
           },
         ],
@@ -115,4 +110,11 @@ module.exports = {
       options: {},
     },
   ],
+  transformers: {
+    remark: {
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
+    }
+  }
 }
