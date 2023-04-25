@@ -7,23 +7,20 @@ sidebar: 'docs'
 
 Here are the deployed contracts on each network supporting CronCat:
 
-<!-- This section intentionally commented out until we resolve an FFI error currently under investigation by the Neutron team.
 ## Neutron
 
 #### Factory
 
-| Network | Contract address                                                     |
-|----|----------------------------------------------------------------------|
-| Mainnet | Soon™                                                                |
-| Testnet | `neutron1wr6vc3g4caz9aclgjacxewr0pjlre9wl2uhq73rp8mawwmqaczsq5smp3h` |
+| Network          | Contract address                                                     |
+|------------------|----------------------------------------------------------------------|
+| Mainnet          | Soon™                                                                |
+| Testnet (pion-1) | `neutron1sc3r0m8zxw34jfg5xtym8tuxg38n2efuazap8nzmcgrjfampc0vqp0lg55` |
 
 #### Query latest contracts
 
 Testnet 
 
-    neutrond q wasm contract-state smart neutron1wr6vc3g4caz9aclgjacxewr0pjlre9wl2uhq73rp8mawwmqaczsq5smp3h '{"latest_contracts":{}}' --node https://rpc.baryon.ntrn.info:443 --chain-id baryon-1
-
--->
+    neutrond q wasm contract-state smart neutron1sc3r0m8zxw34jfg5xtym8tuxg38n2efuazap8nzmcgrjfampc0vqp0lg55 '{"latest_contracts":{}}' --node https://rpc-palvus.pion-1.ntrn.tech:443 --chain-id pion-1
 
 ## Juno
 
@@ -31,23 +28,23 @@ Testnet
 
 | Network | Contract address                                                  |
 |----|-------------------------------------------------------------------|
-| Mainnet | Soon™                                                             |
-| Testnet | `juno1qzkcegjce9ezy5afs043r8kdf50lkugcgdxqgp4a902mayefssws5n5ydu` |
+| Mainnet | `juno1pm0nejzjq506vamesj64ryqr3ycyz8h45h5kvxjl24snq0x8pzfqep4uqm` |
+| Testnet | `juno124vcmqsukhmuy6psm45a2tdg5354rnemdetqhjt72ynju666gf0qpxmlxz` |
 
 #### Query latest contracts
 
 Testnet
 
-    junod q wasm contract-state smart juno1qzkcegjce9ezy5afs043r8kdf50lkugcgdxqgp4a902mayefssws5n5ydu '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
+    junod q wasm contract-state smart juno124vcmqsukhmuy6psm45a2tdg5354rnemdetqhjt72ynju666gf0qpxmlxz '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
 
 ## Osmosis
 
 #### Factory
 
-| Network | Contract address |
-|----|------------------|
-| Mainnet | Soon™            |
-| Testnet | `osmo1lg4yl42z56g8fw7j33ep29x5rmh5qyaeu03kyhvjtj4scyz8tvwsdtju04` |
+| Network     | Contract address |
+|-------------|------------------|
+| Mainnet     | Soon™            |
+| Testnet (osmo-test-5) | `osmo1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrqvlx82r` |
 
 **Note**: at the time of this writing, the latest contracts are not on Osmosis testnet yet, as we wait for a deployment of [`chain-registry`](https://www.npmjs.com/package/chain-registry). Will be up soon!
 
@@ -55,7 +52,7 @@ Testnet
 
 Testnet
 
-    osmosisd q wasm contract-state smart osmo1lg4yl42z56g8fw7j33ep29x5rmh5qyaeu03kyhvjtj4scyz8tvwsdtju04 '{"latest_contracts":{}}' --node https://rpc.testnet.osmosis.zone:443 --chain-id osmo-test-4
+    osmosisd q wasm contract-state smart osmo1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrqvlx82r '{"latest_contracts":{}}' --node https://rpc.osmotest5.osmosis.zone:443 --chain-id osmo-test-5
 
 ## Stargaze
 
@@ -64,32 +61,25 @@ Testnet
 | Network | Contract address                                                                                                     |
 |----|----------------------------------------------------------------------------------------------------------------------|
 | Mainnet | Soon™                                                                                                                |
-| Testnet | `stars1ahejlx0g8cz90a4jzcd8znmtrzncfrt0ckexrhtztmfcqm3nk4tsmunwn7` |
+| Testnet | `stars1kauk24v3wkyy64kc7jn0r3ys0zqy9dxqvmy6ul76z7405ur2y9lq90yd8d` |
 
 #### Query latest contracts
 
 Testnet
 
-    starsd q wasm contract-state smart stars1ahejlx0g8cz90a4jzcd8znmtrzncfrt0ckexrhtztmfcqm3nk4tsmunwn7 '{"latest_contracts":{}}' --node https://rpc.elgafar-1.stargaze-apis.com:443 --chain-id elgafar-1
-
-<!-- There's currently an issue using the deploy scripts with Archway, tracked here:
-https://github.com/CronCats/cw-croncat/issues/393
-
-Once this is resolved we can uncomment this section and these contextual notes.
+    starsd q wasm contract-state smart stars1kauk24v3wkyy64kc7jn0r3ys0zqy9dxqvmy6ul76z7405ur2y9lq90yd8d '{"latest_contracts":{}}' --node https://rpc.elgafar-1.stargaze-apis.com:443 --chain-id elgafar-1
 
 ## Archway
 
 #### Factory
 
-| Network | Contract address                                                                                    |
-|----|-----------------------------------------------------------------------------------------------------|
-| Mainnet | Soon™ |
-| Testnet | `archway1g8s22s8mkgtu8p7zpy3lrmjl09jj76wkgl8c0xmt4hm7jc9vwq9qhk6u3t` |
+| Network    | Contract address                                                                                    |
+|------------|-----------------------------------------------------------------------------------------------------|
+| Mainnet    | Soon™ |
+| Testnet (constantine-2) | `archway1fz8wlm2sygmf5zzg47xeznsmljyz0pkxefuugr44lyt58l2uertqnh87ts` |
 
 #### Query latest contracts
 
 Testnet
 
-    archwayd q wasm contract-state smart archway1g8s22s8mkgtu8p7zpy3lrmjl09jj76wkgl8c0xmt4hm7jc9vwq9qhk6u3t '{"latest_contracts":{}}' --node https://rpc.constantine-1.archway.tech:443 --chain-id constantine-1
-
--->
+    archwayd q wasm contract-state smart archway1fz8wlm2sygmf5zzg47xeznsmljyz0pkxefuugr44lyt58l2uertqnh87ts '{"latest_contracts":{}}' --node https://rpc.constantine-2.archway.tech:443 --chain-id constantine-2
