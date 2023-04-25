@@ -52,6 +52,12 @@ module.exports = {
             ],
           },
           {
+            title: 'Integrate in your dApp',
+            items: [
+              '/docs/integration-landing/',
+            ],
+          },
+          {
             title: 'Examples',
             items: [
               '/docs/examples/',
