@@ -38,7 +38,7 @@ fn foo(…) -> Result<Response, ContractError> {
                 msg: to_binary(&ExecuteMsg::Tick {})?,
                 funds: vec![],
             }),
-            gas_limit: None,
+            gas_limit: Some(300_000),
         }],
         queries: None,
         transforms: None,
