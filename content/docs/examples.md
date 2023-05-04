@@ -7,6 +7,10 @@ next: '/docs/example-counter/'
 
 # Boolean contract caller
 
+The 11-minute video below goes through this example.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4prggJVuprw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Overview
 
 Learning how to set up example contracts that get triggered externally with CronCat! The following examples are toy examples, but help demonstrate how the automation layer works and can be leveraged by end users and invoked by other smart contracts.
