@@ -7,6 +7,21 @@ sidebar: 'docs'
 
 Here are the deployed contracts on each network supporting CronCat:
 
+## Juno
+
+#### Factory
+
+| Network | Contract address                                                  |
+|----|-------------------------------------------------------------------|
+| Mainnet | `juno16tzc6krytqxd7350ja4xqvzy522r3737fyaqm5xxn9n5damncx9qt884hn` |
+| Testnet | `juno1n7gsa2zf2qsa0rl526pqc6v2ljq45qw5df9tfm26fdm76tupv0fq38xpan` |
+
+#### Query latest contracts
+
+Testnet
+
+    junod q wasm contract-state smart juno124vcmqsukhmuy6psm45a2tdg5354rnemdetqhjt72ynju666gf0qpxmlxz '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
+
 ## Neutron
 
 #### Factory
@@ -21,21 +36,6 @@ Here are the deployed contracts on each network supporting CronCat:
 Testnet 
 
     neutrond q wasm contract-state smart neutron1sc3r0m8zxw34jfg5xtym8tuxg38n2efuazap8nzmcgrjfampc0vqp0lg55 '{"latest_contracts":{}}' --node https://rpc-palvus.pion-1.ntrn.tech:443 --chain-id pion-1
-
-## Juno
-
-#### Factory
-
-| Network | Contract address                                                  |
-|----|-------------------------------------------------------------------|
-| Mainnet | `juno1pm0nejzjq506vamesj64ryqr3ycyz8h45h5kvxjl24snq0x8pzfqep4uqm` |
-| Testnet | `juno124vcmqsukhmuy6psm45a2tdg5354rnemdetqhjt72ynju666gf0qpxmlxz` |
-
-#### Query latest contracts
-
-Testnet
-
-    junod q wasm contract-state smart juno124vcmqsukhmuy6psm45a2tdg5354rnemdetqhjt72ynju666gf0qpxmlxz '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
 
 ## Osmosis
 
