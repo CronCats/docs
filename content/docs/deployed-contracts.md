@@ -20,7 +20,7 @@ Here are the deployed contracts on each network supporting CronCat:
 
 Testnet
 
-    junod q wasm contract-state smart juno124vcmqsukhmuy6psm45a2tdg5354rnemdetqhjt72ynju666gf0qpxmlxz '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
+    junod q wasm contract-state smart juno1n7gsa2zf2qsa0rl526pqc6v2ljq45qw5df9tfm26fdm76tupv0fq38xpan '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
 
 ## Neutron
 
