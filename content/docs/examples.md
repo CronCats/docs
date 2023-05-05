@@ -1,8 +1,7 @@
 ---
 description: 'Examples of contracts setup with CronCat'
 sidebar: 'docs'
-# prev: '/docs/'
-next: '/docs/example-counter/'
+next: '/docs/example-validate-invocation/'
 ---
 
 # Boolean contract caller

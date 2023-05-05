@@ -61,6 +61,7 @@ module.exports = {
             title: 'Examples',
             items: [
               '/docs/examples/',
+              '/docs/example-validate-invocation/',
             ],
           },
           // { Would like to keep this and uncomment later
