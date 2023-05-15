@@ -44,7 +44,7 @@ Testnet
 | Network     | Contract address |
 |-------------|------------------|
 | Mainnet     | Soon™            |
-| Testnet (osmo-test-5) | `osmo1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrqvlx82r` |
+| Testnet (osmo-test-5) | `osmo12r3fm9rdhae5v68pn6dju39y4tp3qd5mwaqcku9een8fnm2pjv0sa0n4gm` |
 
 **Note**: at the time of this writing, the latest contracts are not on Osmosis testnet yet, as we wait for a deployment of [`chain-registry`](https://www.npmjs.com/package/chain-registry). Will be up soon!
 
@@ -52,7 +52,7 @@ Testnet
 
 Testnet
 
-    osmosisd q wasm contract-state smart osmo1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrqvlx82r '{"latest_contracts":{}}' --node https://rpc.osmotest5.osmosis.zone:443 --chain-id osmo-test-5
+    osmosisd q wasm contract-state smart osmo12r3fm9rdhae5v68pn6dju39y4tp3qd5mwaqcku9een8fnm2pjv0sa0n4gm '{"latest_contracts":{}}' --node https://rpc.osmotest5.osmosis.zone:443 --chain-id osmo-test-5
 
 ## Stargaze
 
