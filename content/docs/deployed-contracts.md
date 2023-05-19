@@ -14,13 +14,13 @@ Here are the deployed contracts on each network supporting CronCat:
 | Network | Contract address                                                  |
 |----|-------------------------------------------------------------------|
 | Mainnet | `juno16tzc6krytqxd7350ja4xqvzy522r3737fyaqm5xxn9n5damncx9qt884hn` |
-| Testnet | `juno1n7gsa2zf2qsa0rl526pqc6v2ljq45qw5df9tfm26fdm76tupv0fq38xpan` |
+| Testnet | `juno17dlsh3wx4n0j87pw3nt87745t4vz2rxuyxlfnn4qy46k8yatvd7qzs788d` |
 
 #### Query latest contracts
 
 Testnet
 
-    junod q wasm contract-state smart juno1n7gsa2zf2qsa0rl526pqc6v2ljq45qw5df9tfm26fdm76tupv0fq38xpan '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
+    junod q wasm contract-state smart juno17dlsh3wx4n0j87pw3nt87745t4vz2rxuyxlfnn4qy46k8yatvd7qzs788d '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
 
 ## Neutron
 
@@ -61,13 +61,13 @@ Testnet
 | Network | Contract address                                                                                                     |
 |----|----------------------------------------------------------------------------------------------------------------------|
 | Mainnet | Soon™                                                                                                                |
-| Testnet | `stars1kauk24v3wkyy64kc7jn0r3ys0zqy9dxqvmy6ul76z7405ur2y9lq90yd8d` |
+| Testnet | `stars1vxd9a2w4taqlv5cfjnqpqhwtl9va8k0jgs5u35s3g4cxhy44zv5q3upvx5` |
 
 #### Query latest contracts
 
 Testnet
 
-    starsd q wasm contract-state smart stars1kauk24v3wkyy64kc7jn0r3ys0zqy9dxqvmy6ul76z7405ur2y9lq90yd8d '{"latest_contracts":{}}' --node https://rpc.elgafar-1.stargaze-apis.com:443 --chain-id elgafar-1
+    starsd q wasm contract-state smart stars1vxd9a2w4taqlv5cfjnqpqhwtl9va8k0jgs5u35s3g4cxhy44zv5q3upvx5 '{"latest_contracts":{}}' --node https://rpc.elgafar-1.stargaze-apis.com:443 --chain-id elgafar-1
 
 ## Archway
 
