@@ -13,7 +13,7 @@ Here are the deployed contracts on each network supporting CronCat:
 
 | Network | Contract address                                                  |
 |----|-------------------------------------------------------------------|
-| Mainnet | `juno16tzc6krytqxd7350ja4xqvzy522r3737fyaqm5xxn9n5damncx9qt884hn` |
+| Mainnet | `juno17hhmhgjku4h2ppru7et4kellnqz6qucnuzsj56ve2wv9urv7266q8enxdn` |
 | Testnet | `juno17dlsh3wx4n0j87pw3nt87745t4vz2rxuyxlfnn4qy46k8yatvd7qzs788d` |
 
 #### Query latest contracts
