@@ -69,6 +69,7 @@ Testnet
 
     starsd q wasm contract-state smart stars1vxd9a2w4taqlv5cfjnqpqhwtl9va8k0jgs5u35s3g4cxhy44zv5q3upvx5 '{"latest_contracts":{}}' --node https://rpc.elgafar-1.stargaze-apis.com:443 --chain-id elgafar-1
 
+<!--
 ## Archway
 
 #### Factory
@@ -83,3 +84,4 @@ Testnet
 Testnet
 
     archwayd q wasm contract-state smart archway1fz8wlm2sygmf5zzg47xeznsmljyz0pkxefuugr44lyt58l2uertqnh87ts '{"latest_contracts":{}}' --node https://rpc.constantine-2.archway.tech:443 --chain-id constantine-2
+-->
