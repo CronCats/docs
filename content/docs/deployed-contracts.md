@@ -29,7 +29,7 @@ Testnet
 | Network          | Contract address                                                     |
 |------------------|----------------------------------------------------------------------|
 | Mainnet          | Soon™                                                                |
-| Testnet (pion-1) | `neutron1sc3r0m8zxw34jfg5xtym8tuxg38n2efuazap8nzmcgrjfampc0vqp0lg55` |
+| Testnet (pion-1) | `neutron1qdmeqpzlha2lgw7w90up895fu3a8p3g0gnfvd9yj04ks9z9p305qtpkxdt` |
 
 #### Query latest contracts
 
@@ -44,7 +44,7 @@ Testnet
 | Network     | Contract address |
 |-------------|------------------|
 | Mainnet     | Soon™            |
-| Testnet (osmo-test-5) | `osmo12r3fm9rdhae5v68pn6dju39y4tp3qd5mwaqcku9een8fnm2pjv0sa0n4gm` |
+| Testnet (osmo-test-5) | `osmo105qu7ajcf9y5wgpj7kcqj2rmj6zn6d9ernw99efua7834xprvwkq3hfhaz` |
 
 **Note**: at the time of this writing, the latest contracts are not on Osmosis testnet yet, as we wait for a deployment of [`chain-registry`](https://www.npmjs.com/package/chain-registry). Will be up soon!
 
