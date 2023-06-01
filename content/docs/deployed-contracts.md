@@ -14,13 +14,13 @@ Here are the deployed contracts on each network supporting CronCat:
 | Network | Contract address                                                  |
 |----|-------------------------------------------------------------------|
 | Mainnet | `juno17hhmhgjku4h2ppru7et4kellnqz6qucnuzsj56ve2wv9urv7266q8enxdn` |
-| Testnet | `juno17dlsh3wx4n0j87pw3nt87745t4vz2rxuyxlfnn4qy46k8yatvd7qzs788d` |
+| Testnet | `juno1mc4wfy9unvy2mwx7dskjqhh6v7qta3vqsxmkayclg4c2jude76es0jcp38` |
 
 #### Query latest contracts
 
 Testnet
 
-    junod q wasm contract-state smart juno17dlsh3wx4n0j87pw3nt87745t4vz2rxuyxlfnn4qy46k8yatvd7qzs788d '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
+    junod q wasm contract-state smart juno1mc4wfy9unvy2mwx7dskjqhh6v7qta3vqsxmkayclg4c2jude76es0jcp38 '{"latest_contracts":{}}' --node https://uni-rpc.reece.sh:443 --chain-id uni-6
 
 ## Neutron
 
