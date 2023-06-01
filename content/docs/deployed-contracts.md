@@ -13,10 +13,14 @@ Here are the deployed contracts on each network supporting CronCat:
 
 | Network | Contract address                                                  |
 |----|-------------------------------------------------------------------|
-| Mainnet | `juno17hhmhgjku4h2ppru7et4kellnqz6qucnuzsj56ve2wv9urv7266q8enxdn` |
+| Mainnet | `juno10dtfwf3gtspz9ts0rpqslf4yx65rdr8j3wk33y87h92m43a5pt8qmfusxx` |
 | Testnet | `juno1mc4wfy9unvy2mwx7dskjqhh6v7qta3vqsxmkayclg4c2jude76es0jcp38` |
 
 #### Query latest contracts
+
+Mainnet
+
+    junod q wasm contract-state smart juno10dtfwf3gtspz9ts0rpqslf4yx65rdr8j3wk33y87h92m43a5pt8qmfusxx '{"latest_contracts":{}}' --node https://juno-rpc.polkachu.com:443 --chain-id juno-1
 
 Testnet
 
