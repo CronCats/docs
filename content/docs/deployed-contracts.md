@@ -47,12 +47,16 @@ Testnet
 
 | Network     | Contract address |
 |-------------|------------------|
-| Mainnet     | Soon™            |
+| Mainnet     | `osmo14yjyt057saxauzc7scc5e0qce7c2dmeuzuhgsul0lnyy25xtz7ksxfzf07`            |
 | Testnet (osmo-test-5) | `osmo105qu7ajcf9y5wgpj7kcqj2rmj6zn6d9ernw99efua7834xprvwkq3hfhaz` |
 
 **Note**: at the time of this writing, the latest contracts are not on Osmosis testnet yet, as we wait for a deployment of [`chain-registry`](https://www.npmjs.com/package/chain-registry). Will be up soon!
 
 #### Query latest contracts
+
+Mainnet
+
+    osmosisd q wasm contract-state smart osmo14yjyt057saxauzc7scc5e0qce7c2dmeuzuhgsul0lnyy25xtz7ksxfzf07 '{"latest_contracts":{}}' --node https://rpc.osmotest5.osmosis.zone:443 --chain-id osmosis-1
 
 Testnet
 
