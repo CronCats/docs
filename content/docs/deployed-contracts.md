@@ -68,10 +68,14 @@ Testnet
 
 | Network | Contract address                                                                                                     |
 |----|----------------------------------------------------------------------------------------------------------------------|
-| Mainnet | Soon™                                                                                                                |
+| Mainnet | `stars10sgfde78kwhs4y45fh3w72qjt3f8tak0pck0hntm89wrmd223prsegggcg` |
 | Testnet | `stars1vxd9a2w4taqlv5cfjnqpqhwtl9va8k0jgs5u35s3g4cxhy44zv5q3upvx5` |
 
 #### Query latest contracts
+
+Mainnet
+
+    starsd q wasm contract-state smart stars10sgfde78kwhs4y45fh3w72qjt3f8tak0pck0hntm89wrmd223prsegggcg '{"latest_contracts":{}}' --node https://rpc.stargaze-apis.com:443 --chain-id stargaze-1
 
 Testnet
 
