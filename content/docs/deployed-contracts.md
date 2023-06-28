@@ -56,7 +56,7 @@ Testnet
 
 Mainnet
 
-    osmosisd q wasm contract-state smart osmo14yjyt057saxauzc7scc5e0qce7c2dmeuzuhgsul0lnyy25xtz7ksxfzf07 '{"latest_contracts":{}}' --node https://rpc.osmotest5.osmosis.zone:443 --chain-id osmosis-1
+    osmosisd q wasm contract-state smart osmo14yjyt057saxauzc7scc5e0qce7c2dmeuzuhgsul0lnyy25xtz7ksxfzf07 '{"latest_contracts":{}}' --node https://rpc.osmosis.zone:443 --chain-id osmosis-1
 
 Testnet
 
