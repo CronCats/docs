@@ -32,10 +32,14 @@ Testnet
 
 | Network          | Contract address                                                     |
 |------------------|----------------------------------------------------------------------|
-| Mainnet          | Soon™                                                                |
+| Mainnet          | `neutron12g9rc7uet8jqlhhjf72emd56ndk8rctfsmy30llekem4scsgd77sgnkvfa` |
 | Testnet (pion-1) | `neutron1qdmeqpzlha2lgw7w90up895fu3a8p3g0gnfvd9yj04ks9z9p305qtpkxdt` |
 
 #### Query latest contracts
+
+Mainnet 
+
+    neutrond q wasm contract-state smart neutron12g9rc7uet8jqlhhjf72emd56ndk8rctfsmy30llekem4scsgd77sgnkvfa '{"latest_contracts":{}}' --node https://neutron-rpc.polkachu.com:443 --chain-id neutron-1
 
 Testnet 
 
